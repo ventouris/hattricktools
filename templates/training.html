@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Training Estimation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<!-- Bootstrap style --> 
+    <link href="/static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="/static/css/slider.css" rel="stylesheet"/>
+    <link href="/static/css/adsense.css" rel="stylesheet"/>
+    <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+
+    <style>
+
+    @font-face {
+    font-family: 'Rosetta';
+    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.eot'); /* IE9 Compat Modes */
+    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.eot?#iefix') format('embedded-opentype'),;/* IE6-IE8 */
+    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.woff') format('woff'); /* Modern Browsers */
+    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+    }
+
+    .bordered {
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      background-color: #277F31;
+    }
+
+    body {
+      background: url("/static/images/bg.png");
+      font-family: "Rosetta";
+    }
+
+    .card-panel {
+      border-radius: 15px;
+      border: 1px solid #FFA500;
+      background-color: #FCF6DF;
+      text-align: justify;
+      padding-top: 0px;
+      line-height: 1 !important;
+    }
+
+    .table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{
+      padding:5px
+    }
+
+    
+   </style>
+
+
+  </head>
+
+  
+<body>
+
+<header>
+  
+{% include "header.html" %}
+
+</header>
+
+<main>
+
+  <div>
+    <div class="row">
+
+      <div id="ad1" class="col s12 m12 l2 adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+
+      <div class="col s12 m12 l10">
+
+      <div class="col s12 m12 l12">
+        <div class="card-panel">
+          <h5><b>Training Estimation</b></h5>
+          <span><b>Info:</b> Training Estimation will help you to identify how many weeks a player needs to reach a specific level. You will be able to change parameters like Assistant Coaches, Training Intensity and Stamina Share. New Hattrick Staff system is available in this tool.</span>
+        </div>
+      </div>
+
+      <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
+      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
+
+      <div class="col l5 m6 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
+       
+      
+        <div><b>Skill</b></div>
+        <select id="skill">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="SP">Set pieces</option>
+          <option value="SP 25%">Set pieces +25%</option>
+          <option value="Def">Defending</option>
+          <option value="Sco">Scoring</option>
+          <option value="Cross">Crossing (winger)</option>
+          <option value="Shoot">Shooting</option>
+          <option value="Pass">Short passes</option>
+          <option value="PM">Playmaking</option>
+          <option value="PM 50%">Playmaking 50%</option>
+          <option value="GK">Goalkeeping</option>
+          <option value="ThPass">Through passes</option>
+          <option value="DefPos">Defensive positions</option>
+          <option value="WingAtt">Wing attacks</option>
+                           
+        </select>
+
+        <div><b>Years</b></div>
+        <div class="col l12 m12 s12">
+          <div id="slider-years" class="slider-success" style="width:80%;float:left"></div><input type="text" id="years-value" style="float:right;width:40px;height:25px;" value="0"/>
+        </div>
+        <div><b>Days</b></div>
+        <div class="col l12 m12 s12">
+          <div id="slider-days" class="slider-success" style="width:80%;float:left"></div><input type="text" id="days-value" style="float:right;width:40px;height:25px;" value="0"/>
+        </div>
+        <div><b>Skill Level</b></div>
+        <div class="col l12 m12 s12">
+          <div id="slider-skilllevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="skilllevel-value" style="float:right;width:40px;height:25px;" value="0"/>
+        </div>
+        <div><b>Subskill</b></div>
+        <div class="col l12 m12 s12">
+          <div id="slider-subskill" class="slider-success" style="width:80%;float:left"></div><input type="text" id="subskill-value" style="float:right;width:40px;height:25px;" value="0"/>
+        </div>
+        <div><b>Coach Level</b></div>
+        <div class="col l12 m12 s12">
+          <div id="slider-coachlevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="coachlevel-value" style="float:right;width:40px;height:25px;" value="0"/>
+        </div>
+        <div><b>Assistants Level</b></div>
+        <div class="col l12 m12 s12">
+          <div id="slider-assistants" class="slider-success" style="width:80%;float:left"></div><input type="text" id="assistantslevel-value" style="float:right;width:40px;height:25px;" value="0"/>
+        </div>  
+        <div><b>Training Intensity</b></div>
+        <div class="col l12 m12 s12">
+          <div id="slider-intensity" class="slider-success" style="width:80%;float:left"></div><input type="text" id="trainingintensity-value" style="float:right;width:40px;height:25px;" value="0"/>
+        </div>
+        <div><b>Stamina Share</b></div>
+        <div class="col l12 m12 s12">
+          <div id="slider-stamina" class="slider-success" style="width:80%;float:left"></div><input type="text" id="staminashare-value" style="float:right;width:40px;height:25px;" value="0"/>
+        </div>
+
+        <a class="btn-floating btn-large waves-effect waves-light green" onclick="trainingcalc()" style="float:right"><i class="mdi-content-send"></i></a>
+
+        
+        
+      </div>
+
+      <div class="col l7 m6 s12">
+
+        <table class="table bordered centered striped" id="resultstable" style="background-color:#fff">
+            <thead>
+              <tr style="background-color: #277F31; color:#fff">
+                  <th>Skill</th>
+                  <th>Weeks</th>
+                  <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "rectangular.html" %}</div>
+
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+
+    {% include "footer.html" %}
+      
+    </footer>
+
+
+
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+
+<script type="text/javascript" src="/static/js/training.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70, edge: 'right'});
+      $('.collapsible').collapsible();
+      $('select').material_select();
+    });
+</script>
+
+<script type="text/javascript">
+  $('#slider-years').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['years']}} ],
+  step: 1,
+  range: {
+    'min': [  17 ],
+    'max': [ 30 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-years').Link('lower').to($('#years-value'));  
+
+$('#slider-days').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['days']}} ],
+  step: 1,
+  range: {
+    'min': [  0],
+    'max': [ 111 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-days').Link('lower').to($('#days-value'));  
+
+$('#slider-skilllevel').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['skilllevel']}} ],
+  step: 1,
+  range: {
+    'min': [  1 ],
+    'max': [ 20 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-skilllevel').Link('lower').to($('#skilllevel-value'));  
+
+$('#slider-subskill').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['subskill']}} ],
+  step: 1,
+  range: {
+    'min': [  0 ],
+    'max': [ 100 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-subskill').Link('lower').to($('#subskill-value'));  
+
+$('#slider-coachlevel').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['coachlevel']}} ],
+  step: 1,
+  range: {
+    'min': [  4 ],
+    'max': [ 8 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-coachlevel').Link('lower').to($('#coachlevel-value'));  
+
+$('#slider-assistants').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['assistants']}} ],
+  step: 1,
+  range: {
+    'min': [  0 ],
+    'max': [ 15 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-assistants').Link('lower').to($('#assistantslevel-value'));  
+
+$('#slider-intensity').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['intensity']}} ],
+  step: 1,
+  range: {
+    'min': [  5 ],
+    'max': [ 100 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-intensity').Link('lower').to($('#trainingintensity-value'));  
+
+$('#slider-stamina').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['stamina']}} ],
+  step: 1,
+  range: {
+    'min': [  5],
+    'max': [ 100 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-stamina').Link('lower').to($('#staminashare-value'));  
+
+</script>
+
+</body>
+</html>
