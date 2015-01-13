@@ -50,5 +50,21 @@ def training():
 
     return render_template("training.html", param=param)
 
+@app.route("/healing")
+def healing():
+    param = {}
+    param["TSIA"] = request.args.get('TSIA',0)
+    param["TSIB"] = request.args.get('TSIB',0)
+    param["mediclevel"] = request.args.get('mediclevel',0)
+    param["age"] = request.args.get('age',17)
+    param["weeks"] = request.args.get('weeks',0)
+
+    TSIA = int(param["TSIA"])
+    TSIB = int(param["TSIB"])
+    if TSIA != 0 and TSIB != 0:
+        param["weeks"] = round(((float(TSIB-TSIA))/TSIB)*10,1)
+   
+    return render_template("healing.html", param=param)
+
 if __name__ == "__main__":
 	app.run(debug=True)

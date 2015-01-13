@@ -9,52 +9,12 @@
 
 <!-- Bootstrap style --> 
     <link href="/static/css/materialize.min.css" rel="stylesheet"/>
-    <link href="/static/css/slider.css" rel="stylesheet"/>
+    <link href="/static/css/ht-tools.css" rel="stylesheet"/>
     <link href="/static/css/adsense.css" rel="stylesheet"/>
     <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
 
 <!-- fav and touch icons -->
     <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
-
-    <style>
-
-    @font-face {
-    font-family: 'Rosetta';
-    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.eot'); /* IE9 Compat Modes */
-    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.eot?#iefix') format('embedded-opentype'),;/* IE6-IE8 */
-    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.woff') format('woff'); /* Modern Browsers */
-    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
-    }
-
-    .bordered {
-      border: 1px solid #ddd;
-    }
-
-    footer {
-      background-color: #277F31;
-    }
-
-    body {
-      background: url("/static/images/bg.png");
-      font-family: "Rosetta";
-    }
-
-    .card-panel {
-      border-radius: 15px;
-      border: 1px solid #FFA500;
-      background-color: #FCF6DF;
-      text-align: justify;
-      padding-top: 0px;
-      line-height: 1 !important;
-    }
-
-    .table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{
-      padding:5px
-    }
-
-    
-   </style>
-
 
   </head>
 
@@ -88,15 +48,16 @@
 
       <div class="col l5 m6 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
        
-      
+      <form onsubmit="trainingcalc();return false">
         <div><b>Skill</b></div>
-        <select id="skill">
+        <select class="browser-default" id="skill">
           <option value="" disabled selected>Choose your option</option>
           <option value="SP">Set pieces</option>
           <option value="SP 25%">Set pieces +25%</option>
           <option value="Def">Defending</option>
           <option value="Sco">Scoring</option>
           <option value="Cross">Crossing (winger)</option>
+          <option value="Cross 50%">Crossing (winger) 50%</option>
           <option value="Shoot">Shooting</option>
           <option value="Pass">Short passes</option>
           <option value="PM">Playmaking</option>
@@ -109,39 +70,41 @@
         </select>
 
         <div><b>Years</b></div>
-        <div class="col l12 m12 s12">
-          <div id="slider-years" class="slider-success" style="width:80%;float:left"></div><input type="text" id="years-value" style="float:right;width:40px;height:25px;" value="0"/>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-years" class="slider-success" style="width:80%;float:left"></div><input type="text" id="years-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
         </div>
         <div><b>Days</b></div>
-        <div class="col l12 m12 s12">
-          <div id="slider-days" class="slider-success" style="width:80%;float:left"></div><input type="text" id="days-value" style="float:right;width:40px;height:25px;" value="0"/>
-        </div>
-        <div><b>Skill Level</b></div>
-        <div class="col l12 m12 s12">
-          <div id="slider-skilllevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="skilllevel-value" style="float:right;width:40px;height:25px;" value="0"/>
-        </div>
-        <div><b>Subskill</b></div>
-        <div class="col l12 m12 s12">
-          <div id="slider-subskill" class="slider-success" style="width:80%;float:left"></div><input type="text" id="subskill-value" style="float:right;width:40px;height:25px;" value="0"/>
-        </div>
-        <div><b>Coach Level</b></div>
-        <div class="col l12 m12 s12">
-          <div id="slider-coachlevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="coachlevel-value" style="float:right;width:40px;height:25px;" value="0"/>
-        </div>
-        <div><b>Assistants Level</b></div>
-        <div class="col l12 m12 s12">
-          <div id="slider-assistants" class="slider-success" style="width:80%;float:left"></div><input type="text" id="assistantslevel-value" style="float:right;width:40px;height:25px;" value="0"/>
-        </div>  
-        <div><b>Training Intensity</b></div>
-        <div class="col l12 m12 s12">
-          <div id="slider-intensity" class="slider-success" style="width:80%;float:left"></div><input type="text" id="trainingintensity-value" style="float:right;width:40px;height:25px;" value="0"/>
-        </div>
-        <div><b>Stamina Share</b></div>
-        <div class="col l12 m12 s12">
-          <div id="slider-stamina" class="slider-success" style="width:80%;float:left"></div><input type="text" id="staminashare-value" style="float:right;width:40px;height:25px;" value="0"/>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-days" class="slider-success" style="width:80%;float:left"></div><input type="text" id="days-value" style="float:right;width:40px;height:25px;text-align:right;" value="0"/>
         </div>
 
-        <a class="btn-floating btn-large waves-effect waves-light green" onclick="trainingcalc()" style="float:right"><i class="mdi-content-send"></i></a>
+        <div class="row slidercls"><b>Skill Level</b><span id="skilllevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-skilllevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="skilllevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>Subskill</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-subskill" class="slider-success" style="width:80%;float:left"></div><input type="text" id="subskill-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div class="row slidercls"><b>Coach Level</b><span id="coachlevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-coachlevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="coachlevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>Assistants Level</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-assistants" class="slider-success" style="width:80%;float:left"></div><input type="text" id="assistantslevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>  
+        <div><b>Training Intensity</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-intensity" class="slider-success" style="width:80%;float:left"></div><input type="text" id="trainingintensity-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>Stamina Share</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-stamina" class="slider-success" style="width:80%;float:left"></div><input type="text" id="staminashare-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+
+        <button type="submit" class="btn-floating btn-large waves-effect waves-light green" style="float:right"><i class="mdi-content-send"></i></button>
+      </form>
 
         
         
@@ -188,13 +151,15 @@
 <script type="text/javascript" src="/static/js/training.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-      $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70, edge: 'right'});
+      $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
       $('.collapsible').collapsible();
-      $('select').material_select();
     });
 </script>
 
 <script type="text/javascript">
+  var names = {"11": "brilliant", "10": "outstanding", "13": "world class", "12": "magnificent", "15": "titanic", "14": "supernatural", "17": "mythical", "16": "extra-terrestrial", "19": "utopian", "18": "magical", "20": "divine", "1": "disastrous", "0": "non-existent", "3": "poor", "2": "wretched", "5": "inadequate", "4": "weak", "7": "solid", "6": "passable", "9": "formidable", "8": "excellent"}
+
+
   $('#slider-years').noUiSlider({
   connect: 'lower',
   start: [ {{param['years']}} ],
@@ -268,7 +233,8 @@ $('#slider-coachlevel').noUiSlider({
   })
 });    
 
-$('#slider-coachlevel').Link('lower').to($('#coachlevel-value'));  
+$('#slider-coachlevel').Link('lower').to($('#coachlevel-value'));
+ 
 
 $('#slider-assistants').noUiSlider({
   connect: 'lower',
@@ -314,6 +280,17 @@ $('#slider-stamina').noUiSlider({
 });    
 
 $('#slider-stamina').Link('lower').to($('#staminashare-value'));  
+
+
+$( "#slider-skilllevel" ).Link().to($( "#skilllevelval" ), function ( value ) {
+    $(this).html(names[value]);
+});
+
+$( "#slider-coachlevel" ).Link().to($( "#coachlevelval" ), function ( value ) {
+    $(this).html(names[value]);
+});
+  
+
 
 </script>
 
