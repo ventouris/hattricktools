@@ -1,0 +1,23 @@
+{
+    "info": "Info", 
+    "basic": "Basic Seating", 
+    "chooseyourteam": "Choose your team", 
+    "costofconstruction": "Cost of Construction", 
+    "description": "This tool will help you to identify the ideal or desired size of your arena. You may use the fan members and the fan mood or just your desired arena size with the default or your own percentages.", 
+    "income": "Income", 
+    "accordingtofan": "Size according to your Fans Club", 
+    "seats": "Seats", 
+    "accordingtosize": "Size according to the total number you want", 
+    "terraces": "Terraces", 
+    "Submit": "Submit", 
+    "seatstoadd": "Seats to add", 
+    "vip": "Seats in VIP", 
+    "arenacalc": "Arena Calculator", 
+    "fansmembers": "Fans Members", 
+    "roof": "Seats Under Roof", 
+    "fansmood": "Fans Mood", 
+    "arenasize": "Arena Size", 
+    "currentarena": "Current Arena", 
+    "weeklycost": "Weekly cost", 
+    "totalcapacity": "Total capacity"
+}

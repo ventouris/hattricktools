@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{pagestr["guessmainskill"]|safe}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
+    <meta name="keywords" content="hattrick, football manager, online games, football, training, chpp">
+    <meta property="og:image" content="http://www.ht-tools.eu/static/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://www.ht-tools.eu/static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="/static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="/static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="/static/css/adsense.css" rel="stylesheet"/>
+    <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+
+  </head>
+
+  
+<body>
+
+<header>
+  
+{% include "header.html" %}
+
+</header>
+
+<main>
+
+  <div>
+    <div class="row">
+
+      <div class="col s12 m12 l2">
+      {% if not login %}
+              <div class="card-panel" style="background-color:#fcf6df;border:1px solid orange;margin-top:50px">{{headerstr["loginmessage"]|safe}}</div>
+      {% endif %}
+
+        <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+      </div>
+
+      <div class="col s12 m12 l10">
+
+    
+      <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
+      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">{{pagestr["guessmainskill"]|safe}}</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">{{pagestr["info"]|safe}}</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        <div class="col l5 m6 s12">
+          <form id="my-form">
+
+            <div><b>{{pagestr["skill"]|safe}}</b></div>
+        <select class="browser-default" id="skill">
+          <option value="" disabled selected>{{pagestr["option"]|safe}}</option>
+          {% for i in htlang["skills"] %}
+            {% if i not in ["Stamina", "Kicker", "Experience", "LeaderShip"] %}
+              <option value="{{i}}">{{htlang["skills"][i]}}</option>
+            {% endif %}
+          {% endfor %}
+                           
+        </select>
+
+        <div><b>{{pagestr["age"]|safe}}</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-age" class="slider-success" style="width:80%;float:left"></div><input type="text" id="age-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+
+        <div class="input-field col s12 m8 l8">
+          <input id="wage" type="text" class="validate" value="{{param['wage']}}" required>
+          <label for="wage">{{pagestr["wage"]|safe}}</label>
+        </div>
+
+         <button class="btn green waves-effect waves-light" style="float:right" type="submit">{{pagestr["Submit"]|safe}}</button>
+      </form>
+    </div>
+    <div class="col l7 m6 s12">
+      <table class="table bordered centered striped" id="resultstable">
+            <thead>
+              <tr style="background-color: #277F31; color:#fff">
+                  <th>{{pagestr["mainskill"]|safe}}</th>
+                  <th>{{pagestr["level"]|safe}}</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td></td>
+            <td></td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+        <div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "responsiveRect.html" %}</div>
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>{{pagestr["guessmainskill"]|safe}}</b></h5>
+        <img src="/static/images/mainskill.png" style="float:left;margin-right:15px"><span><b>{{pagestr["info"]|safe}}:</b> {{pagestr["description"]|safe}}</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+  </div>
+
+{% include "language-selector.html" %}
+
+</main>
+
+<footer>
+
+    {% include "footer.html" %}
+      
+</footer>
+
+
+
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="/static/js/cookies.js"></script>
+
+<script type="text/javascript" src="/static/js/guessmainskill.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
+      $('.collapsible').collapsible();
+      $('ul.tabs').tabs();
+    });
+</script>
+
+{% include "analytics.html" %}
+
+<script type="text/javascript">
+$('#my-form').on('submit', function () {
+    var skill = $('#skill').find(":selected").text();
+    guessmainskillcalc(skill);
+    return false;
+});
+</script>
+
+<script type="text/javascript">
+  var names = {{htlang["levels"]|safe}};
+
+
+  $('#slider-age').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['age']}} ],
+  step: 1,
+  range: {
+    'min': [  17 ],
+    'max': [ 38 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-age').Link('lower').to($('#age-value'));  
+
+
+</script>
+
+</body>
+</html>

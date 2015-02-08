@@ -1,0 +1,23 @@
+{
+  "info":"Informacje",
+  "basic":"Miejsca siedziące",
+  "chooseyourteam":"Wybierz swoją drużynę",
+  "costofconstruction":"Koszt budowy",
+  "description":"Za pomocą tego narzędzia możesz obliczyć idealny rozmiar i proporcje stadionu. Do obliczeń możesz użyć liczby fanów, nastroju fanów lub po prostu wpisać pożądaną wielkość stadionu.",
+  "income":"Dochód",
+  "accordingtofan":"Wielkość stadionu wg ilości fanów",
+  "seats":"Miejsc",
+  "accordingtosize":"Rozmiar stadionu wg pożądanych wielkości",
+  "terraces":"Miejsca stojące",
+  "Submit":"Oblicz",
+  "seatstoadd":"Miejsca do wybudowania",
+  "vip":"Loża dla VIP-ów",
+  "arenacalc":"Kalkulator stadionu",
+  "fansmembers":"Ilość fanów",
+  "roof":"Trybuna kryta",
+  "fansmood":"Nastrój fanów",
+  "arenasize":"Wielkość stadionu",
+  "currentarena":"Obecny stadion",
+  "weeklycost":"Koszt tygodniowy",
+  "totalcapacity":"Całkowita pojemność"
+}

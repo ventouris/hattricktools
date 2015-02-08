@@ -1,0 +1,14 @@
+{
+  "info":"Info",
+  "chooseyourteam":"Choose your team",
+  "description":"This tool can calculate the increase and decrease of the formation experience after a match (up to 4 matches), in base of the number of minutes each one has been trained",
+  "Submit":"Submit",
+  "formationexperience":"Formation Experience",
+  "match":"Match",
+  "formation":"Formation",
+  "minutes":"Minutes",
+  "addformationmanually":"Add formation manually",
+  "level":"Level",
+  "addformationlevel":"Add formation level",
+  "resetformation":"Reset formation"
+}

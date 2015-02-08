@@ -1,0 +1,19 @@
+{
+  "info":"Informaţii",
+  "description":"Calculatorul de Sanatate ,te va ajuta sa identifici, de cate zile sau de cate actualizari de sanatate ,mai are nevoie un jucator pentru a ajunge la leziune usoara sau pentru a se vindeca complet dupa o accidentare. Vei putea schimba parametri precum Nivelul Medicului, Subnivelul Accidentarii,precum si varsta. Noul Sistem de Specialisti este implementat in aceasta unealta.",
+  "injuryweeks":"Săptămâni accidentare",
+  "tsib":"ITC-ul înainte de accidentare",
+  "findthesublevel":"Găseste subnivel accidentare",
+  "age":"Vârsta",
+  "days":"Zile",
+  "Submit":"Înregistrare",
+  "bruised":"Leziune usoara",
+  "healthy":"Sănătos",
+  "mediclevel":"Nivelul medicului",
+  "updates":"Actualizări de sănătate",
+  "tsia":"ITC după accidentare",
+  "chooseyourplayer":"Alege jucatorul",
+  "weeks":"Săptămâni",
+  "optional":"Opţional",
+  "healingcalc":"Calculator de vindecare"
+}

@@ -1,0 +1,817 @@
+{
+	"language": {
+		"aggressiveness": [
+			{
+				"text": "potolit",
+				"value": "0"
+			},
+			{
+				"text": "calm",
+				"value": "1"
+			},
+			{
+				"text": "echilibrat",
+				"value": "2"
+			},
+			{
+				"text": "temperamental",
+				"value": "3"
+			},
+			{
+				"text": "irascibil",
+				"value": "4"
+			},
+			{
+				"text": "instabil",
+				"value": "5"
+			}
+		],
+		"agreeability": [
+			{
+				"text": "tip antipatic",
+				"value": "0"
+			},
+			{
+				"text": "tip controversat",
+				"value": "1"
+			},
+			{
+				"text": "tip plăcut",
+				"value": "2"
+			},
+			{
+				"text": "tip simpatic",
+				"value": "3"
+			},
+			{
+				"text": "tip popular",
+				"value": "4"
+			},
+			{
+				"text": "membru iubit al echipei",
+				"value": "5"
+			}
+		],
+		"attitude": [
+			{
+				"text": "Relaxat",
+				"value": "-1"
+			},
+			{
+				"text": "Normal",
+				"value": "0"
+			},
+			{
+				"text": "Meciul sezonului",
+				"value": "1"
+			}
+		],
+		"confidence": [
+			{
+				"text": "inexistentă",
+				"value": "0"
+			},
+			{
+				"text": "dezastruoasă",
+				"value": "1"
+			},
+			{
+				"text": "mizerabilă",
+				"value": "2"
+			},
+			{
+				"text": "jalnică",
+				"value": "3"
+			},
+			{
+				"text": "decentă",
+				"value": "4"
+			},
+			{
+				"text": "puternică",
+				"value": "5"
+			},
+			{
+				"text": "minunată",
+				"value": "6"
+			},
+			{
+				"text": "uşor exagerată",
+				"value": "7"
+			},
+			{
+				"text": "exagerată",
+				"value": "8"
+			},
+			{
+				"text": "complet exagerată",
+				"value": "9"
+			}
+		],
+		"desc": "Romanian",
+		"fans": [
+			{
+				"text": "violenţi",
+				"value": "0"
+			},
+			{
+				"text": "furioşi",
+				"value": "1"
+			},
+			{
+				"text": "nervoşi",
+				"value": "2"
+			},
+			{
+				"text": "iritaţi",
+				"value": "3"
+			},
+			{
+				"text": "dezamăgiţi",
+				"value": "4"
+			},
+			{
+				"text": "calmi",
+				"value": "5"
+			},
+			{
+				"text": "mulţumiţi",
+				"value": "6"
+			},
+			{
+				"text": "bucuroşi",
+				"value": "7"
+			},
+			{
+				"text": "în delir",
+				"value": "8"
+			},
+			{
+				"text": "euforici",
+				"value": "9"
+			},
+			{
+				"text": "dansează pe străzi",
+				"value": "10"
+			},
+			{
+				"text": "îţi trimit scrisori de dragoste",
+				"value": "11"
+			}
+		],
+		"fans_match": [
+			{
+				"text": "Mai bine nu ne prezentăm!",
+				"value": "0"
+			},
+			{
+				"text": "Suntem surclasaţi",
+				"value": "1"
+			},
+			{
+				"text": "Vom pierde",
+				"value": "2"
+			},
+			{
+				"text": "Ei sunt favoriţii",
+				"value": "3"
+			},
+			{
+				"text": "Ei sunt mai buni",
+				"value": "4"
+			},
+			{
+				"text": "Va fi un meci echilibrat",
+				"value": "5"
+			},
+			{
+				"text": "Suntem mai buni decât ei",
+				"value": "6"
+			},
+			{
+				"text": "Suntem favoriţi",
+				"value": "7"
+			},
+			{
+				"text": "Vom câştiga",
+				"value": "8"
+			},
+			{
+				"text": "Floare la ureche!",
+				"value": "9"
+			},
+			{
+				"text": "Hai să-i umilim",
+				"value": "10"
+			}
+		],
+		"fans_season": [
+			{
+				"text": "Nu suntem de divizia asta",
+				"value": "0"
+			},
+			{
+				"text": "Fiecare zi în divizia asta e o plăcere",
+				"value": "1"
+			},
+			{
+				"text": "Trebuie să luptăm",
+				"value": "2"
+			},
+			{
+				"text": "Ar fi bună o clasare la mijloc",
+				"value": "3"
+			},
+			{
+				"text": "Suntem de locurile 1-4",
+				"value": "4"
+			},
+			{
+				"text": "Vrem titlul!",
+				"value": "5"
+			},
+			{
+				"text": "Trebuie să câştigăm sezonul ăsta",
+				"value": "6"
+			},
+			{
+				"text": "Avem valoare peste nivelul diviziei ăsteia!",
+				"value": "7"
+			}
+		],
+		"honesty": [
+			{
+				"text": "infam",
+				"value": "0"
+			},
+			{
+				"text": "necinstit",
+				"value": "1"
+			},
+			{
+				"text": "cinstit",
+				"value": "2"
+			},
+			{
+				"text": "integru",
+				"value": "3"
+			},
+			{
+				"text": "incoruptibil",
+				"value": "4"
+			},
+			{
+				"text": "angelic",
+				"value": "5"
+			}
+		],
+		"id": "23",
+		"leagueNames": {
+			"1": "Suedia",
+			"100": "El Salvador",
+			"101": "Malta",
+			"102": "Kîrgîzstan",
+			"103": "Moldova",
+			"104": "Georgia",
+			"105": "Andorra",
+			"106": "Iordania",
+			"107": "Guatemala",
+			"11": "Danemarca",
+			"110": "Trinidad şi Tobago",
+			"111": "Nicaragua",
+			"112": "Kazahstan",
+			"113": "Surinam",
+			"117": "Liechtenstein",
+			"118": "Algeria",
+			"119": "Mongolia",
+			"12": "Finlanda",
+			"120": "Liban",
+			"121": "Senegal",
+			"122": "Armenia",
+			"123": "Bahrain",
+			"124": "Barbados",
+			"125": "Capul Verde",
+			"126": "Côte d’Ivoire",
+			"127": "Kuweit",
+			"128": "Irak",
+			"129": "Azerbaijan",
+			"130": "Angola",
+			"131": "Muntenegru",
+			"132": "Bangladesh",
+			"133": "Yemen",
+			"134": "Oman",
+			"135": "Mozambic",
+			"136": "Brunei",
+			"137": "Ghana",
+			"138": "Cambogia",
+			"139": "Benin",
+			"14": "Olanda",
+			"140": "Siria",
+			"141": "Qatar",
+			"142": "Tanzania",
+			"143": "Uganda",
+			"144": "Maldive",
+			"145": "Uzbekistan",
+			"146": "Camerun",
+			"147": "Cuba",
+			"148": "Palestina",
+			"15": "Oceania",
+			"16": "Brazilia",
+			"17": "Canada",
+			"18": "Chile",
+			"19": "Columbia",
+			"2": "Anglia",
+			"20": "India",
+			"21": "Irlanda",
+			"22": "Japonia",
+			"23": "Peru",
+			"24": "Polonia",
+			"25": "Portugalia",
+			"26": "Scoţia",
+			"27": "Africa de Sud",
+			"28": "Uruguay",
+			"29": "Venezuela",
+			"3": "Germania",
+			"30": "Coreea de Sud",
+			"31": "Thailanda",
+			"32": "Turcia",
+			"33": "Egipt",
+			"34": "Republica Populară Chineză",
+			"35": "Rusia",
+			"36": "Spania",
+			"37": "România",
+			"38": "Islanda",
+			"39": "Austria",
+			"4": "Italia",
+			"44": "Belgia",
+			"45": "Malaezia",
+			"46": "Elveţia",
+			"47": "Singapore",
+			"5": "Franţa",
+			"50": "Grecia",
+			"51": "Ungaria",
+			"52": "Republica Cehă",
+			"53": "Letonia",
+			"54": "Indonesia",
+			"55": "Filipine",
+			"56": "Estonia",
+			"57": "Serbia",
+			"58": "Croaţia",
+			"59": "Hong Kong",
+			"6": "Mexic",
+			"60": "Taiwan",
+			"61": "Ţara Galilor",
+			"62": "Bulgaria",
+			"63": "Israel",
+			"64": "Slovenia",
+			"66": "Lituania",
+			"67": "Slovacia",
+			"68": "Ucraina",
+			"69": "Bosnia şi Herţegovina",
+			"7": "Argentina",
+			"70": "Vietnam",
+			"71": "Pakistan",
+			"72": "Paraguay",
+			"73": "Ecuador",
+			"74": "Bolivia",
+			"75": "Nigeria",
+			"76": "Insulele Feroe",
+			"77": "Maroc",
+			"79": "Arabia Saudită",
+			"8": "SUA",
+			"80": "Tunisia",
+			"81": "Costa Rica",
+			"83": "Emiratele Arabe Unite",
+			"84": "Luxemburg",
+			"85": "Iran",
+			"88": "Republica Dominicană",
+			"89": "Cipru",
+			"9": "Norvegia",
+			"91": "Belarus",
+			"93": "Irlanda de Nord",
+			"94": "Jamaica",
+			"95": "Kenya",
+			"96": "Panama",
+			"97": "Macedonia",
+			"98": "Albania",
+			"99": "Honduras"
+		},
+		"levels": [
+			{
+				"text": "inexistent",
+				"value": "0"
+			},
+			{
+				"text": "dezastruos",
+				"value": "1"
+			},
+			{
+				"text": "mizerabil",
+				"value": "2"
+			},
+			{
+				"text": "jalnic",
+				"value": "3"
+			},
+			{
+				"text": "slab",
+				"value": "4"
+			},
+			{
+				"text": "inadecvat",
+				"value": "5"
+			},
+			{
+				"text": "acceptabil",
+				"value": "6"
+			},
+			{
+				"text": "bun",
+				"value": "7"
+			},
+			{
+				"text": "excelent",
+				"value": "8"
+			},
+			{
+				"text": "formidabil",
+				"value": "9"
+			},
+			{
+				"text": "impresionant",
+				"value": "10"
+			},
+			{
+				"text": "sclipitor",
+				"value": "11"
+			},
+			{
+				"text": "magnific",
+				"value": "12"
+			},
+			{
+				"text": "legendar",
+				"value": "13"
+			},
+			{
+				"text": "supranatural",
+				"value": "14"
+			},
+			{
+				"text": "titanic",
+				"value": "15"
+			},
+			{
+				"text": "extraterestru",
+				"value": "16"
+			},
+			{
+				"text": "mitic",
+				"value": "17"
+			},
+			{
+				"text": "magic",
+				"value": "18"
+			},
+			{
+				"text": "utopic",
+				"value": "19"
+			},
+			{
+				"text": "divin",
+				"value": "20"
+			}
+		],
+		"name": "ro",
+		"positions": [
+			{
+				"type": "Keeper",
+				"value": "Portar"
+			},
+			{
+				"type": "WingBack",
+				"value": "Fundaş Lateral"
+			},
+			{
+				"type": "CentralDefender",
+				"value": "Fundaş Central"
+			},
+			{
+				"type": "InnerMidfield",
+				"value": "Mijlocaş Central"
+			},
+			{
+				"type": "Winger",
+				"value": "Extremă"
+			},
+			{
+				"type": "Forward",
+				"value": "Atacant"
+			}
+		],
+		"ratingSubLevels": [
+			{
+				"text": "foarte scăzut",
+				"value": "0"
+			},
+			{
+				"text": "scăzut",
+				"value": "0.25"
+			},
+			{
+				"text": "ridicat",
+				"value": "0.5"
+			},
+			{
+				"text": "foarte ridicat",
+				"value": "0.75"
+			}
+		],
+		"sectors": [
+			{
+				"type": "Midfield",
+				"value": "Mijloc"
+			},
+			{
+				"type": "RightDefense",
+				"value": "Apărare pe dreapta"
+			},
+			{
+				"type": "CentralDefense",
+				"value": "Apărare pe centru"
+			},
+			{
+				"type": "LeftDefense",
+				"value": "Apărare pe stânga"
+			},
+			{
+				"type": "RightAttack",
+				"value": "Atac pe dreapta"
+			},
+			{
+				"type": "CentralAttack",
+				"value": "Atac pe centru"
+			},
+			{
+				"type": "LeftAttack",
+				"value": "Atac pe stânga"
+			}
+		],
+		"skills": [
+			{
+				"type": "Keeper",
+				"value": "Portar"
+			},
+			{
+				"type": "Stamina",
+				"value": "Rezistenţă"
+			},
+			{
+				"type": "Defender",
+				"value": "Apărare"
+			},
+			{
+				"type": "Playmaker",
+				"value": "Construcţie"
+			},
+			{
+				"type": "Winger",
+				"value": "Extremă"
+			},
+			{
+				"type": "Scorer",
+				"value": "Atac"
+			},
+			{
+				"type": "Kicker",
+				"value": "Faze fixe"
+			},
+			{
+				"type": "Passer",
+				"value": "Pase"
+			},
+			{
+				"type": "Experience",
+				"value": "Experienţă"
+			},
+			{
+				"type": "LeaderShip",
+				"value": "Lider"
+			}
+		],
+		"specialties": [
+			{
+				"type": "None",
+				"value": "Fără"
+			},
+			{
+				"type": "Technical",
+				"value": "Tehnic"
+			},
+			{
+				"type": "Quick",
+				"value": "Rapid"
+			},
+			{
+				"type": "Powerful",
+				"value": "Puternic"
+			},
+			{
+				"type": "Unpredictable",
+				"value": "Imprevizibil"
+			},
+			{
+				"type": "Head",
+				"value": "Cap"
+			},
+			{
+				"type": "Regainer",
+				"value": "Recuperare"
+			}
+		],
+		"spirit": [
+			{
+				"text": "ca la război",
+				"value": "0"
+			},
+			{
+				"text": "violenţi",
+				"value": "1"
+			},
+			{
+				"text": "furioşi",
+				"value": "2"
+			},
+			{
+				"text": "iritaţi",
+				"value": "3"
+			},
+			{
+				"text": "liniştiţi",
+				"value": "4"
+			},
+			{
+				"text": "calmi",
+				"value": "5"
+			},
+			{
+				"text": "mulţumiţi",
+				"value": "6"
+			},
+			{
+				"text": "bucuroşi",
+				"value": "7"
+			},
+			{
+				"text": "în delir",
+				"value": "8"
+			},
+			{
+				"text": "cu capul în nori",
+				"value": "9"
+			},
+			{
+				"text": "în al nouălea cer!",
+				"value": "10"
+			}
+		],
+		"sponsors": [
+			{
+				"text": "violenţi",
+				"value": "0"
+			},
+			{
+				"text": "furioşi",
+				"value": "1"
+			},
+			{
+				"text": "iritaţi",
+				"value": "2"
+			},
+			{
+				"text": "calmi",
+				"value": "3"
+			},
+			{
+				"text": "mulţumiţi",
+				"value": "4"
+			},
+			{
+				"text": "bucuroşi",
+				"value": "5"
+			},
+			{
+				"text": "în delir",
+				"value": "6"
+			},
+			{
+				"text": "euforici",
+				"value": "7"
+			},
+			{
+				"text": "dansează pe străzi",
+				"value": "8"
+			},
+			{
+				"text": "îţi trimit scrisori de dragoste",
+				"value": "9"
+			}
+		],
+		"tactics": [
+			{
+				"type": "normal",
+				"value": "Normal"
+			},
+			{
+				"type": "pressing",
+				"value": "Presing"
+			},
+			{
+				"type": "ca",
+				"value": "Contraatac"
+			},
+			{
+				"type": "aim",
+				"value": "Atac pe Centru"
+			},
+			{
+				"type": "aow",
+				"value": "Atac pe Flancuri"
+			},
+			{
+				"type": "",
+				"value": "Necunoscut"
+			},
+			{
+				"type": "",
+				"value": "Necunoscut"
+			},
+			{
+				"type": "creatively",
+				"value": "Joc creativ"
+			},
+			{
+				"type": "longshots",
+				"value": "Şuturi de la distanţă"
+			}
+		],
+		"training": [
+			{
+				"type": "Gen",
+				"value": "General (Formă)"
+			},
+			{
+				"type": "Sta",
+				"value": "Rezistenţă"
+			},
+			{
+				"type": "SP",
+				"value": "Faze fixe"
+			},
+			{
+				"type": "Def",
+				"value": "Apărare"
+			},
+			{
+				"type": "Sco",
+				"value": "Atac"
+			},
+			{
+				"type": "Cross",
+				"value": "Extremă"
+			},
+			{
+				"type": "Shoot",
+				"value": "Şut"
+			},
+			{
+				"type": "Pass",
+				"value": "Pase scurte"
+			},
+			{
+				"type": "PM",
+				"value": "Construcţie"
+			},
+			{
+				"type": "GK",
+				"value": "Portar"
+			},
+			{
+				"type": "ThPass",
+				"value": "Pase în adâncime"
+			},
+			{
+				"type": "DefPos",
+				"value": "Poziţii defensive"
+			},
+			{
+				"type": "WingAtt",
+				"value": "Atacuri pe extremă"
+			},
+			{
+				"type": "Indiv",
+				"value": "Individual"
+			}
+		]
+	}
+}

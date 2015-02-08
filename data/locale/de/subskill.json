@@ -1,0 +1,11 @@
+{
+  "info":"Info",
+  "description":"Berechne mit diesem Tool den Subskill des Hauptskills eines deiner Spieler oder eines Spielers dessen Skills du kennst.<br>Stelle die Skillhöhen und das Gehalt ein.",
+  "subskill":"Subskillschätzung",
+  "sublevel":"Sublevel",
+  "Submit":"Abschicken",
+  "chooseyourplayer":"Spieler auswählen",
+  "age":"Alter",
+  "wage":"Gehalt (ohne 20%)",
+  "mainskill":"Hauptskill"
+}

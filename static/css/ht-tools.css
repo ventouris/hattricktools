@@ -1,10 +1,16 @@
-@font-face {
-    font-family: 'Rosetta';
-    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.eot'); /* IE9 Compat Modes */
-    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.eot?#iefix') format('embedded-opentype'),;/* IE6-IE8 */
-    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.woff') format('woff'); /* Modern Browsers */
-    src: url('/static/fonts/ufonts.com_rosetta_bold_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
-    }
+.progressbar {
+    
+    height: 20px;
+    margin-bottom: 2px;
+    color: white;
+    text-align: center;
+    background-color: #849D84;
+    font-weight: bold;
+}
+
+.progressbar .determinate {
+    background-color:#277F31;
+}
 
     .bordered {
       border: 1px solid #ddd;
@@ -16,26 +22,115 @@
 
     body {
       background: url("/static/images/bg.png");
-      font-family: "Rosetta";
     }
 
-    .card-panel {
-      border-radius: 15px;
-      border: 1px solid #FFA500;
-      background-color: #FCF6DF;
-      text-align: justify;
-      padding-top: 0px;
-      line-height: 1 !important;
-    }
-
+  
     .table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{
       padding:5px
     }
 
+    ul.side-nav.full li,ul.side-nav.fixed li{
+        line-height: 40px !important;
+    }
 
+
+    #slide-out{
+        background-color: rgb(39, 127, 49);
+        color: white;
+    }
+
+.picker__box {
+    display: inline-block;
+}
+
+.first_button {
+    width: 20px;
+    height: 21px;
+    background: transparent url('/static/images/master_icons.png') no-repeat;
+    
+}
+img.first_button {
+    background-position: -20px -102px;
+    border-width: 0px;
+}
+
+.previous_button {
+    width: 20px;
+    height: 21px;
+    background: transparent url('/static/images/master_icons.png') no-repeat;
+    
+}
+img.previous_button {
+    background-position: -60px -102px;
+    border-width: 0px;
+}
+
+.next_button {
+    width: 20px;
+    height: 21px;
+    background: transparent url('/static/images/master_icons.png') no-repeat;
+    
+}
+img.next_button {
+    background-position: -100px -102px;
+    border-width: 0px;
+}
+
+.last_button {
+    width: 20px;
+    height: 21px;
+    background: transparent url('/static/images/master_icons.png') no-repeat;
+    
+}
+img.last_button {
+    background-position: -140px -102px;
+    border-width: 0px;
+}
+
+.fg-button {
+    margin-right: 3px;
+border: solid 1px #ddd;
+text-decoration: none;
+background-color: #edf1ed;
+line-height: 22px !important;
+margin-left: 4px;
+height: 20px;
+vertical-align: middle;
+padding: 3px 5px;
+cursor: pointer;
+color: #3f7137;
+}
+
+.ui-state-disabled {
+    font-weight: bold;
+}
+
+.ui-button {
+    border: 0;
+    background-color: #fff;
+}
+
+#resultstable_paginate {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#langsel {
+    border-bottom: 4px solid #277F31;
+    width:150px;
+    bottom:0;
+    left:0;
+    position:fixed;
+    background-color:#fcfcfc;
+    cursor: pointer;
+    height: 36px;
+    border-radius: 5px 0 0;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 1);
+    font-size:14px;
+}
     
 .slidercls {
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 }
 
 

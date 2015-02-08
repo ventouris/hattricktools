@@ -1,0 +1,817 @@
+{
+	"language": {
+		"aggressiveness": [
+			{
+				"text": "jámbor",
+				"value": "0"
+			},
+			{
+				"text": "higgadt",
+				"value": "1"
+			},
+			{
+				"text": "kiegyensúlyozott",
+				"value": "2"
+			},
+			{
+				"text": "temperamentumos",
+				"value": "3"
+			},
+			{
+				"text": "lobbanékony",
+				"value": "4"
+			},
+			{
+				"text": "bizonytalan",
+				"value": "5"
+			}
+		],
+		"agreeability": [
+			{
+				"text": "Bajkeverő alak",
+				"value": "0"
+			},
+			{
+				"text": "Öntörvényű ember",
+				"value": "1"
+			},
+			{
+				"text": "Kedves fickó",
+				"value": "2"
+			},
+			{
+				"text": "Szimpatikus fickó",
+				"value": "3"
+			},
+			{
+				"text": "Népszerű fickó",
+				"value": "4"
+			},
+			{
+				"text": "Imádott csapattag",
+				"value": "5"
+			}
+		],
+		"attitude": [
+			{
+				"text": "Laza játék",
+				"value": "-1"
+			},
+			{
+				"text": "Átlagos",
+				"value": "0"
+			},
+			{
+				"text": "A szezon legfontosabb mérkőzése",
+				"value": "1"
+			}
+		],
+		"confidence": [
+			{
+				"text": "nem létező",
+				"value": "0"
+			},
+			{
+				"text": "katasztrofális",
+				"value": "1"
+			},
+			{
+				"text": "pocsék",
+				"value": "2"
+			},
+			{
+				"text": "csapnivaló",
+				"value": "3"
+			},
+			{
+				"text": "stabil",
+				"value": "4"
+			},
+			{
+				"text": "erős",
+				"value": "5"
+			},
+			{
+				"text": "kiváló",
+				"value": "6"
+			},
+			{
+				"text": "kissé túlzott",
+				"value": "7"
+			},
+			{
+				"text": "önhitt",
+				"value": "8"
+			},
+			{
+				"text": "teljességgel önelégült",
+				"value": "9"
+			}
+		],
+		"desc": "Magyar",
+		"fans": [
+			{
+				"text": "gyilkos",
+				"value": "0"
+			},
+			{
+				"text": "dühödt",
+				"value": "1"
+			},
+			{
+				"text": "mérges",
+				"value": "2"
+			},
+			{
+				"text": "ingerült",
+				"value": "3"
+			},
+			{
+				"text": "csalódott",
+				"value": "4"
+			},
+			{
+				"text": "higgadt",
+				"value": "5"
+			},
+			{
+				"text": "elégedett",
+				"value": "6"
+			},
+			{
+				"text": "boldog",
+				"value": "7"
+			},
+			{
+				"text": "mámoros",
+				"value": "8"
+			},
+			{
+				"text": "fellegjáró",
+				"value": "9"
+			},
+			{
+				"text": "karneváli",
+				"value": "10"
+			},
+			{
+				"text": "szerelmes versekkel bombáznak",
+				"value": "11"
+			}
+		],
+		"fans_match": [
+			{
+				"text": "Jobb, ha ki se állunk",
+				"value": "0"
+			},
+			{
+				"text": "Esélyünk sincs",
+				"value": "1"
+			},
+			{
+				"text": "Ki fogunk kapni",
+				"value": "2"
+			},
+			{
+				"text": "Ők a favoritok",
+				"value": "3"
+			},
+			{
+				"text": "Ők vannak előnyösebb helyzetben",
+				"value": "4"
+			},
+			{
+				"text": "Szoros lesz",
+				"value": "5"
+			},
+			{
+				"text": "Mi vagyunk előnyösebb helyzetben",
+				"value": "6"
+			},
+			{
+				"text": "Mi vagyunk a favoritok",
+				"value": "7"
+			},
+			{
+				"text": "Győzni fogunk",
+				"value": "8"
+			},
+			{
+				"text": "Gyerekjáték lesz",
+				"value": "9"
+			},
+			{
+				"text": "Alázzuk meg őket",
+				"value": "10"
+			}
+		],
+		"fans_season": [
+			{
+				"text": "Nem vagyunk idevalók",
+				"value": "0"
+			},
+			{
+				"text": "Ebben a csoportban minden nap ajándék",
+				"value": "1"
+			},
+			{
+				"text": "Küzdeni kell a bent maradásért",
+				"value": "2"
+			},
+			{
+				"text": "Jó lenne a mezőny közepén végezni",
+				"value": "3"
+			},
+			{
+				"text": "Az első négyben a helyünk",
+				"value": "4"
+			},
+			{
+				"text": "Cél a bajnoki cím!",
+				"value": "5"
+			},
+			{
+				"text": "Nyerni kell ebben a szezonban",
+				"value": "6"
+			},
+			{
+				"text": "Kiemelkedünk ebből a csoportból!",
+				"value": "7"
+			}
+		],
+		"honesty": [
+			{
+				"text": "balhés",
+				"value": "0"
+			},
+			{
+				"text": "sunyi",
+				"value": "1"
+			},
+			{
+				"text": "becsületes",
+				"value": "2"
+			},
+			{
+				"text": "egyenes",
+				"value": "3"
+			},
+			{
+				"text": "igazságos",
+				"value": "4"
+			},
+			{
+				"text": "angyali",
+				"value": "5"
+			}
+		],
+		"id": "33",
+		"leagueNames": {
+			"1": "Svédország",
+			"100": "Salvador",
+			"101": "Málta",
+			"102": "Kirgizisztán",
+			"103": "Moldova",
+			"104": "Grúzia",
+			"105": "Andorra",
+			"106": "Jordánia",
+			"107": "Guatemala",
+			"11": "Dánia",
+			"110": "Trinidad és Tobago",
+			"111": "Nicaragua",
+			"112": "Kazahsztán",
+			"113": "Suriname",
+			"117": "Liechtenstein",
+			"118": "Algéria",
+			"119": "Mongólia",
+			"12": "Finnország",
+			"120": "Libanon",
+			"121": "Szenegál",
+			"122": "Örményország",
+			"123": "Bahrein",
+			"124": "Barbados",
+			"125": "Zöld-foki Köztársaság",
+			"126": "Elefántcsontpart",
+			"127": "Kuvait",
+			"128": "Irak",
+			"129": "Azerbajdzsán",
+			"130": "Angola",
+			"131": "Montenegró",
+			"132": "Banglades",
+			"133": "Jemen",
+			"134": "Omán",
+			"135": "Mozambik",
+			"136": "Brunei",
+			"137": "Ghána",
+			"138": "Kambodzsa",
+			"139": "Benin",
+			"14": "Hollandia",
+			"140": "Szíria",
+			"141": "Katar",
+			"142": "Tanzánia",
+			"143": "Uganda",
+			"144": "Maldív-szigetek",
+			"145": "Üzbegisztán",
+			"146": "Kamerun",
+			"147": "Kuba",
+			"148": "Palesztina",
+			"15": "Óceánia",
+			"16": "Brazília",
+			"17": "Kanada",
+			"18": "Chile",
+			"19": "Kolumbia",
+			"2": "Anglia",
+			"20": "India",
+			"21": "Írország",
+			"22": "Japán",
+			"23": "Peru",
+			"24": "Lengyelország",
+			"25": "Portugália",
+			"26": "Skócia",
+			"27": "Dél-afrikai Köztársaság",
+			"28": "Uruguay",
+			"29": "Venezuela",
+			"3": "Németország",
+			"30": "Dél-Korea",
+			"31": "Thaiföld",
+			"32": "Törökország",
+			"33": "Egyiptom",
+			"34": "Kína",
+			"35": "Oroszország",
+			"36": "Spanyolország",
+			"37": "Románia",
+			"38": "Izland",
+			"39": "Ausztria",
+			"4": "Olaszország",
+			"44": "Belgium",
+			"45": "Malájzia",
+			"46": "Svájc",
+			"47": "Szingapúr",
+			"5": "Franciaország",
+			"50": "Görögország",
+			"51": "Magyarország",
+			"52": "Csehország",
+			"53": "Lettország",
+			"54": "Indonézia",
+			"55": "Fülöp-szigetek",
+			"56": "Észtország",
+			"57": "Szerbia",
+			"58": "Horvátország",
+			"59": "Hongkong",
+			"6": "Mexikó",
+			"60": "Kínai Köztársaság",
+			"61": "Wales",
+			"62": "Bulgária",
+			"63": "Izrael",
+			"64": "Szlovénia",
+			"66": "Litvánia",
+			"67": "Szlovákia",
+			"68": "Ukrajna",
+			"69": "Bosznia-Hercegovina",
+			"7": "Argentína",
+			"70": "Vietnám",
+			"71": "Pakisztán",
+			"72": "Paraguay",
+			"73": "Ecuador",
+			"74": "Bolívia",
+			"75": "Nigéria",
+			"76": "Feröer-szigetek",
+			"77": "Marokkó",
+			"79": "Szaúd-Arábia",
+			"8": "Amerikai Egyesült Államok",
+			"80": "Tunézia",
+			"81": "Costa Rica",
+			"83": "Egyesült Arab Emírségek",
+			"84": "Luxemburg",
+			"85": "Irán",
+			"88": "Dominikai Köztársaság",
+			"89": "Ciprus",
+			"9": "Norvégia",
+			"91": "Fehéroroszország",
+			"93": "Észak-Írország",
+			"94": "Jamaica",
+			"95": "Kenya",
+			"96": "Panama",
+			"97": "Macedónia",
+			"98": "Albánia",
+			"99": "Honduras"
+		},
+		"levels": [
+			{
+				"text": "nem létező",
+				"value": "0"
+			},
+			{
+				"text": "katasztrofális",
+				"value": "1"
+			},
+			{
+				"text": "pocsék",
+				"value": "2"
+			},
+			{
+				"text": "csapnivaló",
+				"value": "3"
+			},
+			{
+				"text": "gyenge",
+				"value": "4"
+			},
+			{
+				"text": "középszerű",
+				"value": "5"
+			},
+			{
+				"text": "megfelelő",
+				"value": "6"
+			},
+			{
+				"text": "jó",
+				"value": "7"
+			},
+			{
+				"text": "remek",
+				"value": "8"
+			},
+			{
+				"text": "nagyszerű",
+				"value": "9"
+			},
+			{
+				"text": "kiemelkedő",
+				"value": "10"
+			},
+			{
+				"text": "ragyogó",
+				"value": "11"
+			},
+			{
+				"text": "lenyűgöző",
+				"value": "12"
+			},
+			{
+				"text": "világklasszis",
+				"value": "13"
+			},
+			{
+				"text": "természetfeletti",
+				"value": "14"
+			},
+			{
+				"text": "titáni",
+				"value": "15"
+			},
+			{
+				"text": "földöntúli",
+				"value": "16"
+			},
+			{
+				"text": "legendás",
+				"value": "17"
+			},
+			{
+				"text": "varázslatos",
+				"value": "18"
+			},
+			{
+				"text": "csodás",
+				"value": "19"
+			},
+			{
+				"text": "isteni",
+				"value": "20"
+			}
+		],
+		"name": "hu",
+		"positions": [
+			{
+				"type": "Keeper",
+				"value": "Kapus"
+			},
+			{
+				"type": "WingBack",
+				"value": "Szélsőhátvéd"
+			},
+			{
+				"type": "CentralDefender",
+				"value": "Középhátvéd"
+			},
+			{
+				"type": "InnerMidfield",
+				"value": "Középpályás"
+			},
+			{
+				"type": "Winger",
+				"value": "Szélső"
+			},
+			{
+				"type": "Forward",
+				"value": "Csatár"
+			}
+		],
+		"ratingSubLevels": [
+			{
+				"text": "Éppen",
+				"value": "0"
+			},
+			{
+				"text": "Átlag alatt",
+				"value": "0.25"
+			},
+			{
+				"text": "Átlagos",
+				"value": "0.5"
+			},
+			{
+				"text": "Átlag felett",
+				"value": "0.75"
+			}
+		],
+		"sectors": [
+			{
+				"type": "Midfield",
+				"value": "Középpálya"
+			},
+			{
+				"type": "RightDefense",
+				"value": "Jobb oldali védelem"
+			},
+			{
+				"type": "CentralDefense",
+				"value": "Középső védelem"
+			},
+			{
+				"type": "LeftDefense",
+				"value": "Bal oldali védelem"
+			},
+			{
+				"type": "RightAttack",
+				"value": "Jobb oldali támadás"
+			},
+			{
+				"type": "CentralAttack",
+				"value": "Középső támadás"
+			},
+			{
+				"type": "LeftAttack",
+				"value": "Bal oldali támadás"
+			}
+		],
+		"skills": [
+			{
+				"type": "Keeper",
+				"value": "Védés"
+			},
+			{
+				"type": "Stamina",
+				"value": "Erőnlét"
+			},
+			{
+				"type": "Defender",
+				"value": "Védekezés"
+			},
+			{
+				"type": "Playmaker",
+				"value": "Játékszervezés"
+			},
+			{
+				"type": "Winger",
+				"value": "Szélsőjáték"
+			},
+			{
+				"type": "Scorer",
+				"value": "Gólszerzés"
+			},
+			{
+				"type": "Kicker",
+				"value": "Pontrúgás"
+			},
+			{
+				"type": "Passer",
+				"value": "Átadás"
+			},
+			{
+				"type": "Experience",
+				"value": "Tapasztalat"
+			},
+			{
+				"type": "LeaderShip",
+				"value": "Vezetői képesség"
+			}
+		],
+		"specialties": [
+			{
+				"type": "None",
+				"value": "Nincs"
+			},
+			{
+				"type": "Technical",
+				"value": "Technikás"
+			},
+			{
+				"type": "Quick",
+				"value": "Gyors"
+			},
+			{
+				"type": "Powerful",
+				"value": "Erőteljes"
+			},
+			{
+				"type": "Unpredictable",
+				"value": "Kiszámíthatatlan"
+			},
+			{
+				"type": "Head",
+				"value": "Jól fejelő"
+			},
+			{
+				"type": "Regainer",
+				"value": "Szívós"
+			}
+		],
+		"spirit": [
+			{
+				"text": "hidegháborús",
+				"value": "0"
+			},
+			{
+				"text": "gyilkos",
+				"value": "1"
+			},
+			{
+				"text": "dühödt",
+				"value": "2"
+			},
+			{
+				"text": "ingerült",
+				"value": "3"
+			},
+			{
+				"text": "hűvös",
+				"value": "4"
+			},
+			{
+				"text": "nyugodt",
+				"value": "5"
+			},
+			{
+				"text": "elégedett",
+				"value": "6"
+			},
+			{
+				"text": "boldog",
+				"value": "7"
+			},
+			{
+				"text": "mámoros",
+				"value": "8"
+			},
+			{
+				"text": "fellegjáró",
+				"value": "9"
+			},
+			{
+				"text": "földi paradicsom!",
+				"value": "10"
+			}
+		],
+		"sponsors": [
+			{
+				"text": "gyilkos",
+				"value": "0"
+			},
+			{
+				"text": "dühödt",
+				"value": "1"
+			},
+			{
+				"text": "ingerült",
+				"value": "2"
+			},
+			{
+				"text": "higgadt",
+				"value": "3"
+			},
+			{
+				"text": "elégedett",
+				"value": "4"
+			},
+			{
+				"text": "boldog",
+				"value": "5"
+			},
+			{
+				"text": "mámoros",
+				"value": "6"
+			},
+			{
+				"text": "fellegjáró",
+				"value": "7"
+			},
+			{
+				"text": "karneváli",
+				"value": "8"
+			},
+			{
+				"text": "szerelmes versekkel bombáznak",
+				"value": "9"
+			}
+		],
+		"tactics": [
+			{
+				"type": "normal",
+				"value": "Alap"
+			},
+			{
+				"type": "pressing",
+				"value": "Játéktördelés"
+			},
+			{
+				"type": "ca",
+				"value": "Ellentámadás"
+			},
+			{
+				"type": "aim",
+				"value": "Középen támadás"
+			},
+			{
+				"type": "aow",
+				"value": "Széleken támadás"
+			},
+			{
+				"type": "",
+				"value": "Ismeretlen"
+			},
+			{
+				"type": "",
+				"value": "Ismeretlen"
+			},
+			{
+				"type": "creatively",
+				"value": "Kreatív játék"
+			},
+			{
+				"type": "longshots",
+				"value": "Távoli lövések"
+			}
+		],
+		"training": [
+			{
+				"type": "Gen",
+				"value": "Általános edzés (forma)"
+			},
+			{
+				"type": "Sta",
+				"value": "Erőnlét"
+			},
+			{
+				"type": "SP",
+				"value": "Pontrúgás"
+			},
+			{
+				"type": "Def",
+				"value": "Védekezés"
+			},
+			{
+				"type": "Sco",
+				"value": "Gólszerzés"
+			},
+			{
+				"type": "Cross",
+				"value": "Keresztlabdák (Szélsőjáték)"
+			},
+			{
+				"type": "Shoot",
+				"value": "Kapura lövés"
+			},
+			{
+				"type": "Pass",
+				"value": "Rövid passzok (Átadás)"
+			},
+			{
+				"type": "PM",
+				"value": "Játékszervezés"
+			},
+			{
+				"type": "GK",
+				"value": "Védés"
+			},
+			{
+				"type": "ThPass",
+				"value": "Támadásépítés"
+			},
+			{
+				"type": "DefPos",
+				"value": "Területvédekezés"
+			},
+			{
+				"type": "WingAtt",
+				"value": "Széleken támadás"
+			},
+			{
+				"type": "Indiv",
+				"value": "Egyéni"
+			}
+		]
+	}
+}

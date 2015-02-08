@@ -1,0 +1,817 @@
+{
+	"language": {
+		"aggressiveness": [
+			{
+				"text": "tranquilla",
+				"value": "0"
+			},
+			{
+				"text": "calma",
+				"value": "1"
+			},
+			{
+				"text": "equilibrata",
+				"value": "2"
+			},
+			{
+				"text": "impulsiva",
+				"value": "3"
+			},
+			{
+				"text": "irascibile",
+				"value": "4"
+			},
+			{
+				"text": "lunatica",
+				"value": "5"
+			}
+		],
+		"agreeability": [
+			{
+				"text": "attaccabrighe",
+				"value": "0"
+			},
+			{
+				"text": "scontrosa",
+				"value": "1"
+			},
+			{
+				"text": "gradevole",
+				"value": "2"
+			},
+			{
+				"text": "simpatica",
+				"value": "3"
+			},
+			{
+				"text": "popolare",
+				"value": "4"
+			},
+			{
+				"text": "amata",
+				"value": "5"
+			}
+		],
+		"attitude": [
+			{
+				"text": "Partitella",
+				"value": "-1"
+			},
+			{
+				"text": "Normale",
+				"value": "0"
+			},
+			{
+				"text": "Partita della stagione",
+				"value": "1"
+			}
+		],
+		"confidence": [
+			{
+				"text": "inesistente",
+				"value": "0"
+			},
+			{
+				"text": "disastrosa",
+				"value": "1"
+			},
+			{
+				"text": "tremenda",
+				"value": "2"
+			},
+			{
+				"text": "scarsa",
+				"value": "3"
+			},
+			{
+				"text": "decente",
+				"value": "4"
+			},
+			{
+				"text": "forte",
+				"value": "5"
+			},
+			{
+				"text": "magnifica",
+				"value": "6"
+			},
+			{
+				"text": "leggermente esagerata",
+				"value": "7"
+			},
+			{
+				"text": "esagerata",
+				"value": "8"
+			},
+			{
+				"text": "estremamente esagerata",
+				"value": "9"
+			}
+		],
+		"desc": "Italiano",
+		"fans": [
+			{
+				"text": "inferociti",
+				"value": "0"
+			},
+			{
+				"text": "furiosi",
+				"value": "1"
+			},
+			{
+				"text": "arrabbiati",
+				"value": "2"
+			},
+			{
+				"text": "irritati",
+				"value": "3"
+			},
+			{
+				"text": "delusi",
+				"value": "4"
+			},
+			{
+				"text": "calmi",
+				"value": "5"
+			},
+			{
+				"text": "contenti",
+				"value": "6"
+			},
+			{
+				"text": "soddisfatti",
+				"value": "7"
+			},
+			{
+				"text": "in delirio",
+				"value": "8"
+			},
+			{
+				"text": "sulle stelle",
+				"value": "9"
+			},
+			{
+				"text": "danzano per le strade",
+				"value": "10"
+			},
+			{
+				"text": "mandano poesie d'amore",
+				"value": "11"
+			}
+		],
+		"fans_match": [
+			{
+				"text": "Meglio non presentarsi nemmeno",
+				"value": "0"
+			},
+			{
+				"text": "Siamo nettamente inferiori",
+				"value": "1"
+			},
+			{
+				"text": "Perderemo",
+				"value": "2"
+			},
+			{
+				"text": "Sono i favoriti",
+				"value": "3"
+			},
+			{
+				"text": "Avranno un certo vantaggio",
+				"value": "4"
+			},
+			{
+				"text": "Partita aperta a qualsiasi risultato",
+				"value": "5"
+			},
+			{
+				"text": "Avremo un certo vantaggio",
+				"value": "6"
+			},
+			{
+				"text": "Siamo i favoriti",
+				"value": "7"
+			},
+			{
+				"text": "Vinceremo",
+				"value": "8"
+			},
+			{
+				"text": "Sarà una passeggiata",
+				"value": "9"
+			},
+			{
+				"text": "Umiliamoli!",
+				"value": "10"
+			}
+		],
+		"fans_season": [
+			{
+				"text": "Non siamo pronti per questa categoria",
+				"value": "0"
+			},
+			{
+				"text": "Ogni giorno in questa serie è regalato",
+				"value": "1"
+			},
+			{
+				"text": "Dovremo lottare per salvarci",
+				"value": "2"
+			},
+			{
+				"text": "Dovremmo finire a metà classifica",
+				"value": "3"
+			},
+			{
+				"text": "Siamo da primi 4 posti",
+				"value": "4"
+			},
+			{
+				"text": "Puntiamo al titolo!",
+				"value": "5"
+			},
+			{
+				"text": "Questa stagione è nostra!",
+				"value": "6"
+			},
+			{
+				"text": "Ci meritiamo molto di più di questa serie!",
+				"value": "7"
+			}
+		],
+		"honesty": [
+			{
+				"text": "infame",
+				"value": "0"
+			},
+			{
+				"text": "disonesta",
+				"value": "1"
+			},
+			{
+				"text": "onesta",
+				"value": "2"
+			},
+			{
+				"text": "retta",
+				"value": "3"
+			},
+			{
+				"text": "virtuosa",
+				"value": "4"
+			},
+			{
+				"text": "quasi santa",
+				"value": "5"
+			}
+		],
+		"id": "4",
+		"leagueNames": {
+			"1": "Svezia",
+			"100": "El Salvador",
+			"101": "Malta",
+			"102": "Kirghizistan",
+			"103": "Moldavia",
+			"104": "Georgia",
+			"105": "Andorra",
+			"106": "Giordania",
+			"107": "Guatemala",
+			"11": "Danimarca",
+			"110": "Trinidad e Tobago",
+			"111": "Nicaragua",
+			"112": "Kazakistan",
+			"113": "Suriname",
+			"117": "Liechtenstein",
+			"118": "Algeria",
+			"119": "Mongolia",
+			"12": "Finlandia",
+			"120": "Libano",
+			"121": "Senegal",
+			"122": "Armenia",
+			"123": "Bahrein",
+			"124": "Barbados",
+			"125": "Capo Verde",
+			"126": "Costa d’Avorio",
+			"127": "Kuwait",
+			"128": "Iraq",
+			"129": "Azerbaigian",
+			"130": "Angola",
+			"131": "Montenegro",
+			"132": "Bangladesh",
+			"133": "Yemen",
+			"134": "Oman",
+			"135": "Mozambico",
+			"136": "Brunei",
+			"137": "Ghana",
+			"138": "Cambogia",
+			"139": "Benin",
+			"14": "Paesi Bassi",
+			"140": "Siria",
+			"141": "Qatar",
+			"142": "Tanzania",
+			"143": "Uganda",
+			"144": "Maldive",
+			"145": "Uzbekistan",
+			"146": "Camerun",
+			"147": "Cuba",
+			"148": "Palestina",
+			"15": "Oceania",
+			"16": "Brasile",
+			"17": "Canada",
+			"18": "Cile",
+			"19": "Colombia",
+			"2": "Inghilterra",
+			"20": "India",
+			"21": "Irlanda",
+			"22": "Giappone",
+			"23": "Perù",
+			"24": "Polonia",
+			"25": "Portogallo",
+			"26": "Scozia",
+			"27": "Sud Africa",
+			"28": "Uruguay",
+			"29": "Venezuela",
+			"3": "Germania",
+			"30": "Corea del Sud",
+			"31": "Thailandia",
+			"32": "Turchia",
+			"33": "Egitto",
+			"34": "Repubblica Popolare Cinese",
+			"35": "Russia",
+			"36": "Spagna",
+			"37": "Romania",
+			"38": "Islanda",
+			"39": "Austria",
+			"4": "Italia",
+			"44": "Belgio",
+			"45": "Malesia",
+			"46": "Svizzera",
+			"47": "Singapore",
+			"5": "Francia",
+			"50": "Grecia",
+			"51": "Ungheria",
+			"52": "Repubblica Ceca",
+			"53": "Lettonia",
+			"54": "Indonesia",
+			"55": "Filippine",
+			"56": "Estonia",
+			"57": "Serbia",
+			"58": "Croazia",
+			"59": "Hong Kong",
+			"6": "Messico",
+			"60": "Taiwan",
+			"61": "Galles",
+			"62": "Bulgaria",
+			"63": "Israele",
+			"64": "Slovenia",
+			"66": "Lituania",
+			"67": "Slovacchia",
+			"68": "Ucraina",
+			"69": "Bosnia ed Erzegovina",
+			"7": "Argentina",
+			"70": "Vietnam",
+			"71": "Pakistan",
+			"72": "Paraguay",
+			"73": "Ecuador",
+			"74": "Bolivia",
+			"75": "Nigeria",
+			"76": "Isole Faroe",
+			"77": "Marocco",
+			"79": "Arabia Saudita",
+			"8": "USA",
+			"80": "Tunisia",
+			"81": "Costa Rica",
+			"83": "Emirati Arabi Uniti",
+			"84": "Lussemburgo",
+			"85": "Iran",
+			"88": "Repubblica Dominicana",
+			"89": "Cipro",
+			"9": "Norvegia",
+			"91": "Bielorussia",
+			"93": "Irlanda del Nord",
+			"94": "Giamaica",
+			"95": "Kenya",
+			"96": "Panamá",
+			"97": "Repubblica di Macedonia",
+			"98": "Albania",
+			"99": "Honduras"
+		},
+		"levels": [
+			{
+				"text": "inesistente",
+				"value": "0"
+			},
+			{
+				"text": "disastroso",
+				"value": "1"
+			},
+			{
+				"text": "tremendo",
+				"value": "2"
+			},
+			{
+				"text": "scarso",
+				"value": "3"
+			},
+			{
+				"text": "debole",
+				"value": "4"
+			},
+			{
+				"text": "insufficiente",
+				"value": "5"
+			},
+			{
+				"text": "accettabile",
+				"value": "6"
+			},
+			{
+				"text": "buono",
+				"value": "7"
+			},
+			{
+				"text": "eccellente",
+				"value": "8"
+			},
+			{
+				"text": "formidabile",
+				"value": "9"
+			},
+			{
+				"text": "straordinario",
+				"value": "10"
+			},
+			{
+				"text": "splendido",
+				"value": "11"
+			},
+			{
+				"text": "magnifico",
+				"value": "12"
+			},
+			{
+				"text": "fuoriclasse",
+				"value": "13"
+			},
+			{
+				"text": "sovrannaturale",
+				"value": "14"
+			},
+			{
+				"text": "titanico",
+				"value": "15"
+			},
+			{
+				"text": "extraterrestre",
+				"value": "16"
+			},
+			{
+				"text": "mitico",
+				"value": "17"
+			},
+			{
+				"text": "magico",
+				"value": "18"
+			},
+			{
+				"text": "utopico",
+				"value": "19"
+			},
+			{
+				"text": "divino",
+				"value": "20"
+			}
+		],
+		"name": "it",
+		"positions": [
+			{
+				"type": "Keeper",
+				"value": "Portiere"
+			},
+			{
+				"type": "WingBack",
+				"value": "Terzino"
+			},
+			{
+				"type": "CentralDefender",
+				"value": "Difensore centrale"
+			},
+			{
+				"type": "InnerMidfield",
+				"value": "Centrocampista"
+			},
+			{
+				"type": "Winger",
+				"value": "Ala"
+			},
+			{
+				"type": "Forward",
+				"value": "Attaccante"
+			}
+		],
+		"ratingSubLevels": [
+			{
+				"text": "molto basso",
+				"value": "0"
+			},
+			{
+				"text": "basso",
+				"value": "0.25"
+			},
+			{
+				"text": "alto",
+				"value": "0.5"
+			},
+			{
+				"text": "molto alto",
+				"value": "0.75"
+			}
+		],
+		"sectors": [
+			{
+				"type": "Midfield",
+				"value": "Centrocampo"
+			},
+			{
+				"type": "RightDefense",
+				"value": "Difesa Destra"
+			},
+			{
+				"type": "CentralDefense",
+				"value": "Difesa Centrale"
+			},
+			{
+				"type": "LeftDefense",
+				"value": "Difesa Sinistra"
+			},
+			{
+				"type": "RightAttack",
+				"value": "Attacco Destro"
+			},
+			{
+				"type": "CentralAttack",
+				"value": "Attacco Centrale"
+			},
+			{
+				"type": "LeftAttack",
+				"value": "Attacco Sinistro"
+			}
+		],
+		"skills": [
+			{
+				"type": "Keeper",
+				"value": "Parate"
+			},
+			{
+				"type": "Stamina",
+				"value": "Resistenza"
+			},
+			{
+				"type": "Defender",
+				"value": "Difesa"
+			},
+			{
+				"type": "Playmaker",
+				"value": "Regia"
+			},
+			{
+				"type": "Winger",
+				"value": "Cross"
+			},
+			{
+				"type": "Scorer",
+				"value": "Attacco"
+			},
+			{
+				"type": "Kicker",
+				"value": "Calci piazzati"
+			},
+			{
+				"type": "Passer",
+				"value": "Passaggi"
+			},
+			{
+				"type": "Experience",
+				"value": "Esperienza"
+			},
+			{
+				"type": "LeaderShip",
+				"value": "Carisma"
+			}
+		],
+		"specialties": [
+			{
+				"type": "None",
+				"value": "Nessuna"
+			},
+			{
+				"type": "Technical",
+				"value": "Tecnico"
+			},
+			{
+				"type": "Quick",
+				"value": "Veloce"
+			},
+			{
+				"type": "Powerful",
+				"value": "Potente"
+			},
+			{
+				"type": "Unpredictable",
+				"value": "Imprevedibile"
+			},
+			{
+				"type": "Head",
+				"value": "Colpo di testa"
+			},
+			{
+				"type": "Regainer",
+				"value": "Guarigione Veloce"
+			}
+		],
+		"spirit": [
+			{
+				"text": "guerra aperta",
+				"value": "0"
+			},
+			{
+				"text": "in rivolta",
+				"value": "1"
+			},
+			{
+				"text": "furiosi",
+				"value": "2"
+			},
+			{
+				"text": "irritati",
+				"value": "3"
+			},
+			{
+				"text": "composti",
+				"value": "4"
+			},
+			{
+				"text": "calmi",
+				"value": "5"
+			},
+			{
+				"text": "contenti",
+				"value": "6"
+			},
+			{
+				"text": "soddisfatti",
+				"value": "7"
+			},
+			{
+				"text": "in delirio",
+				"value": "8"
+			},
+			{
+				"text": "sulle stelle",
+				"value": "9"
+			},
+			{
+				"text": "al settimo cielo!",
+				"value": "10"
+			}
+		],
+		"sponsors": [
+			{
+				"text": "inferociti",
+				"value": "0"
+			},
+			{
+				"text": "furiosi",
+				"value": "1"
+			},
+			{
+				"text": "irritati",
+				"value": "2"
+			},
+			{
+				"text": "calmi",
+				"value": "3"
+			},
+			{
+				"text": "contenti",
+				"value": "4"
+			},
+			{
+				"text": "soddisfatti",
+				"value": "5"
+			},
+			{
+				"text": "in delirio",
+				"value": "6"
+			},
+			{
+				"text": "sulle stelle",
+				"value": "7"
+			},
+			{
+				"text": "danzano per le strade",
+				"value": "8"
+			},
+			{
+				"text": "mandano poesie d'amore",
+				"value": "9"
+			}
+		],
+		"tactics": [
+			{
+				"type": "normal",
+				"value": "Normale"
+			},
+			{
+				"type": "pressing",
+				"value": "Pressing"
+			},
+			{
+				"type": "ca",
+				"value": "Contropiede"
+			},
+			{
+				"type": "aim",
+				"value": "Attacco al centro"
+			},
+			{
+				"type": "aow",
+				"value": "Attacco sulle fasce"
+			},
+			{
+				"type": "",
+				"value": "Sconosciuto"
+			},
+			{
+				"type": "",
+				"value": "Sconosciuto"
+			},
+			{
+				"type": "creatively",
+				"value": "Libertà d'inventiva"
+			},
+			{
+				"type": "longshots",
+				"value": "Tiri da fuori"
+			}
+		],
+		"training": [
+			{
+				"type": "Gen",
+				"value": "Generale (Forma)"
+			},
+			{
+				"type": "Sta",
+				"value": "Resistenza"
+			},
+			{
+				"type": "SP",
+				"value": "Calci piazzati"
+			},
+			{
+				"type": "Def",
+				"value": "Difesa"
+			},
+			{
+				"type": "Sco",
+				"value": "Attacco"
+			},
+			{
+				"type": "Cross",
+				"value": "Cross (Ali)"
+			},
+			{
+				"type": "Shoot",
+				"value": "Conclusioni (Tiri)"
+			},
+			{
+				"type": "Pass",
+				"value": "Passaggi"
+			},
+			{
+				"type": "PM",
+				"value": "Regia"
+			},
+			{
+				"type": "GK",
+				"value": "Parate"
+			},
+			{
+				"type": "ThPass",
+				"value": "Passaggi lunghi"
+			},
+			{
+				"type": "DefPos",
+				"value": "Interdizione"
+			},
+			{
+				"type": "WingAtt",
+				"value": "Offensive laterali"
+			},
+			{
+				"type": "Indiv",
+				"value": "Individuale"
+			}
+		]
+	}
+}

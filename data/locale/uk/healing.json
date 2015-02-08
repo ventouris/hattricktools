@@ -1,0 +1,19 @@
+{
+  "info":"Info",
+  "description":"Healing Calculator will help you identify how many days or health updates a player needs to be bruised or completely healthy after an injury. You will be able to change parameters like Medic Level, Injury sublevel and Age. New Hattrick Staff system is implemented in this tool.",
+  "injuryweeks":"Injury Weeks",
+  "tsib":"TSI before injury",
+  "findthesublevel":"Find the sublevel of the injury",
+  "age":"Age",
+  "days":"Days",
+  "Submit":"Submit",
+  "bruised":"Bruised",
+  "healthy":"Healthy",
+  "mediclevel":"Medic Level",
+  "updates":"Health Updates",
+  "tsia":"TSI after injury",
+  "chooseyourplayer":"Choose your player",
+  "weeks":"Weeks",
+  "optional":"Optional",
+  "healingcalc":"Healing Calculator"
+}

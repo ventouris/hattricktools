@@ -1,0 +1,19 @@
+{
+  "info":"Informacije",
+  "description":"Kalkulator poškodb vam pomaga predvideti koliko dni oz. posodobitev potrebuje igralec do obtolčenosti ali okrevanja po poškodbi. Novo osebje je na voljo.",
+  "injuryweeks":"Tedni poškodbe",
+  "tsib":"TSI pred poškodbo",
+  "findthesublevel":"Poišči podstopnjo poškodbe",
+  "age":"Leta",
+  "days":"Dni",
+  "Submit":"Potrdi",
+  "bruised":"Obtolčen",
+  "healthy":"Zdravje",
+  "mediclevel":"Stopnja zdravnika",
+  "updates":"Zdravstvenih posodobitev",
+  "tsia":"TSI po poškodbi",
+  "chooseyourplayer":"Choose your player",
+  "weeks":"Tednov",
+  "optional":"Neobvezno",
+  "healingcalc":"Kalkulator poškodb"
+}

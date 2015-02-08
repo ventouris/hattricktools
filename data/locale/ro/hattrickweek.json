@@ -1,0 +1,17 @@
+{
+  "info":"Informaţii",
+  "hattrickweek":"Săptămâna Hattrick",
+  "description":"Gaseste programul săptămânal al fiecarei ligi în Hattrick, inclusiv actualizarea antrenamentului, economiei , datele de meci ale seriei si ale Cupei.",
+  "country":"Ţara",
+  "training":"Antrenament",
+  "economy":"Economia",
+  "series":"Seria",
+  "cup":"Cupa",
+  "monday":"Luni",
+  "tuesday":"Marti",
+  "wednesday":"Miercuri",
+  "thursday":"Joi",
+  "friday":"Vineri",
+  "saturday":"Sambata",
+  "sunday":"Duminică"
+}

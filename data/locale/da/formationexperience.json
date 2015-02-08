@@ -1,0 +1,14 @@
+{
+  "info":"Info",
+  "chooseyourteam":"Vælg dit hold",
+  "description":"Få overblik over udviklingen af dit holds formationserfaring. Afhængig af de antal minutter du har valgt at bruge de forskellige formationer, kan vi udregne dit holds aktuelle formationserfaring efter en kamp og op til 4 kampe",
+  "Submit":"Send",
+  "formationexperience":"Formationserfaring",
+  "match":"Kamp",
+  "formation":"Formation",
+  "minutes":"Minutter",
+  "addformationmanually":"Tilføj formation manuelt",
+  "level":"Niveau",
+  "addformationlevel":"Tilføj formationsniveau",
+  "resetformation":"Nulstil formation"
+}

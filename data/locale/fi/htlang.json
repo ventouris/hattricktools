@@ -1,0 +1,817 @@
+{
+	"language": {
+		"aggressiveness": [
+			{
+				"text": "seesteinen",
+				"value": "0"
+			},
+			{
+				"text": "levollinen",
+				"value": "1"
+			},
+			{
+				"text": "tasapainoinen",
+				"value": "2"
+			},
+			{
+				"text": "temperamenttinen",
+				"value": "3"
+			},
+			{
+				"text": "tulisieluinen",
+				"value": "4"
+			},
+			{
+				"text": "epävakaa",
+				"value": "5"
+			}
+		],
+		"agreeability": [
+			{
+				"text": "ilkeä tyyppi",
+				"value": "0"
+			},
+			{
+				"text": "kiistelty henkilö",
+				"value": "1"
+			},
+			{
+				"text": "miellyttävä heppu",
+				"value": "2"
+			},
+			{
+				"text": "sympaattinen kaveri",
+				"value": "3"
+			},
+			{
+				"text": "suosittu kaveri",
+				"value": "4"
+			},
+			{
+				"text": "rakastettu joukkueen jäsen",
+				"value": "5"
+			}
+		],
+		"attitude": [
+			{
+				"text": "Rento peli",
+				"value": "-1"
+			},
+			{
+				"text": "Normaali",
+				"value": "0"
+			},
+			{
+				"text": "Kauden tärkein peli",
+				"value": "1"
+			}
+		],
+		"confidence": [
+			{
+				"text": "olematon",
+				"value": "0"
+			},
+			{
+				"text": "surkea",
+				"value": "1"
+			},
+			{
+				"text": "kurja",
+				"value": "2"
+			},
+			{
+				"text": "huono",
+				"value": "3"
+			},
+			{
+				"text": "hyvä",
+				"value": "4"
+			},
+			{
+				"text": "vahva",
+				"value": "5"
+			},
+			{
+				"text": "mahtava",
+				"value": "6"
+			},
+			{
+				"text": "hieman liioiteltu",
+				"value": "7"
+			},
+			{
+				"text": "liioiteltu",
+				"value": "8"
+			},
+			{
+				"text": "täysin liioiteltu",
+				"value": "9"
+			}
+		],
+		"desc": "Suomi",
+		"fans": [
+			{
+				"text": "murhanhimoinen",
+				"value": "0"
+			},
+			{
+				"text": "raivoisa",
+				"value": "1"
+			},
+			{
+				"text": "vihainen",
+				"value": "2"
+			},
+			{
+				"text": "ärtynyt",
+				"value": "3"
+			},
+			{
+				"text": "pettynyt",
+				"value": "4"
+			},
+			{
+				"text": "maltillinen",
+				"value": "5"
+			},
+			{
+				"text": "hyvä",
+				"value": "6"
+			},
+			{
+				"text": "tyytyväinen",
+				"value": "7"
+			},
+			{
+				"text": "haltioitunut",
+				"value": "8"
+			},
+			{
+				"text": "taivaallinen",
+				"value": "9"
+			},
+			{
+				"text": "seitsemäs taivas",
+				"value": "10"
+			},
+			{
+				"text": "lähettävät rakkausrunoja sinulle",
+				"value": "11"
+			}
+		],
+		"fans_match": [
+			{
+				"text": "Ehkä olisi parempi luovuttaa jo suosiolla",
+				"value": "0"
+			},
+			{
+				"text": "Vastustaja on selvästi parempi",
+				"value": "1"
+			},
+			{
+				"text": "Tulemme häviämään ottelun",
+				"value": "2"
+			},
+			{
+				"text": "Vastustaja on ennakkosuosikki",
+				"value": "3"
+			},
+			{
+				"text": "Vastustajalla on etulyöntiasema",
+				"value": "4"
+			},
+			{
+				"text": "Taistosta tulee tasainen",
+				"value": "5"
+			},
+			{
+				"text": "Meillä on etulyöntiasema",
+				"value": "6"
+			},
+			{
+				"text": "Olemme ennakkosuosikki",
+				"value": "7"
+			},
+			{
+				"text": "Tulemme voittamaan ottelun",
+				"value": "8"
+			},
+			{
+				"text": "Pian laulamme voitonlauluja",
+				"value": "9"
+			},
+			{
+				"text": "Nöyryytetään vastustajaa kunnolla",
+				"value": "10"
+			}
+		],
+		"fans_season": [
+			{
+				"text": "Pelaamme tasoomme nähden aivan liian kovassa sarjassa",
+				"value": "0"
+			},
+			{
+				"text": "Kannattaa iloita joka ottelusta, sillä hupia ei kestä kauan tässä sarjassa",
+				"value": "1"
+			},
+			{
+				"text": "Sarjassa säilyminen vaatii kovaa työtä",
+				"value": "2"
+			},
+			{
+				"text": "Keskikastin sijoitus ei olisi hullumpi",
+				"value": "3"
+			},
+			{
+				"text": "Joukkue kuuluu neljän parhaan joukkoon",
+				"value": "4"
+			},
+			{
+				"text": "Voimme voittaa sarjan",
+				"value": "5"
+			},
+			{
+				"text": "Tällä kaudella vain sarjavoitto kelpaa",
+				"value": "6"
+			},
+			{
+				"text": "Olemme päivänselvästi tämän sarjan yläpuolella!",
+				"value": "7"
+			}
+		],
+		"honesty": [
+			{
+				"text": "täysin arvaamaton",
+				"value": "0"
+			},
+			{
+				"text": "epärehellinen",
+				"value": "1"
+			},
+			{
+				"text": "rehellinen",
+				"value": "2"
+			},
+			{
+				"text": "suoraselkäinen",
+				"value": "3"
+			},
+			{
+				"text": "oikeudentuntoinen",
+				"value": "4"
+			},
+			{
+				"text": "pyhimys",
+				"value": "5"
+			}
+		],
+		"id": "9",
+		"leagueNames": {
+			"1": "Ruotsi",
+			"100": "El Salvador",
+			"101": "Malta",
+			"102": "Kirgisia",
+			"103": "Moldova",
+			"104": "Georgia",
+			"105": "Andorra",
+			"106": "Jordania",
+			"107": "Guatemala",
+			"11": "Tanska",
+			"110": "Trinidad ja Tobago",
+			"111": "Nicaragua",
+			"112": "Kazakstan",
+			"113": "Suriname",
+			"117": "Liechtenstein",
+			"118": "Algeria",
+			"119": "Mongolia",
+			"12": "Suomi",
+			"120": "Libanon",
+			"121": "Senegal",
+			"122": "Armenia",
+			"123": "Bahrain",
+			"124": "Barbados",
+			"125": "Kap Verde",
+			"126": "Norsunluurannikko",
+			"127": "Kuwait",
+			"128": "Irak",
+			"129": "Azerbaidžan",
+			"130": "Angola",
+			"131": "Montenegro",
+			"132": "Bangladesh",
+			"133": "Jemen",
+			"134": "Oman",
+			"135": "Mosambik",
+			"136": "Brunei",
+			"137": "Ghana",
+			"138": "Kambodža",
+			"139": "Benin",
+			"14": "Hollanti",
+			"140": "Syyria",
+			"141": "Qatar",
+			"142": "Tansania",
+			"143": "Uganda",
+			"144": "Malediivit",
+			"145": "Uzbekistan",
+			"146": "Kamerun",
+			"147": "Kuuba",
+			"148": "Palestiina",
+			"15": "Oseania",
+			"16": "Brasilia",
+			"17": "Kanada",
+			"18": "Chile",
+			"19": "Kolumbia",
+			"2": "Englanti",
+			"20": "Intia",
+			"21": "Irlanti",
+			"22": "Japani",
+			"23": "Peru",
+			"24": "Puola",
+			"25": "Portugali",
+			"26": "Skotlanti",
+			"27": "Etelä-Afrikka",
+			"28": "Uruguay",
+			"29": "Venezuela",
+			"3": "Saksa",
+			"30": "Etelä-Korea",
+			"31": "Thaimaa",
+			"32": "Turkki",
+			"33": "Egypti",
+			"34": "Kiina",
+			"35": "Venäjä",
+			"36": "Espanja",
+			"37": "Romania",
+			"38": "Islanti",
+			"39": "Itävalta",
+			"4": "Italia",
+			"44": "Belgia",
+			"45": "Malesia",
+			"46": "Sveitsi",
+			"47": "Singapore",
+			"5": "Ranska",
+			"50": "Kreikka",
+			"51": "Unkari",
+			"52": "Tšekki",
+			"53": "Latvia",
+			"54": "Indonesia",
+			"55": "Filippiinit",
+			"56": "Viro",
+			"57": "Serbia",
+			"58": "Kroatia",
+			"59": "Hong Kong",
+			"6": "Meksiko",
+			"60": "Taiwan",
+			"61": "Wales",
+			"62": "Bulgaria",
+			"63": "Israel",
+			"64": "Slovenia",
+			"66": "Liettua",
+			"67": "Slovakia",
+			"68": "Ukraina",
+			"69": "Bosnia ja Hertsegovina",
+			"7": "Argentiina",
+			"70": "Vietnam",
+			"71": "Pakistan",
+			"72": "Paraguay",
+			"73": "Ecuador",
+			"74": "Bolivia",
+			"75": "Nigeria",
+			"76": "Färsaaret",
+			"77": "Marokko",
+			"79": "Saudi-Arabia",
+			"8": "USA",
+			"80": "Tunisia",
+			"81": "Costa Rica",
+			"83": "Yhdistyneet arabiemiirikunnat",
+			"84": "Luxemburg",
+			"85": "Iran",
+			"88": "Dominikaaninen tasavalta",
+			"89": "Kypros",
+			"9": "Norja",
+			"91": "Valko-Venäjä",
+			"93": "Pohjois-Irlanti",
+			"94": "Jamaika",
+			"95": "Kenia",
+			"96": "Panama",
+			"97": "Makedonia",
+			"98": "Albania",
+			"99": "Honduras"
+		},
+		"levels": [
+			{
+				"text": "olematon",
+				"value": "0"
+			},
+			{
+				"text": "surkea",
+				"value": "1"
+			},
+			{
+				"text": "kurja",
+				"value": "2"
+			},
+			{
+				"text": "kehno",
+				"value": "3"
+			},
+			{
+				"text": "heikko",
+				"value": "4"
+			},
+			{
+				"text": "välttävä",
+				"value": "5"
+			},
+			{
+				"text": "kelvollinen",
+				"value": "6"
+			},
+			{
+				"text": "hyvä",
+				"value": "7"
+			},
+			{
+				"text": "erinomainen",
+				"value": "8"
+			},
+			{
+				"text": "mahtava",
+				"value": "9"
+			},
+			{
+				"text": "loistava",
+				"value": "10"
+			},
+			{
+				"text": "häikäisevä",
+				"value": "11"
+			},
+			{
+				"text": "armoitettu",
+				"value": "12"
+			},
+			{
+				"text": "unohtumaton",
+				"value": "13"
+			},
+			{
+				"text": "yliluonnollinen",
+				"value": "14"
+			},
+			{
+				"text": "titaaninen",
+				"value": "15"
+			},
+			{
+				"text": "uskomaton",
+				"value": "16"
+			},
+			{
+				"text": "myyttinen",
+				"value": "17"
+			},
+			{
+				"text": "maaginen",
+				"value": "18"
+			},
+			{
+				"text": "utopinen",
+				"value": "19"
+			},
+			{
+				"text": "jumalainen",
+				"value": "20"
+			}
+		],
+		"name": "fi",
+		"positions": [
+			{
+				"type": "Keeper",
+				"value": "Maalivahti"
+			},
+			{
+				"type": "WingBack",
+				"value": "Laitapuolustaja"
+			},
+			{
+				"type": "CentralDefender",
+				"value": "Keskuspuolustaja"
+			},
+			{
+				"type": "InnerMidfield",
+				"value": "Keskikenttäpelaaja"
+			},
+			{
+				"type": "Winger",
+				"value": "Laituri"
+			},
+			{
+				"type": "Forward",
+				"value": "Hyökkääjä"
+			}
+		],
+		"ratingSubLevels": [
+			{
+				"text": "erittäin matala",
+				"value": "0"
+			},
+			{
+				"text": "matala",
+				"value": "0.25"
+			},
+			{
+				"text": "korkea",
+				"value": "0.5"
+			},
+			{
+				"text": "erittäin korkea",
+				"value": "0.75"
+			}
+		],
+		"sectors": [
+			{
+				"type": "Midfield",
+				"value": "Keskikenttä"
+			},
+			{
+				"type": "RightDefense",
+				"value": "Oikea puolustus"
+			},
+			{
+				"type": "CentralDefense",
+				"value": "Keskuspuolustus"
+			},
+			{
+				"type": "LeftDefense",
+				"value": "Vasen puolustus"
+			},
+			{
+				"type": "RightAttack",
+				"value": "Oikea hyökkäys"
+			},
+			{
+				"type": "CentralAttack",
+				"value": "Keskushyökkäys"
+			},
+			{
+				"type": "LeftAttack",
+				"value": "Vasen hyökkäys"
+			}
+		],
+		"skills": [
+			{
+				"type": "Keeper",
+				"value": "Maalivahti"
+			},
+			{
+				"type": "Stamina",
+				"value": "Kestävyys"
+			},
+			{
+				"type": "Defender",
+				"value": "Puolustus"
+			},
+			{
+				"type": "Playmaker",
+				"value": "Pelinrakennus"
+			},
+			{
+				"type": "Winger",
+				"value": "Laituri"
+			},
+			{
+				"type": "Scorer",
+				"value": "Maalinteko"
+			},
+			{
+				"type": "Kicker",
+				"value": "Erikoistilanteet"
+			},
+			{
+				"type": "Passer",
+				"value": "Syöttäminen"
+			},
+			{
+				"type": "Experience",
+				"value": "Kokemus"
+			},
+			{
+				"type": "LeaderShip",
+				"value": "Johtajuus"
+			}
+		],
+		"specialties": [
+			{
+				"type": "None",
+				"value": "Ei erikoisuutta"
+			},
+			{
+				"type": "Technical",
+				"value": "Tekninen"
+			},
+			{
+				"type": "Quick",
+				"value": "Nopea"
+			},
+			{
+				"type": "Powerful",
+				"value": "Voimakas"
+			},
+			{
+				"type": "Unpredictable",
+				"value": "Arvaamaton"
+			},
+			{
+				"type": "Head",
+				"value": "Pääpeli"
+			},
+			{
+				"type": "Regainer",
+				"value": "Toipuja"
+			}
+		],
+		"spirit": [
+			{
+				"text": "kuin kylmä sota",
+				"value": "0"
+			},
+			{
+				"text": "murhanhimoinen",
+				"value": "1"
+			},
+			{
+				"text": "raivoisa",
+				"value": "2"
+			},
+			{
+				"text": "ärtynyt",
+				"value": "3"
+			},
+			{
+				"text": "maltillinen",
+				"value": "4"
+			},
+			{
+				"text": "rauhallinen",
+				"value": "5"
+			},
+			{
+				"text": "hyvä",
+				"value": "6"
+			},
+			{
+				"text": "tyytyväinen",
+				"value": "7"
+			},
+			{
+				"text": "haltioitunut",
+				"value": "8"
+			},
+			{
+				"text": "seitsemäs taivas",
+				"value": "9"
+			},
+			{
+				"text": "maanpäällinen paratiisi!",
+				"value": "10"
+			}
+		],
+		"sponsors": [
+			{
+				"text": "murhanhimoinen",
+				"value": "0"
+			},
+			{
+				"text": "raivoisa",
+				"value": "1"
+			},
+			{
+				"text": "ärtynyt",
+				"value": "2"
+			},
+			{
+				"text": "maltillinen",
+				"value": "3"
+			},
+			{
+				"text": "hyvä",
+				"value": "4"
+			},
+			{
+				"text": "tyytyväinen",
+				"value": "5"
+			},
+			{
+				"text": "haltioitunut",
+				"value": "6"
+			},
+			{
+				"text": "taivaallinen",
+				"value": "7"
+			},
+			{
+				"text": "seitsemäs taivas",
+				"value": "8"
+			},
+			{
+				"text": "lähettävät rakkausrunoja sinulle",
+				"value": "9"
+			}
+		],
+		"tactics": [
+			{
+				"type": "normal",
+				"value": "Normaali"
+			},
+			{
+				"type": "pressing",
+				"value": "Painostus"
+			},
+			{
+				"type": "ca",
+				"value": "Vastahyökkäykset"
+			},
+			{
+				"type": "aim",
+				"value": "Hyökkäys keskeltä"
+			},
+			{
+				"type": "aow",
+				"value": "Hyökkäys laidoilta"
+			},
+			{
+				"type": "",
+				"value": "Tuntematon"
+			},
+			{
+				"type": "",
+				"value": "Tuntematon"
+			},
+			{
+				"type": "creatively",
+				"value": "Luova peli"
+			},
+			{
+				"type": "longshots",
+				"value": "Kaukolaukaukset"
+			}
+		],
+		"training": [
+			{
+				"type": "Gen",
+				"value": "Yleiskunto"
+			},
+			{
+				"type": "Sta",
+				"value": "Kestävyys"
+			},
+			{
+				"type": "SP",
+				"value": "Erikoistilanteet"
+			},
+			{
+				"type": "Def",
+				"value": "Puolustus"
+			},
+			{
+				"type": "Sco",
+				"value": "Maalinteko"
+			},
+			{
+				"type": "Cross",
+				"value": "Keskitykset (Laituri)"
+			},
+			{
+				"type": "Shoot",
+				"value": "Laukominen"
+			},
+			{
+				"type": "Pass",
+				"value": "Lyhytsyöttäminen"
+			},
+			{
+				"type": "PM",
+				"value": "Pelinrakennus"
+			},
+			{
+				"type": "GK",
+				"value": "Maalivahti"
+			},
+			{
+				"type": "ThPass",
+				"value": "Läpisyötöt"
+			},
+			{
+				"type": "DefPos",
+				"value": "Puolustuksen auttaminen"
+			},
+			{
+				"type": "WingAtt",
+				"value": "Laitahyökkäykset"
+			},
+			{
+				"type": "Indiv",
+				"value": "Yksilöllinen"
+			}
+		]
+	}
+}

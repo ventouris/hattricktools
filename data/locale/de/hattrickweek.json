@@ -1,0 +1,17 @@
+{
+  "info":"Info",
+  "hattrickweek":"Hattrick Woche",
+  "description":"Hier wird der Wochenplan für jede Liga in Hattrick angezeigt.<br>Er beinhaltet wann das Trainingsupdate, das Finanzupdate, die Ligaspiele und die Pokalspiele stattfinden.",
+  "country":"Land",
+  "training":"Training",
+  "economy":"Finanzen",
+  "series":"Ligaspiele",
+  "cup":"Pokalspiele",
+  "monday":"Montag",
+  "tuesday":"Dienstag",
+  "wednesday":"Mittwoch",
+  "thursday":"Donnerstag",
+  "friday":"Freitag",
+  "saturday":"Samstag",
+  "sunday":"Sonntag"
+}

@@ -1,0 +1,9 @@
+{
+  "info":"Info",
+  "description":"Cet outil va vous aider à calculer l'expérience totale de l'équipe et à trouver le meilleur capitaine de la composition sélectionnée.",
+  "totalexperience":"Expérience totale",
+  "chooseyourteam":"Choisissez votre équipe",
+  "Submit":"Calculer",
+  "chooseyourlineup":"Choisissez votre composition",
+  "leader":"Capitaine"
+}

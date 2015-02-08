@@ -1,0 +1,13 @@
+{
+  "info":"Info",
+  "week":"Semaine",
+  "last":"Dernier",
+  "description":"Cet outil vous aidera à calculer le déclin des caractéristiques d'un joueur. Veuillez noter que cet outil ne prend pas en considération l'âge du joueur.",
+  "level":"Niveau",
+  "skilllevel":"Niveau de la caractéristique",
+  "Submit":"Calculer",
+  "next":"Suivant",
+  "skilldrop":"Déclin des caractéristiques",
+  "previous":"Précédent",
+  "first":"Premier"
+}

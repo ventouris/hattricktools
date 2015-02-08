@@ -1,0 +1,12 @@
+{
+  "info":"Informacje",
+  "description":"Jeśli nie znasz umiejętności gracza, ale wiesz, jaka jest jego umiejętność główna, za pomocą tego narzędzia można oszacować poziom tej umiejętności.",
+  "guessmainskill":"Szacowanie poziomu umiejętności",
+  "skill":"Umiejętność",
+  "Submit":"Oblicz",
+  "option":"Wybierz opcję",
+  "age":"Wiek",
+  "wage":"Pensja (bez 20%)",
+  "mainskill":"Główna umiejętność",
+  "level":"Poziom"
+}

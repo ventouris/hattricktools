@@ -1,0 +1,17 @@
+{
+    "info": "Info", 
+    "hattrickweek": "Hattrick Week",
+    "description": "Find the weekly schedule of every league in Hattrick, including training update, economy update, series and cup match dates.",
+    "country": "Country",
+    "training": "Training",
+    "economy": "Economy",
+    "series": "Series",
+    "cup": "Cup",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+}

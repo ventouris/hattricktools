@@ -1,0 +1,11 @@
+{
+  "info":"Info",
+  "description":"Cet outil vous permet d'estimer le sous-niveau de la caractéristique principale d'un de vos joueurs ou d'un joueur dont vous connaissez les caractéristiques.",
+  "subskill":"Calculateur de sous-niveaux",
+  "sublevel":"Sous-niveau",
+  "Submit":"Calculer",
+  "chooseyourplayer":"Choisissez votre joueur",
+  "age":"Âge",
+  "wage":"Salaire (sans les 20%)",
+  "mainskill":"Caractéristique principale"
+}

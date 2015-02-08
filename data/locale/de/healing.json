@@ -1,0 +1,19 @@
+{
+  "info":"Info",
+  "description":"Berechne mit dem Verletzungsrechner wie lange es dauert, bis ein verletzter Spieler wieder angeschlagen bzw. ganz gesund ist.<br>Folgende Einstellungen sind möglich: Level des Mediziners, Alter des Spielers und Wochenanzahl der Verletzung.<br>\nOptional kann der Sublevel der Verletzung mit TSO vor und TSI nach der Verletzung berechnet werden.<br>Das neue Spezialisten System ist in diesem Tool integriert.",
+  "injuryweeks":"Verletzung in Wochen",
+  "tsib":"TSI vor der Verletzung",
+  "findthesublevel":"Sublevel der Verletzung berechnen",
+  "age":"Alter",
+  "days":"Tage",
+  "Submit":"Abschicken",
+  "bruised":"Pflaster",
+  "healthy":"Gesund",
+  "mediclevel":"Mediziner Level",
+  "updates":"Heilungsupdates",
+  "tsia":"TSI nach der Verletzung",
+  "chooseyourplayer":"Spieler auswählen",
+  "weeks":"Wochen",
+  "optional":"Optional",
+  "healingcalc":"Verletzungsrechner"
+}

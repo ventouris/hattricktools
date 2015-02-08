@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{pagestr["hattrickweek"]|safe}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
+    <meta name="keywords" content="hattrick, football manager, online games, football, training, chpp">
+    <meta property="og:image" content="http://www.ht-tools.eu/static/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://www.ht-tools.eu/static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="/static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="/static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="/static/css/adsense.css" rel="stylesheet"/>
+    <link href="/static/css/footable.core.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/footable.standalone.min.css" rel="stylesheet" type="text/css" />
+    <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+
+  </head>
+
+  
+<body>
+
+<header>
+  
+{% include "header.html" %}
+
+</header>
+
+<main>
+
+  <div>
+    <div class="row">
+
+      <div class="col s12 m12 l2">
+      {% if not login %}
+              <div class="card-panel" style="background-color:#fcf6df;border:1px solid orange;margin-top:50px">{{headerstr["loginmessage"]|safe}}</div>
+      {% endif %}
+
+      <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+    </div>
+
+      <div class="col s12 m12 l10">
+
+    
+      <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
+      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">{{pagestr["hattrickweek"]|safe}}</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">{{pagestr["info"]|safe}}</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+      <table class="table bordered centered" id="resultstable" style="background-color:#fff">
+        <thead>
+          <tr style="background-color: #277F31; color:#fff">
+            <th data-sort-initial="true">{{pagestr["country"]}}</th>
+            <th>{{pagestr["training"]}}</th>
+            <th data-hide="phone">{{pagestr["economy"]}}</th>
+            <th data-hide="phone">{{pagestr["series"]}}</th>
+            <th data-hide="phone">{{pagestr["cup"]}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in param["program"] %}
+            <tr>
+              <td><img src='{{"/static/images/flags/"~i~".gif"}}'> {{htlang["leagueNames"][i]}}</td>
+              <td>{{param["program"][i][0]}}</td>
+              <td>{{param["program"][i][1]}}</td>
+              <td>{{param["program"][i][2]}}</td>
+              <td>{{param["program"][i][3]}}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+
+    </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>{{pagestr["hattrickweek"]|safe}}</b></h5>
+        <img src="/static/images/hattrickweek.png" style="float:left;margin-right:15px"><span><b>{{pagestr["info"]|safe}}:</b> {{pagestr["description"]|safe}}</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  {% include "language-selector.html" %}
+   
+</main>
+
+<footer>
+
+    {% include "footer.html" %}
+      
+</footer>
+
+
+
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="/static/js/cookies.js"></script>
+
+<script type="text/javascript" src="/static/js/footable.js"></script>
+<script type="text/javascript" src="/static/js/footable.sort.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
+      $('.collapsible').collapsible();
+      $('ul.tabs').tabs();
+    });
+</script>
+
+{% include "analytics.html" %}
+
+<script type="text/javascript">
+  $(function () {
+    $('#resultstable').footable({
+      breakpoints: {
+        phone: 700
+    }
+});
+  });
+</script>
+
+<script type="text/javascript">
+  
+  $("#resultstable tbody tr").each(function () {
+    $("td", this).slice(1).each(function (i) {
+      $(this).text(function(index, text) {return text.replace('Monday,', '{{pagestr["monday"]}}, ');})
+      $(this).text(function(index, text) {return text.replace('Tuesday,', '{{pagestr["tuesday"]}}, ');})
+      $(this).text(function(index, text) {return text.replace('Wednesday,', '{{pagestr["wednesday"]}}, ');})
+      $(this).text(function(index, text) {return text.replace('Thursday,', '{{pagestr["thursday"]}}, ');})
+      $(this).text(function(index, text) {return text.replace('Friday,', '{{pagestr["friday"]}}, ');})
+      $(this).text(function(index, text) {return text.replace('Saturday,', '{{pagestr["saturday"]}}, ');})
+      $(this).text(function(index, text) {return text.replace('Sunday,', '{{pagestr["sunday"]}}, ');})
+    });
+});
+
+
+
+</script>
+
+
+</body>
+</html>

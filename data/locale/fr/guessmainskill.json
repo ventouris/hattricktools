@@ -1,0 +1,12 @@
+{
+  "info":"Info",
+  "description":"Si vous ne connaissez pas les caractéristiques d'un joueur mais que vous imaginez sa caractéristique principale, cet outil vous aidera à estimer le niveau de cette dernière.",
+  "guessmainskill":"Estimer la caractéristique principale",
+  "skill":"Caractéristique",
+  "Submit":"Calculer",
+  "option":"Choisissez votre option",
+  "age":"Âge",
+  "wage":"Salaire (sans les 20%)",
+  "mainskill":"Caractéristique principale",
+  "level":"Niveau"
+}

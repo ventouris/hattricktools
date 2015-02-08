@@ -1,0 +1,772 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{pagestr["ratingspredictor"]|safe}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
+    <meta name="keywords" content="hattrick, football manager, online games, football, training, chpp">
+    <meta property="og:image" content="http://www.ht-tools.eu/static/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://www.ht-tools.eu/static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="/static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="/static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="/static/css/adsense.css" rel="stylesheet"/>
+    <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+
+
+
+
+
+
+	<style type="text/css">
+
+	#dhtmlgoodies_dragDropContainer li,#dragContent li,li#indicateDestination{	/* Movable items, i.e. <LI> */
+		list-style-type:none;
+		background-color:#EEE;
+		border:1px solid #000;
+		padding:5px;
+		margin:2px;
+		cursor:pointer;
+		font-size:0.9em;
+		display: inline-block;
+		border-radius: 2px;
+	}
+
+	li#indicateDestination{	/* Box indicating where content will be dropped - i.e. the one you use if you don't use arrow */
+		border:1px dotted #600;
+		background-color:#FFF;
+	}
+
+
+
+	#dhtmlgoodies_dragDropContainer .mouseover{	/* Mouse over effect DIV box in right column */
+		background-color:#E2EBED;
+		border:1px solid #317082;
+	}
+
+	/* Start main container CSS */
+
+	#dhtmlgoodies_mainContainer div div{	/* Parent <div> of small boxes */
+		margin-right:10px;
+		margin-bottom:10px;
+		margin-top:0px;
+		border:1px solid #999;
+
+		/* CSS HACK */
+		width: 102px;	/* IE 5.x */
+		width/* */:/**/100px;	/* Other browsers */
+		width: /**/100px;
+		display: inline-block;
+	}
+
+	#dhtmlgoodies_mainContainer div div p{	/* Heading above small boxes */
+		margin:0px;
+		padding:0px;
+		font-weight:bold;
+		background-color: #277F31;
+		color:#FFF;
+		margin-bottom:5px;
+	}
+
+	#dhtmlgoodies_mainContainer div div ul{	/* Small box in right column ,i.e <ul> */
+		width:100px;
+		height:50px !important;
+		border:0px;
+		margin-bottom:0px;
+		overflow:hidden;
+
+	}
+
+	#dragContent{	/* Drag container */
+		position:absolute;
+		width:150px;
+		height:20px;
+		display:none;
+		margin:0px;
+		padding:0px;
+		z-index:2000;
+	}
+
+	#dragDropIndicator{	/* DIV for the small arrow */
+		position:absolute;
+		width:7px;
+		height:10px;
+		display:none;
+		z-index:1000;
+		margin:0px;
+		padding:0px;
+	}
+	</style>
+	<style type="text/css" media="print">
+	div#dhtmlgoodies_listOfItems{
+		display:none;
+	}
+	body{
+		background-color:#FFF;
+	}
+	img{
+		display:none;
+	}
+	#dhtmlgoodies_dragDropContainer{
+		border:0px;
+		width:100%;
+	}
+	p{
+		margin-bottom:0px;
+	}
+	</style>
+	<script type="text/javascript">
+	/************************************************************************************************************
+	(C) www.dhtmlgoodies.com, November 2005
+
+	Update log:
+
+	December 20th, 2005 : Version 1.1: Added support for rectangle indicating where object will be dropped
+	January 11th, 2006: Support for cloning, i.e. "copy & paste" items instead of "cut & paste"
+	January 18th, 2006: Allowing multiple instances to be dragged to same box(applies to "cloning mode")
+
+	This is a script from www.dhtmlgoodies.com. You will find this and a lot of other scripts at our website.
+
+		Terms of use:
+	You are free to use this script as long as the copyright message is kept intact. However, you may not
+	redistribute, sell or repost it without our permission.
+
+	Thank you!
+
+	www.dhtmlgoodies.com
+	Alf Magne Kalleland
+
+	************************************************************************************************************/
+
+	/* VARIABLES YOU COULD MODIFY */
+	var boxSizeArray = [1,1,1,1,1,1,1,1,1,1,1,1,1,1];	// Array indicating how many items there is rooom for in the right column ULs
+
+	var arrow_offsetX = -5;	// Offset X - position of small arrow
+	var arrow_offsetY = 0;	// Offset Y - position of small arrow
+
+	var arrow_offsetX_firefox = -6;	// Firefox - offset X small arrow
+	var arrow_offsetY_firefox = -13; // Firefox - offset Y small arrow
+
+	var verticalSpaceBetweenListItems = 3;	// Pixels space between one <li> and next
+											// Same value or higher as margin bottom in CSS for #dhtmlgoodies_dragDropContainer ul li,#dragContent li
+
+
+	var indicateDestionationByUseOfArrow = false;	// Display arrow to indicate where object will be dropped(false = use rectangle)
+
+	var cloneSourceItems = false;	// Items picked from main container will be cloned(i.e. "copy" instead of "cut").
+	var cloneAllowDuplicates = true;	// Allow multiple instances of an item inside a small box(example: drag Student 1 to team A twice
+
+	/* END VARIABLES YOU COULD MODIFY */
+
+	var dragDropTopContainer = false;
+	var dragTimer = -1;
+	var dragContentObj = false;
+	var contentToBeDragged = false;	// Reference to dragged <li>
+	var contentToBeDragged_src = false;	// Reference to parent of <li> before drag started
+	var contentToBeDragged_next = false; 	// Reference to next sibling of <li> to be dragged
+	var destinationObj = false;	// Reference to <UL> or <LI> where element is dropped.
+	var dragDropIndicator = false;	// Reference to small arrow indicating where items will be dropped
+	var ulPositionArray = new Array();
+	var mouseoverObj = false;	// Reference to highlighted DIV
+
+	var MSIE = navigator.userAgent.indexOf('MSIE')>=0?true:false;
+	var navigatorVersion = navigator.appVersion.replace(/.*?MSIE (\d\.\d).*/g,'$1')/1;
+
+
+	var indicateDestinationBox = false;
+	function getTopPos(inputObj)
+	{
+	  var returnValue = inputObj.offsetTop;
+	  while((inputObj = inputObj.offsetParent) != null){
+	  	if(inputObj.tagName!='HTML')returnValue += inputObj.offsetTop;
+	  }
+	  return returnValue;
+	}
+
+	function getLeftPos(inputObj)
+	{
+	  var returnValue = inputObj.offsetLeft;
+	  while((inputObj = inputObj.offsetParent) != null){
+	  	if(inputObj.tagName!='HTML')returnValue += inputObj.offsetLeft;
+	  }
+	  return returnValue;
+	}
+
+	function cancelEvent()
+	{
+		return false;
+	}
+	function initDrag(e)	// Mouse button is pressed down on a LI
+	{
+		if(document.all)e = event;
+		var st = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+		var sl = Math.max(document.body.scrollLeft,document.documentElement.scrollLeft);
+
+		dragTimer = 0;
+		dragContentObj.style.left = e.clientX + sl + 'px';
+		dragContentObj.style.top = e.clientY + st + 'px';
+		contentToBeDragged = this;
+		contentToBeDragged_src = this.parentNode;
+		contentToBeDragged_next = false;
+		if(this.nextSibling){
+			contentToBeDragged_next = this.nextSibling;
+			if(!this.tagName && contentToBeDragged_next.nextSibling)contentToBeDragged_next = contentToBeDragged_next.nextSibling;
+		}
+		timerDrag();
+		return false;
+	}
+
+	function timerDrag()
+	{
+		if(dragTimer>=0 && dragTimer<10){
+			dragTimer++;
+			setTimeout('timerDrag()',10);
+			return;
+		}
+		if(dragTimer==10){
+
+			if(cloneSourceItems && contentToBeDragged.parentNode.id=='allItems'){
+				newItem = contentToBeDragged.cloneNode(true);
+				newItem.onmousedown = contentToBeDragged.onmousedown;
+				contentToBeDragged = newItem;
+			}
+			dragContentObj.style.display='block';
+			dragContentObj.appendChild(contentToBeDragged);
+		}
+	}
+
+	function moveDragContent(e)
+	{
+		if(dragTimer<10){
+			if(contentToBeDragged){
+				if(contentToBeDragged_next){
+					contentToBeDragged_src.insertBefore(contentToBeDragged,contentToBeDragged_next);
+				}else{
+					contentToBeDragged_src.appendChild(contentToBeDragged);
+				}
+			}
+			return;
+		}
+		if(document.all)e = event;
+		var st = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+		var sl = Math.max(document.body.scrollLeft,document.documentElement.scrollLeft);
+
+
+		dragContentObj.style.left = e.clientX + sl + 'px';
+		dragContentObj.style.top = e.clientY + st + 'px';
+
+		if(mouseoverObj)mouseoverObj.className='';
+		destinationObj = false;
+		dragDropIndicator.style.display='none';
+		if(indicateDestinationBox)indicateDestinationBox.style.display='none';
+		var x = e.clientX + sl;
+		var y = e.clientY + st;
+		var width = dragContentObj.offsetWidth;
+		var height = dragContentObj.offsetHeight;
+
+		var tmpOffsetX = arrow_offsetX;
+		var tmpOffsetY = arrow_offsetY;
+		if(!document.all){
+			tmpOffsetX = arrow_offsetX_firefox;
+			tmpOffsetY = arrow_offsetY_firefox;
+		}
+
+		for(var no=0;no<ulPositionArray.length;no++){
+			var ul_leftPos = ulPositionArray[no]['left'];
+			var ul_topPos = ulPositionArray[no]['top'];
+			var ul_height = ulPositionArray[no]['height'];
+			var ul_width = ulPositionArray[no]['width'];
+
+			if((x+width) > ul_leftPos && x<(ul_leftPos + ul_width) && (y+height)> ul_topPos && y<(ul_topPos + ul_height)){
+				var noExisting = ulPositionArray[no]['obj'].getElementsByTagName('LI').length;
+				if(indicateDestinationBox && indicateDestinationBox.parentNode==ulPositionArray[no]['obj'])noExisting--;
+				if(noExisting<boxSizeArray[no-1] || no==0){
+					dragDropIndicator.style.left = ul_leftPos + tmpOffsetX + 'px';
+					var subLi = ulPositionArray[no]['obj'].getElementsByTagName('LI');
+
+					var clonedItemAllreadyAdded = false;
+					if(cloneSourceItems && !cloneAllowDuplicates){
+						for(var liIndex=0;liIndex<subLi.length;liIndex++){
+							if(contentToBeDragged.id == subLi[liIndex].id)clonedItemAllreadyAdded = true;
+						}
+						if(clonedItemAllreadyAdded)continue;
+					}
+
+					for(var liIndex=0;liIndex<subLi.length;liIndex++){
+						var tmpTop = getTopPos(subLi[liIndex]);
+						if(!indicateDestionationByUseOfArrow){
+							if(y<tmpTop){
+								destinationObj = subLi[liIndex];
+								indicateDestinationBox.style.display='block';
+								subLi[liIndex].parentNode.insertBefore(indicateDestinationBox,subLi[liIndex]);
+								break;
+							}
+						}else{
+							if(y<tmpTop){
+								destinationObj = subLi[liIndex];
+								dragDropIndicator.style.top = tmpTop + tmpOffsetY - Math.round(dragDropIndicator.clientHeight/2) + 'px';
+								dragDropIndicator.style.display='block';
+								break;
+							}
+						}
+					}
+
+					if(!indicateDestionationByUseOfArrow){
+						if(indicateDestinationBox.style.display=='none'){
+							indicateDestinationBox.style.display='block';
+							ulPositionArray[no]['obj'].appendChild(indicateDestinationBox);
+						}
+
+					}else{
+						if(subLi.length>0 && dragDropIndicator.style.display=='none'){
+							dragDropIndicator.style.top = getTopPos(subLi[subLi.length-1]) + subLi[subLi.length-1].offsetHeight + tmpOffsetY + 'px';
+							dragDropIndicator.style.display='block';
+						}
+						if(subLi.length==0){
+							dragDropIndicator.style.top = ul_topPos + arrow_offsetY + 'px'
+							dragDropIndicator.style.display='block';
+						}
+					}
+
+					if(!destinationObj)destinationObj = ulPositionArray[no]['obj'];
+					mouseoverObj = ulPositionArray[no]['obj'].parentNode;
+					mouseoverObj.className='mouseover';
+					return;
+				}
+			}
+		}
+	}
+
+	/* End dragging
+	Put <LI> into a destination or back to where it came from.
+	*/
+	function dragDropEnd(e)
+	{
+		if(dragTimer==-1)return;
+		if(dragTimer<10){
+			dragTimer = -1;
+			return;
+		}
+		dragTimer = -1;
+		if(document.all)e = event;
+
+
+		if(cloneSourceItems && (!destinationObj || (destinationObj && (destinationObj.id=='allItems' || destinationObj.parentNode.id=='allItems')))){
+			contentToBeDragged.parentNode.removeChild(contentToBeDragged);
+		}else{
+
+			if(destinationObj){
+				if(destinationObj.tagName=='UL'){
+					destinationObj.appendChild(contentToBeDragged);
+				}else{
+					destinationObj.parentNode.insertBefore(contentToBeDragged,destinationObj);
+				}
+				mouseoverObj.className='';
+				destinationObj = false;
+				dragDropIndicator.style.display='none';
+				if(indicateDestinationBox){
+					indicateDestinationBox.style.display='none';
+					document.body.appendChild(indicateDestinationBox);
+				}
+				contentToBeDragged = false;
+				return;
+			}
+			if(contentToBeDragged_next){
+				contentToBeDragged_src.insertBefore(contentToBeDragged,contentToBeDragged_next);
+			}else{
+				contentToBeDragged_src.appendChild(contentToBeDragged);
+			}
+		}
+		contentToBeDragged = false;
+		dragDropIndicator.style.display='none';
+		if(indicateDestinationBox){
+			indicateDestinationBox.style.display='none';
+			document.body.appendChild(indicateDestinationBox);
+
+		}
+		mouseoverObj = false;
+
+	}
+
+	/*
+	Preparing data to be saved
+	*/
+	function saveDragDropNodes()
+	{
+		var saveString = "";
+		var uls = dragDropTopContainer.getElementsByTagName('UL');
+		for(var no=0;no<uls.length;no++){	// LOoping through all <ul>
+			var lis = uls[no].getElementsByTagName('LI');
+			for(var no2=0;no2<lis.length;no2++){
+				if(saveString.length>0)saveString = saveString + ";";
+				saveString = saveString + uls[no].id + '|' + lis[no2].id;
+			}
+		}
+
+		document.getElementById('saveContent').innerHTML = '<h1>Ready to save these nodes:</h1> ' + saveString.replace(/;/g,';<br>') + '<p>Format: ID of ul |(pipe) ID of li;(semicolon)</p><p>You can put these values into a hidden form fields, post it to the server and explode the submitted value there</p>';
+
+	}
+
+	function initDragDropScript()
+	{
+		dragContentObj = document.getElementById('dragContent');
+		dragDropIndicator = document.getElementById('dragDropIndicator');
+		dragDropTopContainer = document.getElementById('dhtmlgoodies_dragDropContainer');
+		document.documentElement.onselectstart = cancelEvent;;
+		var listItems = dragDropTopContainer.getElementsByTagName('LI');	// Get array containing all <LI>
+		var itemHeight = false;
+		for(var no=0;no<listItems.length;no++){
+			listItems[no].onmousedown = initDrag;
+			listItems[no].onselectstart = cancelEvent;
+			if(!itemHeight)itemHeight = listItems[no].offsetHeight;
+			if(MSIE && navigatorVersion/1<6){
+				listItems[no].style.cursor='hand';
+			}
+		}
+
+		var mainContainer = document.getElementById('dhtmlgoodies_mainContainer');
+		var uls = mainContainer.getElementsByTagName('UL');
+		itemHeight = itemHeight + verticalSpaceBetweenListItems;
+		for(var no=0;no<uls.length;no++){
+			uls[no].style.height = itemHeight * boxSizeArray[no]  + 'px';
+		}
+
+		var leftContainer = document.getElementById('dhtmlgoodies_listOfItems');
+		var itemBox = leftContainer.getElementsByTagName('UL')[0];
+
+		document.documentElement.onmousemove = moveDragContent;	// Mouse move event - moving draggable div
+		document.documentElement.onmouseup = dragDropEnd;	// Mouse move event - moving draggable div
+
+		var ulArray = dragDropTopContainer.getElementsByTagName('UL');
+		for(var no=0;no<ulArray.length;no++){
+			ulPositionArray[no] = new Array();
+			ulPositionArray[no]['left'] = getLeftPos(ulArray[no]);
+			ulPositionArray[no]['top'] = getTopPos(ulArray[no]);
+			ulPositionArray[no]['width'] = ulArray[no].offsetWidth;
+			ulPositionArray[no]['height'] = ulArray[no].clientHeight;
+			ulPositionArray[no]['obj'] = ulArray[no];
+		}
+
+		if(!indicateDestionationByUseOfArrow){
+			indicateDestinationBox = document.createElement('LI');
+			indicateDestinationBox.id = 'indicateDestination';
+			indicateDestinationBox.style.display='none';
+			document.body.appendChild(indicateDestinationBox);
+
+
+		}
+	}
+
+	window.onload = initDragDropScript;
+	</script>
+  </head>
+
+  
+<body>
+
+<header>
+  
+{% include "header.html" %}
+
+</header>
+
+<main>
+
+  <div>
+    <div class="row">
+
+      <div class="col s12 m12 l2">
+      {% if not login %}
+              <div class="card-panel" style="background-color:#fcf6df;border:1px solid orange;margin-top:50px">{{headerstr["loginmessage"]|safe}}</div>
+      {% endif %}
+
+      <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+    </div>
+
+      <div class="col s12 m12 l10">
+
+    
+      <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
+      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">{{pagestr["ratingspredictor"]|safe}}</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">{{pagestr["info"]|safe}}</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+    	
+        <div class="col l5 m6 s12">
+          <form id="my-form">
+        {% if login %}
+          <div class="col s12">
+              <select class="browser-default" name="players" id="teams" onchange="getValue(this)">
+                <option value="" disabled selected>{{pagestr["chooseyourteam"]|safe}}</option>
+                  {% for i in teams %}
+                     <option value="{{i[0]}}">{{i[1]}}</option>
+                  {% endfor %}
+               </select>
+             </div>
+           <br><br><br>
+          <div class="progress" id="progress" style="display:none">
+            <div class="indeterminate"></div>
+          </div>          
+       {% endif %}
+       	<div class="row slidercls"><b>{{pagestr["coachlevel"]|safe}}</b><span id="coachlevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-coachlevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="coachlevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>{{pagestr["assistantslevel"]|safe}}</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-assistants" class="slider-success" style="width:80%;float:left"></div><input type="text" id="assistantslevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>  
+        <div><b>{{pagestr["trainingintensity"]|safe}}</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-intensity" class="slider-success" style="width:80%;float:left"></div><input type="text" id="trainingintensity-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>{{pagestr["staminashare"]|safe}}</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-stamina" class="slider-success" style="width:80%;float:left"></div><input type="text" id="staminashare-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <button class="btn green waves-effect waves-light" style="float:right" type="submit">{{pagestr["Submit"]|safe}}</button>
+      </form>
+    </div>
+    <div class="col l7 m6 s12">
+    	<table class="table bordered centered" id="resultstable" style="background-color:#fff">
+            <thead>
+            	<tr>
+            		<th style="text-align:center" colspan="3">Ratings Results</th>
+            	</tr>
+            </thead>
+            <tbody>
+                <tr>
+                	<td><b>Left Attack</b><br>5</td>
+                	<td><b>Center Attack</b><br>10</td>
+                	<td><b>Right Attack</b><br>8</td>
+                </tr>
+                <tr>
+                	<td colspan="3"><b>Midfield</b><br>15</td>
+                </tr>
+                <tr>
+                	<td><b>Left Defence</b><br>5</td>
+                	<td><b>Center Defence</b><br>10</td>
+                	<td><b>Right Defence</b><br>8</td>
+                </tr>
+            </tbody>
+        </table> 
+  
+    </div>
+
+<div class="row col s12">
+	<div id="dhtmlgoodies_dragDropContainer">
+	<div class="col s12 m12 l3">
+			<div id="dhtmlgoodies_listOfItems">
+		<div>
+			<p>Players</p>
+		<ul id="allItems">
+			<li id="node1">Student A</li>
+			<li id="node2">Student B</li>
+			<li id="node3">Student C</li>
+		</ul>
+		</div>
+		</div>
+	</div>
+	<div class="col s12 m12 l9" style="text-align:center">
+		<div id="dhtmlgoodies_mainContainer">
+		<!-- ONE <UL> for each "room" -->
+		<div class="col s12">
+			<div><p>GK</p><ul id="gk"></ul></div>
+		</div>
+		<div class="col s12">
+			<div><p>LB <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="lb"></ul></div>
+			<div><p>CD <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="cd1"></ul></div>
+			<div><p>CD <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="cd2"></ul></div>
+			<div><p>CD <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="cd3"></ul></div>
+			<div><p>RB <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="rb"></ul>	</div>
+		</div>
+		<div class="col s12">
+			<div><p>LW <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="lw"></ul></div>
+			<div><p>IM <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="im1"></ul></div>
+			<div><p>IM <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="im2"></ul></div>
+			<div><p>IM <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="im3"></ul></div>
+			<div><p>RW <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="rw"></ul></div>
+		</div>
+		<div class="col s12">
+			<div><p>FW <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="fw1"></ul></div>
+			<div><p>FW <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="fw2"></ul></div>
+			<div><p>FW <a href="#" style="float:right;color:white"><i class="tiny mdi-content-create"></i></a></p><ul id="fw3"></ul></div>
+		</div>
+	</div>
+	</div>
+
+
+</div>
+
+</div>
+</div>
+
+<ul id="dragContent"></ul>
+<div id="dragDropIndicator"><img src="images/insert.gif"></div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>{{pagestr["ratingspredictor"]|safe}}</b></h5>
+        <img src="/static/images/training.jpg" style="float:left;margin-right:15px"><span><b>{{pagestr["info"]|safe}}:</b> {{pagestr["description"]|safe}}</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+  </div>
+
+{% include "language-selector.html" %}
+
+</main>
+
+<footer>
+
+    {% include "footer.html" %}
+      
+</footer>
+
+
+
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="/static/js/cookies.js"></script>
+
+<script type="text/javascript" src="/static/js/training.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
+      $('.collapsible').collapsible();
+      $('ul.tabs').tabs();
+    });
+</script>
+
+{% include "analytics.html" %}
+
+<script type="text/javascript">
+$('#my-form').on('submit', function () {
+    var totalweeks = "{{pagestr['totalweeks']|safe}}";
+    var chooseaskill = "{{pagestr['chooseaskill']|safe}}";
+    trainingcalc(totalweeks, chooseaskill);
+    return false;
+});
+</script>
+
+<script type="text/javascript">
+  var names = {{htlang["levels"]|safe}};
+
+
+$('#slider-coachlevel').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['coachlevel']}} ],
+  step: 1,
+  range: {
+    'min': [  4 ],
+    'max': [ 8 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-coachlevel').Link('lower').to($('#coachlevel-value'));
+ 
+
+$('#slider-assistants').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['assistants']}} ],
+  step: 1,
+  range: {
+    'min': [  0 ],
+    'max': [ 15 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-assistants').Link('lower').to($('#assistantslevel-value'));  
+
+$('#slider-intensity').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['intensity']}} ],
+  step: 1,
+  range: {
+    'min': [  5 ],
+    'max': [ 100 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-intensity').Link('lower').to($('#trainingintensity-value'));  
+
+$('#slider-stamina').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['stamina']}} ],
+  step: 1,
+  range: {
+    'min': [  5],
+    'max': [ 100 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-stamina').Link('lower').to($('#staminashare-value'));  
+
+
+
+$( "#slider-coachlevel" ).Link().to($( "#coachlevelval" ), function ( value ) {
+    $(this).html(names[value]);
+});
+  
+
+
+</script>
+
+<script type="text/javascript">
+
+       function getValue(value)  {
+          $("#progress").show();
+
+           $.getJSON('/_jquerydownloaddata', 
+           {'name':'ratingspredictor','team':value.value}
+           ,
+
+           function(data) {
+           		players = data.players;
+
+				for (var i=0; i<players.length; i++) {
+           			$("#allItems").append(players[i]);
+           		}
+
+           	  initDragDropScript();
+              $("#progress").hide();
+           });
+
+          return false
+
+         };
+</script>
+
+</body>
+</html>

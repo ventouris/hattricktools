@@ -1,0 +1,14 @@
+{
+  "info":"Informacje",
+  "chooseyourteam":"Wybierz swoją drużynę",
+  "description":"Za pomocą tego narzędzia możesz obliczyć wzrosty i spadki doświadczenia formacji po meczu (max. 4 mecze) na podstawie ilości minut zagranych w danym ustawieniu",
+  "Submit":"Oblicz",
+  "formationexperience":"Doświadczenie formacji",
+  "match":"Mecz",
+  "formation":"Formacja",
+  "minutes":"Minut",
+  "addformationmanually":"Dodaj formację ręcznie",
+  "level":"Poziom",
+  "addformationlevel":"Dodaj poziom formacji",
+  "resetformation":"Wyczyść ustawienia"
+}

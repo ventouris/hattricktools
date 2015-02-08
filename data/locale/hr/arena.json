@@ -1,0 +1,23 @@
+{
+  "info":"Informacije",
+  "basic":"Sjedeća mjesta",
+  "chooseyourteam":"Izaberi momčad",
+  "costofconstruction":"Cijena izgradnje",
+  "description":"Ovaj alat će vam pomoći da identificirate idealanu ili željenu veličinu vašeg stadiona. Možete koristiti udrugu navijača i raspoloženje navijača ili samo željenu veličinu stadiona sa standardnim ili vlastito zadanim postocima.",
+  "income":"Prihod",
+  "accordingtofan":"Veličina prema broju navijača u vašoj Udruzi navijača",
+  "seats":"Sjedala",
+  "accordingtosize":"Veličina prema ukupnom broju mjesta koje želite",
+  "terraces":"Stajaća mjesta",
+  "Submit":"Pošalji",
+  "seatstoadd":"Sjedala za dodati",
+  "vip":"Svečane lože",
+  "arenacalc":"Kalkulator za Stadion",
+  "fansmembers":"Broj navijača",
+  "roof":"Natkrivena mjesta",
+  "fansmood":"Raspoloženje navijača",
+  "arenasize":"Kapacitet stadiona",
+  "currentarena":"Trenutni stadion",
+  "weeklycost":"Održavanje stadiona",
+  "totalcapacity":"Ukupni kapacitet"
+}

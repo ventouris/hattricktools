@@ -1,0 +1,23 @@
+{
+  "info":"info",
+  "basic":"Siddepladser",
+  "chooseyourteam":"Vælg dit hold",
+  "costofconstruction":"Byggeomkostninger",
+  "description":"Ved hjælp af Stadionudregneren, finder du frem til den ideelle eller ønskede kapacitet af dit stadion. Du kan bruge info om antal medlemmer i din fanklub og fanhumør. For at udregne en ønskede kapacitet, kan du benytte et standard, eller selvdefinerede procenttillæg.",
+  "income":"Indtægter",
+  "accordingtofan":"Kapacitet ift. fanklubbens medlemmer",
+  "seats":"Pladser",
+  "accordingtosize":"Kapacitet ift. det ønskede størrelse",
+  "terraces":"Ståpladser",
+  "Submit":"Send",
+  "seatstoadd":"Tilføj pladser",
+  "vip":"VIP-pladser",
+  "arenacalc":"Stadionudregner",
+  "fansmembers":"Fanklub medlemmer",
+  "roof":"Overdækkede siddepladser",
+  "fansmood":"Fanhumør",
+  "arenasize":"Stadionkapacitet",
+  "currentarena":"Nuværende stadion",
+  "weeklycost":"Ugentlig udgifter",
+  "totalcapacity":"Samlede kapacitet"
+}

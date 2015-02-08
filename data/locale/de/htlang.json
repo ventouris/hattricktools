@@ -1,0 +1,817 @@
+{
+	"language": {
+		"aggressiveness": [
+			{
+				"text": "introvertiert",
+				"value": "0"
+			},
+			{
+				"text": "ruhig",
+				"value": "1"
+			},
+			{
+				"text": "ausgeglichen",
+				"value": "2"
+			},
+			{
+				"text": "temperamentvoll",
+				"value": "3"
+			},
+			{
+				"text": "aufbrausend",
+				"value": "4"
+			},
+			{
+				"text": "hitzköpfig",
+				"value": "5"
+			}
+		],
+		"agreeability": [
+			{
+				"text": "ein Ekel",
+				"value": "0"
+			},
+			{
+				"text": "eine umstrittene Person",
+				"value": "1"
+			},
+			{
+				"text": "ein angenehmer Zeitgenosse",
+				"value": "2"
+			},
+			{
+				"text": "ein sympathischer Mensch",
+				"value": "3"
+			},
+			{
+				"text": "ein beliebter Spieler",
+				"value": "4"
+			},
+			{
+				"text": "eine Integrationsfigur",
+				"value": "5"
+			}
+		],
+		"attitude": [
+			{
+				"text": "Kraft sparen",
+				"value": "-1"
+			},
+			{
+				"text": "normal",
+				"value": "0"
+			},
+			{
+				"text": "Spiel des Jahres",
+				"value": "1"
+			}
+		],
+		"confidence": [
+			{
+				"text": "nicht vorhanden",
+				"value": "0"
+			},
+			{
+				"text": "katastrophal",
+				"value": "1"
+			},
+			{
+				"text": "armselig",
+				"value": "2"
+			},
+			{
+				"text": "gering",
+				"value": "3"
+			},
+			{
+				"text": "bescheiden",
+				"value": "4"
+			},
+			{
+				"text": "stark",
+				"value": "5"
+			},
+			{
+				"text": "sehr groß",
+				"value": "6"
+			},
+			{
+				"text": "leicht überzogen",
+				"value": "7"
+			},
+			{
+				"text": "völlig übertrieben",
+				"value": "8"
+			},
+			{
+				"text": "total abgehoben",
+				"value": "9"
+			}
+		],
+		"desc": "Deutsch",
+		"fans": [
+			{
+				"text": "blutdürstig",
+				"value": "0"
+			},
+			{
+				"text": "wütend",
+				"value": "1"
+			},
+			{
+				"text": "verärgert",
+				"value": "2"
+			},
+			{
+				"text": "irritiert",
+				"value": "3"
+			},
+			{
+				"text": "enttäuscht",
+				"value": "4"
+			},
+			{
+				"text": "ruhig",
+				"value": "5"
+			},
+			{
+				"text": "zufrieden",
+				"value": "6"
+			},
+			{
+				"text": "glücklich",
+				"value": "7"
+			},
+			{
+				"text": "überglücklich",
+				"value": "8"
+			},
+			{
+				"text": "euphorisch",
+				"value": "9"
+			},
+			{
+				"text": "im siebten Himmel",
+				"value": "10"
+			},
+			{
+				"text": "vergöttern dich",
+				"value": "11"
+			}
+		],
+		"fans_match": [
+			{
+				"text": "Wir treten wohl besser gar nicht erst an!",
+				"value": "0"
+			},
+			{
+				"text": "Oh je, da werden wir garantiert deklassiert.",
+				"value": "1"
+			},
+			{
+				"text": "Das wird nichts.",
+				"value": "2"
+			},
+			{
+				"text": "Wir sind Außenseiter.",
+				"value": "3"
+			},
+			{
+				"text": "Wir sind etwas unterlegen.",
+				"value": "4"
+			},
+			{
+				"text": "Das wird eine knappe Angelegenheit.",
+				"value": "5"
+			},
+			{
+				"text": "Wir sind leicht überlegen.",
+				"value": "6"
+			},
+			{
+				"text": "Wir sind die Favoriten.",
+				"value": "7"
+			},
+			{
+				"text": "Wir werden gewinnen!",
+				"value": "8"
+			},
+			{
+				"text": "Das wird ein Kinderspiel!",
+				"value": "9"
+			},
+			{
+				"text": "Demütigen wir sie!",
+				"value": "10"
+			}
+		],
+		"fans_season": [
+			{
+				"text": "Wir sind dieser Liga nicht würdig.",
+				"value": "0"
+			},
+			{
+				"text": "Jeder Tag in dieser Liga ist eine Ehre für uns.",
+				"value": "1"
+			},
+			{
+				"text": "Wir kämpfen um den Klassenerhalt.",
+				"value": "2"
+			},
+			{
+				"text": "Ein Platz im Mittelfeld ist angemessen.",
+				"value": "3"
+			},
+			{
+				"text": "Wir gehören unter die ersten Vier.",
+				"value": "4"
+			},
+			{
+				"text": "Der Titel ist das Ziel!",
+				"value": "5"
+			},
+			{
+				"text": "Die Meisterschaft ist Pflicht.",
+				"value": "6"
+			},
+			{
+				"text": "Wir sind viel zu gut für diese Spielklasse!",
+				"value": "7"
+			}
+		],
+		"honesty": [
+			{
+				"text": "niederträchtig",
+				"value": "0"
+			},
+			{
+				"text": "unehrlich",
+				"value": "1"
+			},
+			{
+				"text": "ehrlich",
+				"value": "2"
+			},
+			{
+				"text": "aufrichtig",
+				"value": "3"
+			},
+			{
+				"text": "rechtschaffen",
+				"value": "4"
+			},
+			{
+				"text": "herzensgut",
+				"value": "5"
+			}
+		],
+		"id": "3",
+		"leagueNames": {
+			"1": "Schweden",
+			"100": "El Salvador",
+			"101": "Malta",
+			"102": "Kirgisistan",
+			"103": "Moldawien",
+			"104": "Georgien",
+			"105": "Andorra",
+			"106": "Jordanien",
+			"107": "Guatemala",
+			"11": "Dänemark",
+			"110": "Trinidad & Tobago",
+			"111": "Nicaragua",
+			"112": "Kasachstan",
+			"113": "Surinam",
+			"117": "Liechtenstein",
+			"118": "Algerien",
+			"119": "Mongolei",
+			"12": "Finnland",
+			"120": "Libanon",
+			"121": "Senegal",
+			"122": "Armenien",
+			"123": "Bahrain",
+			"124": "Barbados",
+			"125": "Kapverden",
+			"126": "Elfenbeinküste",
+			"127": "Kuwait",
+			"128": "Irak",
+			"129": "Aserbaidschan",
+			"130": "Angola",
+			"131": "Montenegro",
+			"132": "Bangladesch",
+			"133": "Jemen",
+			"134": "Oman",
+			"135": "Mosambik",
+			"136": "Brunei",
+			"137": "Ghana",
+			"138": "Kambodscha",
+			"139": "Benin",
+			"14": "Niederlande",
+			"140": "Syrien",
+			"141": "Katar",
+			"142": "Tansania",
+			"143": "Uganda",
+			"144": "Malediven",
+			"145": "Usbekistan",
+			"146": "Kamerun",
+			"147": "Kuba",
+			"148": "Palästina",
+			"15": "Ozeanien",
+			"16": "Brasilien",
+			"17": "Kanada",
+			"18": "Chile",
+			"19": "Kolumbien",
+			"2": "England",
+			"20": "Indien",
+			"21": "Irland",
+			"22": "Japan",
+			"23": "Peru",
+			"24": "Polen",
+			"25": "Portugal",
+			"26": "Schottland",
+			"27": "Südafrika",
+			"28": "Uruguay",
+			"29": "Venezuela",
+			"3": "Deutschland",
+			"30": "Südkorea",
+			"31": "Thailand",
+			"32": "Türkei",
+			"33": "Ägypten",
+			"34": "China",
+			"35": "Russland",
+			"36": "Spanien",
+			"37": "Rumänien",
+			"38": "Island",
+			"39": "Österreich",
+			"4": "Italien",
+			"44": "Belgien",
+			"45": "Malaysia",
+			"46": "Schweiz",
+			"47": "Singapur",
+			"5": "Frankreich",
+			"50": "Griechenland",
+			"51": "Ungarn",
+			"52": "Tschechien",
+			"53": "Lettland",
+			"54": "Indonesien",
+			"55": "Philippinen",
+			"56": "Estland",
+			"57": "Serbien",
+			"58": "Kroatien",
+			"59": "Hongkong",
+			"6": "Mexiko",
+			"60": "Taiwan",
+			"61": "Wales",
+			"62": "Bulgarien",
+			"63": "Israel",
+			"64": "Slowenien",
+			"66": "Litauen",
+			"67": "Slowakei",
+			"68": "Ukraine",
+			"69": "Bosnien-Herzegowina",
+			"7": "Argentinien",
+			"70": "Vietnam",
+			"71": "Pakistan",
+			"72": "Paraguay",
+			"73": "Ecuador",
+			"74": "Bolivien",
+			"75": "Nigeria",
+			"76": "Färöer",
+			"77": "Marokko",
+			"79": "Saudi-Arabien",
+			"8": "USA",
+			"80": "Tunesien",
+			"81": "Costa Rica",
+			"83": "Vereinigte Arabische Emirate",
+			"84": "Luxemburg",
+			"85": "Iran",
+			"88": "Dominikanische Republik",
+			"89": "Zypern",
+			"9": "Norwegen",
+			"91": "Weißrussland",
+			"93": "Nordirland",
+			"94": "Jamaika",
+			"95": "Kenia",
+			"96": "Panama",
+			"97": "Mazedonien",
+			"98": "Albanien",
+			"99": "Honduras"
+		},
+		"levels": [
+			{
+				"text": "nicht vorhanden",
+				"value": "0"
+			},
+			{
+				"text": "katastrophal",
+				"value": "1"
+			},
+			{
+				"text": "erbärmlich",
+				"value": "2"
+			},
+			{
+				"text": "armselig",
+				"value": "3"
+			},
+			{
+				"text": "schwach",
+				"value": "4"
+			},
+			{
+				"text": "durchschnittlich",
+				"value": "5"
+			},
+			{
+				"text": "passabel",
+				"value": "6"
+			},
+			{
+				"text": "gut",
+				"value": "7"
+			},
+			{
+				"text": "sehr gut",
+				"value": "8"
+			},
+			{
+				"text": "hervorragend",
+				"value": "9"
+			},
+			{
+				"text": "großartig",
+				"value": "10"
+			},
+			{
+				"text": "brillant",
+				"value": "11"
+			},
+			{
+				"text": "fantastisch",
+				"value": "12"
+			},
+			{
+				"text": "Weltklasse",
+				"value": "13"
+			},
+			{
+				"text": "übernatürlich",
+				"value": "14"
+			},
+			{
+				"text": "gigantisch",
+				"value": "15"
+			},
+			{
+				"text": "außerirdisch",
+				"value": "16"
+			},
+			{
+				"text": "mythisch",
+				"value": "17"
+			},
+			{
+				"text": "märchenhaft",
+				"value": "18"
+			},
+			{
+				"text": "galaktisch",
+				"value": "19"
+			},
+			{
+				"text": "göttlich",
+				"value": "20"
+			}
+		],
+		"name": "de",
+		"positions": [
+			{
+				"type": "Keeper",
+				"value": "Torwart"
+			},
+			{
+				"type": "WingBack",
+				"value": "Außenverteidiger"
+			},
+			{
+				"type": "CentralDefender",
+				"value": "Innenverteidiger"
+			},
+			{
+				"type": "InnerMidfield",
+				"value": "zentrales Mittelfeld"
+			},
+			{
+				"type": "Winger",
+				"value": "Flügelspieler"
+			},
+			{
+				"type": "Forward",
+				"value": "Stürmer"
+			}
+		],
+		"ratingSubLevels": [
+			{
+				"text": "min.",
+				"value": "0"
+			},
+			{
+				"text": "tief",
+				"value": "0.25"
+			},
+			{
+				"text": "hoch",
+				"value": "0.5"
+			},
+			{
+				"text": "max.",
+				"value": "0.75"
+			}
+		],
+		"sectors": [
+			{
+				"type": "Midfield",
+				"value": "Mittelfeld"
+			},
+			{
+				"type": "RightDefense",
+				"value": "Abwehr rechts"
+			},
+			{
+				"type": "CentralDefense",
+				"value": "Abwehr zentral"
+			},
+			{
+				"type": "LeftDefense",
+				"value": "Abwehr links"
+			},
+			{
+				"type": "RightAttack",
+				"value": "Angriff rechts"
+			},
+			{
+				"type": "CentralAttack",
+				"value": "Angriff zentral"
+			},
+			{
+				"type": "LeftAttack",
+				"value": "Angriff links"
+			}
+		],
+		"skills": [
+			{
+				"type": "Keeper",
+				"value": "Torwart"
+			},
+			{
+				"type": "Stamina",
+				"value": "Kondition"
+			},
+			{
+				"type": "Defender",
+				"value": "Verteidigung"
+			},
+			{
+				"type": "Playmaker",
+				"value": "Spielaufbau"
+			},
+			{
+				"type": "Winger",
+				"value": "Flügelspiel"
+			},
+			{
+				"type": "Scorer",
+				"value": "Torschuss"
+			},
+			{
+				"type": "Kicker",
+				"value": "Standards"
+			},
+			{
+				"type": "Passer",
+				"value": "Passspiel"
+			},
+			{
+				"type": "Experience",
+				"value": "Erfahrung"
+			},
+			{
+				"type": "LeaderShip",
+				"value": "Führungsqualitäten"
+			}
+		],
+		"specialties": [
+			{
+				"type": "None",
+				"value": "keine"
+			},
+			{
+				"type": "Technical",
+				"value": "Ballzauberer"
+			},
+			{
+				"type": "Quick",
+				"value": "schnell"
+			},
+			{
+				"type": "Powerful",
+				"value": "durchsetzungsstark"
+			},
+			{
+				"type": "Unpredictable",
+				"value": "unberechenbar"
+			},
+			{
+				"type": "Head",
+				"value": "Kopfballstärke"
+			},
+			{
+				"type": "Regainer",
+				"value": "Geneser"
+			}
+		],
+		"spirit": [
+			{
+				"text": "wie im Kalten Krieg",
+				"value": "0"
+			},
+			{
+				"text": "blutrünstig",
+				"value": "1"
+			},
+			{
+				"text": "wütend",
+				"value": "2"
+			},
+			{
+				"text": "irritiert",
+				"value": "3"
+			},
+			{
+				"text": "ruhig",
+				"value": "4"
+			},
+			{
+				"text": "zufrieden",
+				"value": "5"
+			},
+			{
+				"text": "gut",
+				"value": "6"
+			},
+			{
+				"text": "ausgezeichnet",
+				"value": "7"
+			},
+			{
+				"text": "euphorisch",
+				"value": "8"
+			},
+			{
+				"text": "auf Wolke Sieben",
+				"value": "9"
+			},
+			{
+				"text": "paradiesisch!",
+				"value": "10"
+			}
+		],
+		"sponsors": [
+			{
+				"text": "blutdürstig",
+				"value": "0"
+			},
+			{
+				"text": "wütend",
+				"value": "1"
+			},
+			{
+				"text": "irritiert",
+				"value": "2"
+			},
+			{
+				"text": "ruhig",
+				"value": "3"
+			},
+			{
+				"text": "zufrieden",
+				"value": "4"
+			},
+			{
+				"text": "glücklich",
+				"value": "5"
+			},
+			{
+				"text": "überglücklich",
+				"value": "6"
+			},
+			{
+				"text": "euphorisch",
+				"value": "7"
+			},
+			{
+				"text": "im siebten Himmel",
+				"value": "8"
+			},
+			{
+				"text": "vergöttern dich",
+				"value": "9"
+			}
+		],
+		"tactics": [
+			{
+				"type": "normal",
+				"value": "normal"
+			},
+			{
+				"type": "pressing",
+				"value": "Pressing"
+			},
+			{
+				"type": "ca",
+				"value": "auf Konter spielen"
+			},
+			{
+				"type": "aim",
+				"value": "Angriff durch die Mitte"
+			},
+			{
+				"type": "aow",
+				"value": "Angriff über die Flügel"
+			},
+			{
+				"type": "",
+				"value": "Unbekannt"
+			},
+			{
+				"type": "",
+				"value": "Unbekannt"
+			},
+			{
+				"type": "creatively",
+				"value": "kreativ spielen"
+			},
+			{
+				"type": "longshots",
+				"value": "Weitschüsse"
+			}
+		],
+		"training": [
+			{
+				"type": "Gen",
+				"value": "Allgemein (Form)"
+			},
+			{
+				"type": "Sta",
+				"value": "Kondition"
+			},
+			{
+				"type": "SP",
+				"value": "Standardsituationen"
+			},
+			{
+				"type": "Def",
+				"value": "Verteidigung"
+			},
+			{
+				"type": "Sco",
+				"value": "Chancenverwertung"
+			},
+			{
+				"type": "Cross",
+				"value": "Flankenläufe"
+			},
+			{
+				"type": "Shoot",
+				"value": "Schusstraining"
+			},
+			{
+				"type": "Pass",
+				"value": "Passspiel"
+			},
+			{
+				"type": "PM",
+				"value": "Spielaufbau"
+			},
+			{
+				"type": "GK",
+				"value": "Torwart"
+			},
+			{
+				"type": "ThPass",
+				"value": "Steilpässe"
+			},
+			{
+				"type": "DefPos",
+				"value": "Abwehrverhalten"
+			},
+			{
+				"type": "WingAtt",
+				"value": "Flügelangriff"
+			},
+			{
+				"type": "Indiv",
+				"value": "Einzeltraining"
+			}
+		]
+	}
+}

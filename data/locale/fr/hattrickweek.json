@@ -1,0 +1,17 @@
+{
+  "info":"Info",
+  "hattrickweek":"Semaine Hattrick",
+  "description":"Trouver le calendrier hebdomadaire de chaque pays dans Hattrick, compris la mise à jour de l'entraînement et de l'économie ainsi que les horaires des matchs de ligue et de coupe.",
+  "country":"Pays",
+  "training":"Entraînement",
+  "economy":"Économie",
+  "series":"Ligue",
+  "cup":"Coupe",
+  "monday":"Lundi",
+  "tuesday":"Mardi",
+  "wednesday":"Mercredi",
+  "thursday":"Jeudi",
+  "friday":"Vendredi",
+  "saturday":"Samedi",
+  "sunday":"Dimanche"
+}

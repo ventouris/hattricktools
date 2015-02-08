@@ -1,0 +1,12 @@
+{
+  "info":"Info",
+  "description":"Har du en formodning om en spillers evner, men kender ikke det eksakte niveau, kan du her afsløre evnerne af enhver spiller. Angiv den primære evne og spillers løn.",
+  "guessmainskill":"Afslør evner",
+  "skill":"Evne",
+  "Submit":"Send",
+  "option":"Vælg en træningsform",
+  "age":"Alder",
+  "wage":"Løn (uden 20%)",
+  "mainskill":"Evne",
+  "level":"Niveau"
+}

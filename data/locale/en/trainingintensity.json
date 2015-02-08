@@ -1,0 +1,11 @@
+{
+    "info": "Info", 
+    "chooseyourteam": "Choose your team", 
+    "description": "With this tool it is possible to calculate how much the team spirit rises when you lower your training intensity or how much your training intensity should be reduced so that it has the desired effect on the team spirit. This tool is in beta version and it may not be accurate enough. The original developer of this tool is GM-Noortje.", 
+    "Submit": "Submit", 
+    "trainingintensity": "Training Intensity",
+    "tibefore": "Training intensity before lowering",
+    "tiafter": "Training intensity after lowering",
+    "tsbefore": "Team spirit before lowering",
+    "tsafter": "Team spirit after lowering"
+}

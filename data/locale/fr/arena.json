@@ -1,0 +1,23 @@
+{
+  "info":"Info",
+  "basic":"Places assises",
+  "chooseyourteam":"Choisissez votre équipe",
+  "costofconstruction":"Coût de construction",
+  "description":"Cet outil va permettre de calculer la taille idéale ou désirée de votre stade, que ce soit en fonction de votre club de supporter et de leur humeur ou encore que ce soit en fonction de de votre envie avec les pourcentages par défaut ou les vôtres.",
+  "income":"Recettes",
+  "accordingtofan":"Taille selon votre nombre de supporters",
+  "seats":"Places",
+  "accordingtosize":"Taille selon le nombre de places que vous voulez",
+  "terraces":"Places debout",
+  "Submit":"Calculer",
+  "seatstoadd":"Places à ajouter",
+  "vip":"Places en loge VIP",
+  "arenacalc":"Calculateur de stade",
+  "fansmembers":"Club des supporters",
+  "roof":"Places assises couvertes",
+  "fansmood":"Humeur des supporters",
+  "arenasize":"Taille du stade",
+  "currentarena":"Stade actuel",
+  "weeklycost":"Coût d'entretien",
+  "totalcapacity":"Capacité totale"
+}

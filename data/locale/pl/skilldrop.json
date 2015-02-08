@@ -1,0 +1,13 @@
+{
+  "info":"Informacje",
+  "week":"Tydzień",
+  "last":"Ostatni",
+  "description":"To narzędzie pomoże Ci obliczyć spadek umiejętności gracza. Ważne! To narzędzie nie oblicza spadku umiejętności ze względu na wiek gracza.",
+  "level":"Poziom",
+  "skilllevel":"Poziom umiejętności",
+  "Submit":"Oblicz",
+  "next":"Następny",
+  "skilldrop":"Spadek umiejętności",
+  "previous":"Poprzedni",
+  "first":"Pierwszy"
+}

@@ -1,0 +1,19 @@
+{
+  "info":"Informacije",
+  "description":"Kalkulator za Ozljede će vam pomoći da utvrdite koliko dana ili dnevnih ažuriranja ozljeda igrač treba da postane Lakše ozljeđen ili da potpuno ozdravi nakon ozljede. Možete mijeniti parametre kao što su Razina Doktora, Podrazina Ozljede i Godine. Novi Hattrickov Sustav Osoblja je implementiran u ovaj alat.",
+  "injuryweeks":"Ozljeđen Tjedana",
+  "tsib":"TSI prije ozljede",
+  "findthesublevel":"Otkrij podrazinu ozljede",
+  "age":"Godine",
+  "days":"Dana",
+  "Submit":"Pošalji",
+  "bruised":"Lakše ozljeđen",
+  "healthy":"Zdrav",
+  "mediclevel":"Razina Doktora",
+  "updates":"Dnevnih ažuriranja ozljeda",
+  "tsia":"TSI poslije ozljede",
+  "chooseyourplayer":"Odaberite svog igrača",
+  "weeks":"Tjedana",
+  "optional":"Neobavezna opcija",
+  "healingcalc":"Kalkulator za Ozljede"
+}

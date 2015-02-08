@@ -1,0 +1,23 @@
+{
+  "info":"Información",
+  "basic":"Preferentes",
+  "chooseyourteam":"Elige tu equipo",
+  "costofconstruction":"Costo de la construcción",
+  "description":"Esta herramienta te ayudará a identificar el tamaño ideal o deseado de tu estadio. Puedes utilizar el tamaño de tu club de aficionados y su estado de ánimo o simplemente usar el tamaño del estadio que deseas, con los porcentajes predeterminados o los de tu preferencia.",
+  "income":"Ingreso total",
+  "accordingtofan":"Tamaño de acuerdo a tu Club de aficionados",
+  "seats":"Asientos",
+  "accordingtosize":"Tamaño de acuerdo al número total que deseas",
+  "terraces":"Grada general",
+  "Submit":"Enviar",
+  "seatstoadd":"Asientos nuevos",
+  "vip":"Palcos",
+  "arenacalc":"Calculadora de Estadio",
+  "fansmembers":"Club de aficionados",
+  "roof":"Tribunas",
+  "fansmood":"Ánimo de los aficionados",
+  "arenasize":"Capacidad total",
+  "currentarena":"Estadio actual",
+  "weeklycost":"Costo semanal",
+  "totalcapacity":"Capacidad total"
+}

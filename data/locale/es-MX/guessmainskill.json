@@ -1,0 +1,12 @@
+{
+  "info":"Info",
+  "description":"If you don't know the skills of a player, but you imagine his main skill, this tool will help you to identify the level of the skill in any player.",
+  "guessmainskill":"Guess Main Skill",
+  "skill":"Skill",
+  "Submit":"Submit",
+  "option":"Choose your option",
+  "age":"Age",
+  "wage":"Wage (without 20%)",
+  "mainskill":"Main skill",
+  "level":"Level"
+}

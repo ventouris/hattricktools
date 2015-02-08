@@ -1,0 +1,13 @@
+{
+  "info":"Información",
+  "week":"Semana",
+  "last":"Último",
+  "description":"Esta herramienta te ayudará a calcular la caída de la habilidad de un jugador. Nota importante! Esta herramienta no calcula la caída de habilidad derivada de la edad del jugador.",
+  "level":"Nivel",
+  "skilllevel":"Nivel de Habilidad",
+  "Submit":"Enviar",
+  "next":"Siguiente",
+  "skilldrop":"Caída de habilidad",
+  "previous":"Anterior",
+  "first":"Primero"
+}

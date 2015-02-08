@@ -1,0 +1,17 @@
+{
+  "info":"Info",
+  "hattrickweek":"Hattrick ugen",
+  "description":"Et overblik over starttider af ugentlige liga-og landspokalkampe og træning- og økonomiopdatering over samtlige lande i Hattrick.",
+  "country":"land",
+  "training":"Træning",
+  "economy":"Økonomi",
+  "series":"Liga",
+  "cup":"Landspokal",
+  "monday":"Mandag",
+  "tuesday":"Tirsdag",
+  "wednesday":"Onsdag",
+  "thursday":"Torsdag",
+  "friday":"Fredag",
+  "saturday":"Lørdag",
+  "sunday":"Søndag"
+}

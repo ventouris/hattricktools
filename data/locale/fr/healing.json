@@ -1,0 +1,19 @@
+{
+  "info":"Info",
+  "description":"Le calculateur de blessure vous permet d'estimer la durée de la guérison ou le nombre de mise à jour de soin d'ici à ce que votre joueur soit avec pansement ou totalement guéri. Vous pouvez modifier les paramètres comme le niveau du médecin, le sous-niveau de la blessure et l'âge. Cet outil prend en compte le nouveau système des employés.",
+  "injuryweeks":"Semaines de blessure",
+  "tsib":"TSI avant blessure",
+  "findthesublevel":"Trouver le sous-niveau de la blessure",
+  "age":"Âge",
+  "days":"Jours",
+  "Submit":"Calculer",
+  "bruised":"Avec pansement",
+  "healthy":"En bonne santé",
+  "mediclevel":"Niveau du médecin",
+  "updates":"Màj de soin",
+  "tsia":"TSI après blessure",
+  "chooseyourplayer":"Choisissez votre joueur",
+  "weeks":"Semaines",
+  "optional":"Option",
+  "healingcalc":"Calculateur de blessure"
+}

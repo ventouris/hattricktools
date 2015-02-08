@@ -1,0 +1,11 @@
+{
+  "info":"Informacje",
+  "description":"Za pomocą tego narzędzia możesz obliczyć podpoziom umiejętności gracza.",
+  "subskill":"Podpoziom umiejętności",
+  "sublevel":"Podpoziom",
+  "Submit":"Oblicz",
+  "chooseyourplayer":"Wybierz zawodnika",
+  "age":"Wiek",
+  "wage":"Pensja (bez 20%)",
+  "mainskill":"Główna umiejętność"
+}

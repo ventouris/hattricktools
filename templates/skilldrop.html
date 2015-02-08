@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{pagestr["skilldrop"]|safe}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
+    <meta name="keywords" content="hattrick, football manager, online games, football, training, chpp">
+    <meta property="og:image" content="http://www.ht-tools.eu/static/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://www.ht-tools.eu/static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="/static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="/static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="/static/css/adsense.css" rel="stylesheet"/>
+    <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+
+  </head>
+
+  
+<body>
+
+<header>
+  
+{% include "header.html" %}
+
+</header>
+
+<main>
+
+  <div>
+    <div class="row">
+
+      <div class="col s12 m12 l2">
+      {% if not login %}
+              <div class="card-panel" style="background-color:#fcf6df;border:1px solid orange;margin-top:50px">{{headerstr["loginmessage"]|safe}}</div>
+      {% endif %}
+
+      <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+    </div>
+
+      <div class="col s12 m12 l10">
+
+    
+      <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
+      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">{{pagestr["skilldrop"]|safe}}</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">{{pagestr["info"]|safe}}</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        <div id="container" style="margin: 0 auto; overflow:hidden; display:none"></div>
+        <div class="col l5 m6 s12">
+          <form id="my-form">
+
+        <div class="row slidercls"><b>{{pagestr["skilllevel"]|safe}}</b><span id="skilllevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-skilllevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="skilllevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+
+         <button class="btn green waves-effect waves-light" style="float:right" type="submit">{{pagestr["Submit"]|safe}}</button>
+      </form>
+
+    </div>
+    <div class="col l7 m6 s12">
+      <table class="table bordered centered striped" id="resultstable">
+        <thead>
+          <tr>
+            <th>{{pagestr["week"]|safe}}</th>
+            <th>{{pagestr["skilllevel"]|safe}}</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+        <div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "responsiveRect.html" %}</div>
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>{{pagestr["skilldrop"]|safe}}</b></h5>
+        <img src="/static/images/skilldrop.png" style="float:left;margin-right:15px"><span><b>{{pagestr["info"]|safe}}:</b> {{pagestr["description"]|safe}}</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+  </div>
+
+{% include "language-selector.html" %}
+
+</main>
+
+<footer>
+
+    {% include "footer.html" %}
+      
+</footer>
+
+
+
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="/static/js/cookies.js"></script>
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="./static/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="/static/js/skilldrop.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
+      $('.collapsible').collapsible();
+      $('ul.tabs').tabs();
+    });
+</script>
+
+{% include "analytics.html" %}
+
+<script type="text/javascript">
+$('#my-form').on('submit', function () {
+    skilldropcalc('{{pagestr["level"]|safe}}','{{pagestr["skilldrop"]|safe}}','{{pagestr["skilllevel"]|safe}}','{{pagestr["week"]|safe}}');
+    return false;
+});
+</script>
+
+<script type="text/javascript">
+  var names = {{htlang["levels"]|safe}};
+
+
+
+$('#slider-skilllevel').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['skilllevel']}} ],
+  step: 0.1,
+  range: {
+    'min': [  15 ],
+    'max': [ 20 ]
+  },
+  format: wNumb({
+    decimals: 1
+  })
+});    
+$('#slider-skilllevel').Link('lower').to($('#skilllevel-value'));
+
+$( "#slider-skilllevel" ).Link().to($( "#skilllevelval" ), function ( value ) {
+    $(this).html(names[Math.floor(value)]);
+});
+
+</script>
+
+
+</body>
+</html>

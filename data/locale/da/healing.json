@@ -1,0 +1,19 @@
+{
+  "info":"info",
+  "description":"Skadesudregner viser, hvor mange dage, eller helbredsopdateringer en spiller har brug for, at blive skadefri eller mærket. Du kan ændre parametre som lægeniveau, skades-subniveau og alder. Det nye personalesystem er implementeret i dette værktøj.",
+  "injuryweeks":"Skadesperiode",
+  "tsib":"TSI før skade",
+  "findthesublevel":"Beregn skades-subniveau",
+  "age":"Alder",
+  "days":"dage",
+  "Submit":"Send",
+  "bruised":"mærket",
+  "healthy":"skadefri",
+  "mediclevel":"Lægeniveau",
+  "updates":"Helbredsopdateringer",
+  "tsia":"TSI efter skade",
+  "chooseyourplayer":"Vælg en spiller",
+  "weeks":"Uger",
+  "optional":"Valgfrit",
+  "healingcalc":"Skadesudregner"
+}

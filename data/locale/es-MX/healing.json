@@ -1,0 +1,19 @@
+{
+  "info":"Información",
+  "description":"La calculadora de lesiones te ayudará a identificar cuántos días o actualizaciones de salud necesita tu jugador para llegar al estado de lastimado o completamente saludable, después de una lesión. Puedes cambiar parámetros como el nivel del médico, el subnivel de la lesión y la edad. El nuevo sistema de especialistas de Hattrick está implementado en esta herramienta.",
+  "injuryweeks":"Semanas de lesión",
+  "tsib":"TSI antes de la lesión",
+  "findthesublevel":"Encontrar el subnivel de la lesión",
+  "age":"Edad",
+  "days":"Días",
+  "Submit":"Enviar",
+  "bruised":"Lastimado, pero jugando",
+  "healthy":"Saludable",
+  "mediclevel":"Nivel de médico",
+  "updates":"Actualizaciones de salud",
+  "tsia":"TSI después de la lesión",
+  "chooseyourplayer":"Elige tu jugador",
+  "weeks":"Semanas",
+  "optional":"Opcional",
+  "healingcalc":"Calculadora de lesiones"
+}

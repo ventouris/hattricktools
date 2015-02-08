@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{pagestr["arenacalc"]|safe}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
+    <meta name="keywords" content="hattrick, football manager, online games, football, training, chpp">
+    <meta property="og:image" content="http://www.ht-tools.eu/static/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://www.ht-tools.eu/static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="/static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="/static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="/static/css/adsense.css" rel="stylesheet"/>
+    <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+
+  </head>
+
+  
+<body>
+
+<header>
+  
+{% include "header.html" %}
+
+</header>
+
+<main>
+
+  <div>
+    <div class="row">
+
+      <div class="col s12 m12 l2">
+      {% if not login %}
+              <div class="card-panel" style="background-color:#fcf6df;border:1px solid orange;margin-top:50px">{{headerstr["loginmessage"]|safe}}</div>
+      {% endif %}
+
+      <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+    </div>
+
+      <div class="col s12 m12 l10">
+
+    
+      <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
+      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">{{pagestr["arenacalc"]|safe}}</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">{{pagestr["info"]|safe}}</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        
+      <div class="col l12 m12 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
+        <div class="col s12 m5 l5">
+        <h5>{{pagestr["accordingtofan"]|safe}}</h5>
+      {% if login %}
+              <select class="browser-default" name="players" id="teams" onchange="getValue(this)">
+                <option value="" disabled selected>{{pagestr["chooseyourteam"]|safe}}</option>
+                  {% for i in teams %}
+                     <option value="{{i[0]}}">{{i[1]}}</option>
+                  {% endfor %}
+               </select>
+           <br>
+          <div class="progress" id="progress" style="display:none">
+            <div class="indeterminate"></div>
+          </div> 
+        
+       {% endif %}
+       <br>
+      <form id="my-form-1" style="overflow:hidden">
+        <div class="row slidercls"><b>{{pagestr["fansmood"]|safe}}</b><span id="fansmood" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-fansmood" class="slider-success" style="width:80%;float:left"></div><input type="text" id="fansmood-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+
+        <div class="input-field col s12 m7 l7">
+          <input id="fans" type="text" class="validate" value="{{param['fans']}}">
+          <label for="fans">{{pagestr["fansmembers"]|safe}}</label>
+        </div>
+
+        <button class="btn green waves-effect waves-light" style="float:right" type="submit">{{pagestr["Submit"]|safe}}</button>
+      </form>
+      </div>
+
+      <form id="my-form-2" class="col s12 m7 l7">
+        <h5>{{pagestr["accordingtosize"]|safe}}</h5>
+        <div class="input-field col s12 m7 l6">
+          <input id="arenasize" type="text" class="validate" value="{{param['arenasize']}}">
+          <label for="arenasize">{{pagestr["arenasize"]|safe}}</label>
+        </div>
+        <div class="input-field col s12 m7 l6">
+          <input id="terper" type="text" class="validate" value="{{param['terper']}}">
+          <label for="terper">{{pagestr["terraces"]|safe}} (%)</label>
+        </div>
+        <div class="input-field col s12 m7 l6">
+          <input id="basper" type="text" class="validate" value="{{param['basper']}}">
+          <label for="basper">{{pagestr["basic"]|safe}} (%)</label>
+        </div>
+        <div class="input-field col s12 m7 l6">
+          <input id="roofper" type="text" class="validate" value="{{param['roofper']}}">
+          <label for="roofper">{{pagestr["roof"]|safe}} (%)</label>
+        </div>
+        <div class="input-field col s12 m7 l6">
+          <input id="vipper" type="text" class="validate" value="{{param['vipper']}}">
+          <label for="vipper">{{pagestr["vip"]|safe}} (%)</label>
+        </div>
+        <br>
+        <button class="btn green waves-effect waves-light" type="submit">{{pagestr["Submit"]|safe}}</button>
+      </form>
+        
+      </div>
+
+    <div class="col l12 m12 s12">
+      <table class="table bordered centered" id="resultstable" style="background-color:#fff">
+          <thead>
+           <tr>
+              <th>{{pagestr["seats"]|safe}}</th>
+              <th>{{pagestr["currentarena"]|safe}}</th>
+              <th>{{pagestr["seatstoadd"]|safe}}</th>
+              <th>{{pagestr["arenasize"]|safe}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{pagestr["terraces"]|safe}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>{{pagestr["basic"]|safe}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>{{pagestr["roof"]|safe}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>{{pagestr["vip"]|safe}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>{{pagestr["totalcapacity"]|safe}}</b></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color:#dff0d8">
+              <td>{{pagestr["income"]|safe}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color:#fcf8e3">
+              <td>{{pagestr["weeklycost"]|safe}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>{{pagestr["costofconstruction"]|safe}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "responsive_banner.html" %}</div>
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>{{pagestr["arenacalc"]|safe}}</b></h5>
+        <img src="/static/images/arena.png" style="float:left;margin-right:15px"><span><b>{{pagestr["info"]|safe}}:</b> {{pagestr["description"]|safe}}</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  {% include "language-selector.html" %}
+   
+</main>
+
+<footer>
+
+    {% include "footer.html" %}
+      
+</footer>
+
+
+
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="/static/js/cookies.js"></script>
+
+<script type="text/javascript" src="/static/js/arenacalc.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
+      $('.collapsible').collapsible();
+      $('ul.tabs').tabs();
+    });
+</script>
+
+{% include "analytics.html" %}
+
+
+<script type="text/javascript">
+$('#my-form-1').on('submit', function () {
+    fancalc();
+    return false;
+});
+
+$('#my-form-2').on('submit', function () {
+    sizecalc();
+    return false;
+});
+</script>
+
+<script type="text/javascript">
+  var names = {{htlang["fans"]|safe}};
+
+
+  $('#slider-fansmood').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['fansmood']}} ],
+  step: 1,
+  range: {
+    'min': [  0 ],
+    'max': [ 11 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-fansmood').Link('lower').to($('#fansmood-value'));  
+
+$( "#slider-fansmood" ).Link().to($( "#fansmood" ), function ( value ) {
+    $(this).html(names[value]);
+});
+
+
+</script>
+
+<script type="text/javascript">
+
+       function getValue(value)  {
+           $("#progress").show();
+
+           $.getJSON('/_jquerydownloaddata', 
+           {'name':'arena','team':value.value}
+           ,
+
+           function(data) {
+
+              $('#slider-fansmood').val(data.fansmood);
+              $('#fans').val(data.fans);
+              $('#fans').focus();
+              
+              var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
+              tableobj.rows[0].cells[1].innerHTML = data.realterraces;
+              tableobj.rows[1].cells[1].innerHTML = data.realbasic;
+              tableobj.rows[2].cells[1].innerHTML = data.realroof;
+              tableobj.rows[3].cells[1].innerHTML = data.realvip;
+              tableobj.rows[4].cells[1].innerHTML = data.realtotal;
+              tableobj.rows[5].cells[1].innerHTML = 7*data.realterraces + 10*data.realbasic + 19*data.realroof + 35*data.realvip + "€"
+              tableobj.rows[6].cells[1].innerHTML = 0.5*data.realterraces + 0.7*data.realbasic + data.realroof + 2.5*data.realvip + "€"
+
+              $("#progress").hide();
+
+           });
+
+          return false;
+
+         };
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "info":"Info",
+  "description":"Schätze mit diesem Tool die Höhe des Hauptskills wenn du die Skills eines Spielers nicht genau kennst aber weißt, welcher der Hauptskill ist.<br>Stelle den Hauptskill und das Gehalt des Spielers ein und klicke auf „Berechnen“.",
+  "guessmainskill":"Hauptskill schätzen",
+  "skill":"Skill",
+  "Submit":"Abschicken",
+  "option":"Wähle deine Option",
+  "age":"Alter",
+  "wage":"Gehalt (ohne 20%)",
+  "mainskill":"Hauptskill",
+  "level":"Level"
+}

@@ -1,0 +1,19 @@
+{
+  "info":"Informacje",
+  "description":"Kalkulator kontuzji pomoże Ci w określeniu ile dni potrzeba, aby gracz był zdolny do gry. Masz możliwość zmiany parametrów takich jak poziom lekarza, wiek itp. Narzędzie bierze pod uwagę nowy sztab w Hattricku.",
+  "injuryweeks":"Długość kontuzji",
+  "tsib":"TSI przed kontuzją",
+  "findthesublevel":"Oblicz podpoziom kontuzji",
+  "age":"Wiek",
+  "days":"Dni",
+  "Submit":"Oblicz",
+  "bruised":"Lekko kontuzjowany",
+  "healthy":"Zdrowy",
+  "mediclevel":"Poziom lekarza",
+  "updates":"Aktualizacje zdrowia",
+  "tsia":"TSI po kontuzji",
+  "chooseyourplayer":"Wybierz zawodnika",
+  "weeks":"Tygodni",
+  "optional":"Opcjonalne",
+  "healingcalc":"Kalkulator kontuzji"
+}

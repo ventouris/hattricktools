@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Training Estimation</title>
+    <title>{{pagestr["trainingestimation"]|safe}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
+    <meta name="keywords" content="hattrick, football manager, online games, football, training, chpp">
+    <meta property="og:image" content="http://www.ht-tools.eu/static/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://www.ht-tools.eu/static/images/favicon.png"/>
 
 <!-- Bootstrap style --> 
     <link href="/static/css/materialize.min.css" rel="stylesheet"/>
@@ -32,106 +34,137 @@
   <div>
     <div class="row">
 
-      <div id="ad1" class="col s12 m12 l2 adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+    <div class="col s12 m12 l2">
+      {% if not login %}
+              <div class="card-panel" style="background-color:#fcf6df;border:1px solid orange;margin-top:50px">{{headerstr["loginmessage"]|safe}}</div>
+      {% endif %}
 
+      <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+    </div>
       <div class="col s12 m12 l10">
 
-      <div class="col s12 m12 l12">
-        <div class="card-panel">
-          <h5><b>Training Estimation</b></h5>
-          <span><b>Info:</b> Training Estimation will help you to identify how many weeks a player needs to reach a specific level. You will be able to change parameters like Assistant Coaches, Training Intensity and Stamina Share. New Hattrick Staff system is available in this tool.</span>
-        </div>
-      </div>
-
+    
       <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
       <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
 
-      <div class="col l5 m6 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
-       
-      <form onsubmit="trainingcalc();return false">
-        <div><b>Skill</b></div>
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">{{pagestr["trainingestimation"]|safe}}</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">{{pagestr["info"]|safe}}</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        <div class="col l5 m6 s12">
+          <form id="my-form">
+        <div><b>{{pagestr["skill"]|safe}}</b></div>
         <select class="browser-default" id="skill">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="SP">Set pieces</option>
-          <option value="SP 25%">Set pieces +25%</option>
-          <option value="Def">Defending</option>
-          <option value="Sco">Scoring</option>
-          <option value="Cross">Crossing (winger)</option>
-          <option value="Cross 50%">Crossing (winger) 50%</option>
-          <option value="Shoot">Shooting</option>
-          <option value="Pass">Short passes</option>
-          <option value="PM">Playmaking</option>
-          <option value="PM 50%">Playmaking 50%</option>
-          <option value="GK">Goalkeeping</option>
-          <option value="ThPass">Through passes</option>
-          <option value="DefPos">Defensive positions</option>
-          <option value="WingAtt">Wing attacks</option>
+          <option value="" disabled selected>{{pagestr["option"]|safe}}</option>
+          <option value="SP">{{pagestr["SP"]|safe}}</option>
+          <option value="SP 25%">{{pagestr["SP 25%"]|safe}}</option>
+          <option value="Def">{{pagestr["Def"]|safe}}</option>
+          <option value="Sco">{{pagestr["Sco"]|safe}}</option>
+          <option value="Cross">{{pagestr["Cross"]|safe}}</option>
+          <option value="Cross 50%">{{pagestr["Cross 50%"]|safe}}</option>
+          <option value="Shoot">{{pagestr["Shoot"]|safe}}</option>
+          <option value="Pass">{{pagestr["Pass"]|safe}}</option>
+          <option value="PM">{{pagestr["PM"]|safe}}</option>
+          <option value="PM 50%">{{pagestr["PM 50%"]|safe}}</option>
+          <option value="GK">{{pagestr["GK"]|safe}}</option>
+          <option value="ThPass">{{pagestr["ThPass"]|safe}}</option>
+          <option value="DefPos">{{pagestr["DefPos"]|safe}}</option>
+          <option value="WingAtt">{{pagestr["WingAtt"]|safe}}</option>
                            
         </select>
 
-        <div><b>Years</b></div>
+        <div><b>{{pagestr["years"]|safe}}</b></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-years" class="slider-success" style="width:80%;float:left"></div><input type="text" id="years-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
         </div>
-        <div><b>Days</b></div>
+        <div><b>{{pagestr["days"]|safe}}</b></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-days" class="slider-success" style="width:80%;float:left"></div><input type="text" id="days-value" style="float:right;width:40px;height:25px;text-align:right;" value="0"/>
         </div>
 
-        <div class="row slidercls"><b>Skill Level</b><span id="skilllevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="row slidercls"><b>{{pagestr["skilllevel"]|safe}}</b><span id="skilllevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-skilllevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="skilllevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
         </div>
-        <div><b>Subskill</b></div>
+        <div><b>{{pagestr["subskill"]|safe}}</b></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-subskill" class="slider-success" style="width:80%;float:left"></div><input type="text" id="subskill-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
         </div>
-        <div class="row slidercls"><b>Coach Level</b><span id="coachlevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+
+        <div class="row slidercls"><b>{{pagestr["coachlevel"]|safe}}</b><span id="coachlevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-coachlevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="coachlevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
         </div>
-        <div><b>Assistants Level</b></div>
+        <div><b>{{pagestr["assistantslevel"]|safe}}</b></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-assistants" class="slider-success" style="width:80%;float:left"></div><input type="text" id="assistantslevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
         </div>  
-        <div><b>Training Intensity</b></div>
+        <div><b>{{pagestr["trainingintensity"]|safe}}</b></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-intensity" class="slider-success" style="width:80%;float:left"></div><input type="text" id="trainingintensity-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
         </div>
-        <div><b>Stamina Share</b></div>
+        <div><b>{{pagestr["staminashare"]|safe}}</b></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-stamina" class="slider-success" style="width:80%;float:left"></div><input type="text" id="staminashare-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
         </div>
 
-        <button type="submit" class="btn-floating btn-large waves-effect waves-light green" style="float:right"><i class="mdi-content-send"></i></button>
+         <button class="btn green waves-effect waves-light" style="float:right" type="submit">{{pagestr["Submit"]|safe}}</button>
       </form>
-
-        
-        
-      </div>
-
-      <div class="col l7 m6 s12">
-
-        <table class="table bordered centered striped" id="resultstable" style="background-color:#fff">
+    </div>
+    <div class="col l7 m6 s12">
+      <table class="table bordered centered striped" id="resultstable">
             <thead>
               <tr style="background-color: #277F31; color:#fff">
-                  <th>Skill</th>
-                  <th>Weeks</th>
-                  <th>Age</th>
+                  <th>{{pagestr["skill"]|safe}}</th>
+                  <th>{{pagestr["weeks"]|safe}}</th>
+                  <th>{{pagestr["age"]|safe}}</th>
               </tr>
             </thead>
             <tbody>
+            <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+
+             <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+
+             <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+
             </tbody>
         </table>
 
-        <div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "rectangular.html" %}</div>
+        <div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "responsiveRect.html" %}</div>
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>{{pagestr["trainingestimation"]|safe}}</b></h5>
+        <img src="/static/images/training.jpg" style="float:left;margin-right:15px"><span><b>{{pagestr["info"]|safe}}:</b> {{pagestr["description"]|safe}}</span>
 
       </div>
-
-      </div>
+    </div>
 
     </div>
   </div>
+  </div>
+
+{% include "language-selector.html" %}
 
 </main>
 
@@ -139,7 +172,7 @@
 
     {% include "footer.html" %}
       
-    </footer>
+</footer>
 
 
 
@@ -147,17 +180,30 @@
 <script type="text/javascript" src="/static/js/jquery.min.js"></script>
 <script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.min.js"></script>
 <script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="/static/js/cookies.js"></script>
 
 <script type="text/javascript" src="/static/js/training.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
       $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
       $('.collapsible').collapsible();
+      $('ul.tabs').tabs();
     });
 </script>
 
+{% include "analytics.html" %}
+
 <script type="text/javascript">
-  var names = {"11": "brilliant", "10": "outstanding", "13": "world class", "12": "magnificent", "15": "titanic", "14": "supernatural", "17": "mythical", "16": "extra-terrestrial", "19": "utopian", "18": "magical", "20": "divine", "1": "disastrous", "0": "non-existent", "3": "poor", "2": "wretched", "5": "inadequate", "4": "weak", "7": "solid", "6": "passable", "9": "formidable", "8": "excellent"}
+$('#my-form').on('submit', function () {
+    var totalweeks = "{{pagestr['totalweeks']|safe}}";
+    var chooseaskill = "{{pagestr['chooseaskill']|safe}}";
+    trainingcalc(totalweeks, chooseaskill);
+    return false;
+});
+</script>
+
+<script type="text/javascript">
+  var names = {{htlang["levels"]|safe}};
 
 
   $('#slider-years').noUiSlider({

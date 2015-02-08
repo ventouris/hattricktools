@@ -1,0 +1,19 @@
+{
+  "info":"Info",
+  "description":"Helsekalkulatoren hjelper deg å finne ut hvor mange dager eller helseoppdateringer en spiller trenger for å bli plastret eller helt frisk etter en skade. Du kan endre på klubblegenivå, undernivå av skadeuker og alder. Hattricks nye system for ansatte er innebygget i dette verktøyet.",
+  "injuryweeks":"Skadeuker",
+  "tsib":"TSI før skade",
+  "findthesublevel":"Finn skadens undernivå",
+  "age":"Alder",
+  "days":"Dager",
+  "Submit":"Submit",
+  "bruised":"Plastret",
+  "healthy":"Frisk",
+  "mediclevel":"Klubblegenivå",
+  "updates":"Helseoppdateringer",
+  "tsia":"TSI etter skade",
+  "chooseyourplayer":"Choose your player",
+  "weeks":"Uker",
+  "optional":"Valgfritt",
+  "healingcalc":"Skadekalkulator"
+}

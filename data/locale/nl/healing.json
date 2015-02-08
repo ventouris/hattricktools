@@ -1,0 +1,19 @@
+{
+  "info":"Info",
+  "description":"De hersteltijd rekentool helpt je uitvinden hoeveel dagen of gezondheidsupdates een speler nodig heeft om een pleister te krijgen of gezond te worden na het verkrijgen van een blessure. Je kunt de waarden zoals, Arts niveau, subniveau blessure en leeftijd zelf aanpassen. Het systeem werkt met het nieuwe Hattrick personeelssysteem.",
+  "injuryweeks":"Blessuretijd",
+  "tsib":"TSI voor de blessure",
+  "findthesublevel":"Vind het subniveau van de blessure",
+  "age":"Leeftijd",
+  "days":"Dagen",
+  "Submit":"Bereken",
+  "bruised":"Pleister",
+  "healthy":"Gezond",
+  "mediclevel":"Arts niveau",
+  "updates":"Gezondheidsupdates",
+  "tsia":"TSI na de blessure",
+  "chooseyourplayer":"Kies je speler",
+  "weeks":"Weken",
+  "optional":"Optioneel",
+  "healingcalc":"Blessuretijd \/ hersteltijd rekentool"
+}

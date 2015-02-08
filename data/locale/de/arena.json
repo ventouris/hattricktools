@@ -1,0 +1,23 @@
+{
+  "info":"Info",
+  "basic":"Sitzplätze",
+  "chooseyourteam":"Team auswählen",
+  "costofconstruction":"Kosten für den Stadionumbau",
+  "description":"Berechne mit dem Stadionrechner die ideale Größe deines Stadions.<br>Folgende Berechnungsvarianten sind möglich: <br>Variante 1: Berechnung der Stadiongröße mittels Fanstimmung und Größe des Fanklubs. <br>Variante 2: Berechnung der Aufteilung der Stadionplätze mittels gewünschter Stadiongröße.",
+  "income":"Einnahmen",
+  "accordingtofan":"Variante 1: Berechnung der Stadiongröße",
+  "seats":"Plätze",
+  "accordingtosize":"Variante 2: Berechnung der Aufteilung der Stadionplätze",
+  "terraces":"Stehplätze",
+  "Submit":"Abschicken",
+  "seatstoadd":"Zusätzliche Plätze",
+  "vip":"VIP-Logen",
+  "arenacalc":"Stadionrechner",
+  "fansmembers":"Fananzahl",
+  "roof":"überd. Sitzplätze",
+  "fansmood":"Fanstimmung",
+  "arenasize":"Stadiongröße",
+  "currentarena":"Derzeitiges Stadion",
+  "weeklycost":"Wöchentliche Ausgaben",
+  "totalcapacity":"Gesamtkapazität"
+}

@@ -1,0 +1,817 @@
+{
+	"language": {
+		"aggressiveness": [
+			{
+				"text": "spokojny",
+				"value": "0"
+			},
+			{
+				"text": "opanowany",
+				"value": "1"
+			},
+			{
+				"text": "zrównoważony",
+				"value": "2"
+			},
+			{
+				"text": "z charakterem",
+				"value": "3"
+			},
+			{
+				"text": "porywczy",
+				"value": "4"
+			},
+			{
+				"text": "niezrównoważony",
+				"value": "5"
+			}
+		],
+		"agreeability": [
+			{
+				"text": "złośliwy",
+				"value": "0"
+			},
+			{
+				"text": "kontrowersyjny",
+				"value": "1"
+			},
+			{
+				"text": "przyjemny",
+				"value": "2"
+			},
+			{
+				"text": "sympatyczny",
+				"value": "3"
+			},
+			{
+				"text": "popularny",
+				"value": "4"
+			},
+			{
+				"text": "uwielbiany przez zespół",
+				"value": "5"
+			}
+		],
+		"attitude": [
+			{
+				"text": "gra na luzie (PIC)",
+				"value": "-1"
+			},
+			{
+				"text": "normalne spotkanie",
+				"value": "0"
+			},
+			{
+				"text": "mecz sezonu (MOTS)",
+				"value": "1"
+			}
+		],
+		"confidence": [
+			{
+				"text": "beznadziejna",
+				"value": "0"
+			},
+			{
+				"text": "fatalna",
+				"value": "1"
+			},
+			{
+				"text": "nędzna",
+				"value": "2"
+			},
+			{
+				"text": "kiepska",
+				"value": "3"
+			},
+			{
+				"text": "przyzwoita",
+				"value": "4"
+			},
+			{
+				"text": "mocna",
+				"value": "5"
+			},
+			{
+				"text": "cudowna",
+				"value": "6"
+			},
+			{
+				"text": "lekko przesadzona",
+				"value": "7"
+			},
+			{
+				"text": "przesadzona",
+				"value": "8"
+			},
+			{
+				"text": "niemożliwie przesadzona",
+				"value": "9"
+			}
+		],
+		"desc": "Polski",
+		"fans": [
+			{
+				"text": "żądni krwi",
+				"value": "0"
+			},
+			{
+				"text": "wściekli",
+				"value": "1"
+			},
+			{
+				"text": "rozzłoszczeni",
+				"value": "2"
+			},
+			{
+				"text": "zirytowani",
+				"value": "3"
+			},
+			{
+				"text": "zawiedzeni",
+				"value": "4"
+			},
+			{
+				"text": "obojętni",
+				"value": "5"
+			},
+			{
+				"text": "spokojni",
+				"value": "6"
+			},
+			{
+				"text": "zadowoleni",
+				"value": "7"
+			},
+			{
+				"text": "zachwyceni",
+				"value": "8"
+			},
+			{
+				"text": "szaleją z radości",
+				"value": "9"
+			},
+			{
+				"text": "w siódmym niebie",
+				"value": "10"
+			},
+			{
+				"text": "przysyłają poematy miłosne",
+				"value": "11"
+			}
+		],
+		"fans_match": [
+			{
+				"text": "lepiej się nie pokazujmy!",
+				"value": "0"
+			},
+			{
+				"text": "nie mamy szans",
+				"value": "1"
+			},
+			{
+				"text": "przegramy",
+				"value": "2"
+			},
+			{
+				"text": "to oni są faworytami",
+				"value": "3"
+			},
+			{
+				"text": "to oni mają przewagę",
+				"value": "4"
+			},
+			{
+				"text": "szanse są wyrównane",
+				"value": "5"
+			},
+			{
+				"text": "mamy przewagę",
+				"value": "6"
+			},
+			{
+				"text": "jesteśmy faworytami",
+				"value": "7"
+			},
+			{
+				"text": "wygramy",
+				"value": "8"
+			},
+			{
+				"text": "bułka z masłem!",
+				"value": "9"
+			},
+			{
+				"text": "poniżmy ich",
+				"value": "10"
+			}
+		],
+		"fans_season": [
+			{
+				"text": "ta liga nas całkowicie przerasta",
+				"value": "0"
+			},
+			{
+				"text": "każdy dzień w tej lidze to cud",
+				"value": "1"
+			},
+			{
+				"text": "będziemy musieli walczyć o utrzymanie",
+				"value": "2"
+			},
+			{
+				"text": "środek tabeli powinien być nasz",
+				"value": "3"
+			},
+			{
+				"text": "nasze miejsce to czołowa czwórka",
+				"value": "4"
+			},
+			{
+				"text": "walczymy o tytuł!",
+				"value": "5"
+			},
+			{
+				"text": "mistrzostwo musi być nasze",
+				"value": "6"
+			},
+			{
+				"text": "przerastamy tę ligę o lata świetlne!",
+				"value": "7"
+			}
+		],
+		"honesty": [
+			{
+				"text": "podły",
+				"value": "0"
+			},
+			{
+				"text": "nieuczciwy",
+				"value": "1"
+			},
+			{
+				"text": "uczciwy",
+				"value": "2"
+			},
+			{
+				"text": "prawy",
+				"value": "3"
+			},
+			{
+				"text": "szlachetny",
+				"value": "4"
+			},
+			{
+				"text": "świątobliwy",
+				"value": "5"
+			}
+		],
+		"id": "13",
+		"leagueNames": {
+			"1": "Szwecja",
+			"100": "Salwador",
+			"101": "Malta",
+			"102": "Kirgistan",
+			"103": "Mołdawia",
+			"104": "Gruzja",
+			"105": "Andora",
+			"106": "Jordania",
+			"107": "Gwatemala",
+			"11": "Dania",
+			"110": "Trynidad i Tobago",
+			"111": "Nikaragua",
+			"112": "Kazachstan",
+			"113": "Surinam",
+			"117": "Liechtenstein",
+			"118": "Algieria",
+			"119": "Mongolia",
+			"12": "Finlandia",
+			"120": "Liban",
+			"121": "Senegal",
+			"122": "Armenia",
+			"123": "Bahrajn",
+			"124": "Barbados",
+			"125": "Republika Zielonego Przylądka",
+			"126": "Wybrzeże Kości Słoniowej",
+			"127": "Kuwejt",
+			"128": "Irak",
+			"129": "Azerbejdżan",
+			"130": "Angola",
+			"131": "Czarnogóra",
+			"132": "Bangladesz",
+			"133": "Jemen",
+			"134": "Oman",
+			"135": "Mozambik",
+			"136": "Brunei",
+			"137": "Ghana",
+			"138": "Kambodża",
+			"139": "Benin",
+			"14": "Holandia",
+			"140": "Syria",
+			"141": "Katar",
+			"142": "Tanzania",
+			"143": "Uganda",
+			"144": "Malediwy",
+			"145": "Uzbekistan",
+			"146": "Kamerun",
+			"147": "Kuba",
+			"148": "Palestyna",
+			"15": "Oceania",
+			"16": "Brazylia",
+			"17": "Kanada",
+			"18": "Chile",
+			"19": "Kolumbia",
+			"2": "Anglia",
+			"20": "Indie",
+			"21": "Irlandia",
+			"22": "Japonia",
+			"23": "Peru",
+			"24": "Polska",
+			"25": "Portugalia",
+			"26": "Szkocja",
+			"27": "RPA",
+			"28": "Urugwaj",
+			"29": "Wenezuela",
+			"3": "Niemcy",
+			"30": "Korea Płd.",
+			"31": "Tajlandia",
+			"32": "Turcja",
+			"33": "Egipt",
+			"34": "Chiny (ChRL)",
+			"35": "Rosja",
+			"36": "Hiszpania",
+			"37": "Rumunia",
+			"38": "Islandia",
+			"39": "Austria",
+			"4": "Włochy",
+			"44": "Belgia",
+			"45": "Malezja",
+			"46": "Szwajcaria",
+			"47": "Singapur",
+			"5": "Francja",
+			"50": "Grecja",
+			"51": "Węgry",
+			"52": "Czechy",
+			"53": "Łotwa",
+			"54": "Indonezja",
+			"55": "Filipiny",
+			"56": "Estonia",
+			"57": "Serbia",
+			"58": "Chorwacja",
+			"59": "Hong Kong",
+			"6": "Meksyk",
+			"60": "Tajwan (Chińskie Tajpej)",
+			"61": "Walia",
+			"62": "Bułgaria",
+			"63": "Izrael",
+			"64": "Słowenia",
+			"66": "Litwa",
+			"67": "Słowacja",
+			"68": "Ukraina",
+			"69": "Bośnia i Hercegowina",
+			"7": "Argentyna",
+			"70": "Wietnam",
+			"71": "Pakistan",
+			"72": "Paragwaj",
+			"73": "Ekwador",
+			"74": "Boliwia",
+			"75": "Nigeria",
+			"76": "Wyspy Owcze",
+			"77": "Maroko",
+			"79": "Arabia Saudyjska",
+			"8": "USA",
+			"80": "Tunezja",
+			"81": "Kostaryka",
+			"83": "Zjednoczone Emiraty Arabskie",
+			"84": "Luksemburg",
+			"85": "Iran",
+			"88": "Dominikana",
+			"89": "Cypr",
+			"9": "Norwegia",
+			"91": "Białoruś",
+			"93": "Irlandia Płn.",
+			"94": "Jamajka",
+			"95": "Kenia",
+			"96": "Panama",
+			"97": "Macedonia",
+			"98": "Albania",
+			"99": "Honduras"
+		},
+		"levels": [
+			{
+				"text": "beznadziejny",
+				"value": "0"
+			},
+			{
+				"text": "fatalny",
+				"value": "1"
+			},
+			{
+				"text": "nędzny",
+				"value": "2"
+			},
+			{
+				"text": "kiepski",
+				"value": "3"
+			},
+			{
+				"text": "słaby",
+				"value": "4"
+			},
+			{
+				"text": "przeciętny",
+				"value": "5"
+			},
+			{
+				"text": "zadowalający",
+				"value": "6"
+			},
+			{
+				"text": "solidny",
+				"value": "7"
+			},
+			{
+				"text": "znakomity",
+				"value": "8"
+			},
+			{
+				"text": "fantastyczny",
+				"value": "9"
+			},
+			{
+				"text": "olśniewający",
+				"value": "10"
+			},
+			{
+				"text": "błyskotliwy",
+				"value": "11"
+			},
+			{
+				"text": "mistrzowski",
+				"value": "12"
+			},
+			{
+				"text": "światowej klasy",
+				"value": "13"
+			},
+			{
+				"text": "nadprzyrodzony",
+				"value": "14"
+			},
+			{
+				"text": "tytaniczny",
+				"value": "15"
+			},
+			{
+				"text": "nieziemski",
+				"value": "16"
+			},
+			{
+				"text": "mityczny",
+				"value": "17"
+			},
+			{
+				"text": "magiczny",
+				"value": "18"
+			},
+			{
+				"text": "utopijny",
+				"value": "19"
+			},
+			{
+				"text": "boski",
+				"value": "20"
+			}
+		],
+		"name": "pl",
+		"positions": [
+			{
+				"type": "Keeper",
+				"value": "bramkarz"
+			},
+			{
+				"type": "WingBack",
+				"value": "boczny obrońca"
+			},
+			{
+				"type": "CentralDefender",
+				"value": "stoper"
+			},
+			{
+				"type": "InnerMidfield",
+				"value": "pomocnik"
+			},
+			{
+				"type": "Winger",
+				"value": "skrzydłowy"
+			},
+			{
+				"type": "Forward",
+				"value": "napastnik"
+			}
+		],
+		"ratingSubLevels": [
+			{
+				"text": "min.",
+				"value": "0"
+			},
+			{
+				"text": "niski",
+				"value": "0.25"
+			},
+			{
+				"text": "wysoki",
+				"value": "0.5"
+			},
+			{
+				"text": "maks.",
+				"value": "0.75"
+			}
+		],
+		"sectors": [
+			{
+				"type": "Midfield",
+				"value": "Pomoc"
+			},
+			{
+				"type": "RightDefense",
+				"value": "Prawa obrona"
+			},
+			{
+				"type": "CentralDefense",
+				"value": "Środek obrony"
+			},
+			{
+				"type": "LeftDefense",
+				"value": "Lewa obrona"
+			},
+			{
+				"type": "RightAttack",
+				"value": "Prawy atak"
+			},
+			{
+				"type": "CentralAttack",
+				"value": "Środkowy atak"
+			},
+			{
+				"type": "LeftAttack",
+				"value": "Lewy atak"
+			}
+		],
+		"skills": [
+			{
+				"type": "Keeper",
+				"value": "Bramkarz"
+			},
+			{
+				"type": "Stamina",
+				"value": "Kondycja"
+			},
+			{
+				"type": "Defender",
+				"value": "Defensywa"
+			},
+			{
+				"type": "Playmaker",
+				"value": "Rozgrywanie"
+			},
+			{
+				"type": "Winger",
+				"value": "Skrzydłowy"
+			},
+			{
+				"type": "Scorer",
+				"value": "Skuteczność"
+			},
+			{
+				"type": "Kicker",
+				"value": "St.fragmenty"
+			},
+			{
+				"type": "Passer",
+				"value": "Podania"
+			},
+			{
+				"type": "Experience",
+				"value": "Doświadczenie"
+			},
+			{
+				"type": "LeaderShip",
+				"value": "Przywódca"
+			}
+		],
+		"specialties": [
+			{
+				"type": "None",
+				"value": "brak"
+			},
+			{
+				"type": "Technical",
+				"value": "techniczny"
+			},
+			{
+				"type": "Quick",
+				"value": "szybki"
+			},
+			{
+				"type": "Powerful",
+				"value": "atletyczny"
+			},
+			{
+				"type": "Unpredictable",
+				"value": "nieprzewidywalny"
+			},
+			{
+				"type": "Head",
+				"value": "gra głową"
+			},
+			{
+				"type": "Regainer",
+				"value": "witalny"
+			}
+		],
+		"spirit": [
+			{
+				"text": "jak w czasie Zimnej Wojny",
+				"value": "0"
+			},
+			{
+				"text": "żądni krwi",
+				"value": "1"
+			},
+			{
+				"text": "wściekli",
+				"value": "2"
+			},
+			{
+				"text": "zirytowani",
+				"value": "3"
+			},
+			{
+				"text": "opanowani",
+				"value": "4"
+			},
+			{
+				"text": "obojętni",
+				"value": "5"
+			},
+			{
+				"text": "spokojni",
+				"value": "6"
+			},
+			{
+				"text": "zadowoleni",
+				"value": "7"
+			},
+			{
+				"text": "zachwyceni",
+				"value": "8"
+			},
+			{
+				"text": "w siódmym niebie",
+				"value": "9"
+			},
+			{
+				"text": "Raj na Ziemi!",
+				"value": "10"
+			}
+		],
+		"sponsors": [
+			{
+				"text": "żądni krwi",
+				"value": "0"
+			},
+			{
+				"text": "wściekli",
+				"value": "1"
+			},
+			{
+				"text": "zirytowani",
+				"value": "2"
+			},
+			{
+				"text": "obojętni",
+				"value": "3"
+			},
+			{
+				"text": "spokojni",
+				"value": "4"
+			},
+			{
+				"text": "zadowoleni",
+				"value": "5"
+			},
+			{
+				"text": "zachwyceni",
+				"value": "6"
+			},
+			{
+				"text": "szaleją z radości",
+				"value": "7"
+			},
+			{
+				"text": "w siódmym niebie",
+				"value": "8"
+			},
+			{
+				"text": "przysyłają poematy miłosne",
+				"value": "9"
+			}
+		],
+		"tactics": [
+			{
+				"type": "normal",
+				"value": "normalny"
+			},
+			{
+				"type": "pressing",
+				"value": "Pressing"
+			},
+			{
+				"type": "ca",
+				"value": "Gra z kontry"
+			},
+			{
+				"type": "aim",
+				"value": "Atak środkiem"
+			},
+			{
+				"type": "aow",
+				"value": "Atak skrzydłami"
+			},
+			{
+				"type": "",
+				"value": "nieznany"
+			},
+			{
+				"type": "",
+				"value": "nieznany"
+			},
+			{
+				"type": "creatively",
+				"value": "Gra kreatywna"
+			},
+			{
+				"type": "longshots",
+				"value": "Strzały z dystansu"
+			}
+		],
+		"training": [
+			{
+				"type": "Gen",
+				"value": "ogólny (forma)"
+			},
+			{
+				"type": "Sta",
+				"value": "kondycja"
+			},
+			{
+				"type": "SP",
+				"value": "stałe fragmenty"
+			},
+			{
+				"type": "Def",
+				"value": "defensywa"
+			},
+			{
+				"type": "Sco",
+				"value": "skuteczność"
+			},
+			{
+				"type": "Cross",
+				"value": "dośrodkowania"
+			},
+			{
+				"type": "Shoot",
+				"value": "strzelecki"
+			},
+			{
+				"type": "Pass",
+				"value": "krótkie podania"
+			},
+			{
+				"type": "PM",
+				"value": "rozgrywanie"
+			},
+			{
+				"type": "GK",
+				"value": "bramkarski"
+			},
+			{
+				"type": "ThPass",
+				"value": "prostopadłe podania"
+			},
+			{
+				"type": "DefPos",
+				"value": "postawa obronna"
+			},
+			{
+				"type": "WingAtt",
+				"value": "atak skrzydłem"
+			},
+			{
+				"type": "Indiv",
+				"value": "indywidualny"
+			}
+		]
+	}
+}

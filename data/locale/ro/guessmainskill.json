@@ -1,0 +1,12 @@
+{
+  "info":"Informaţii",
+  "description":"Dacă nu ştiţi abilităţile unui jucător, dar vă imaginaţi talentul său principal, acest instrument vă va ajuta să identificati nivelul calitatii la orice jucător.",
+  "guessmainskill":"Ghiceste principala calitate",
+  "skill":"Calitate",
+  "Submit":"Înregistrare",
+  "option":"Alegeţi opţiunea dumneavoastră",
+  "age":"Vârsta",
+  "wage":"Salariul (fără 20%)",
+  "mainskill":"Principala de calitate",
+  "level":"Nivel"
+}

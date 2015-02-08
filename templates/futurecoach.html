@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{pagestr["futurecoach"]|safe}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
+    <meta name="keywords" content="hattrick, football manager, online games, football, training, chpp">
+    <meta property="og:image" content="http://www.ht-tools.eu/static/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://www.ht-tools.eu/static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="/static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="/static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="/static/css/adsense.css" rel="stylesheet"/>
+    <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+
+  </head>
+
+  
+<body>
+
+<header>
+  
+{% include "header.html" %}
+
+</header>
+
+<main>
+
+  <div>
+    <div class="row">
+
+      <div class="col s12 m12 l2">
+      {% if not login %}
+              <div class="card-panel" style="background-color:#fcf6df;border:1px solid orange;margin-top:50px">{{headerstr["loginmessage"]|safe}}</div>
+      {% endif %}
+
+      <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+    </div>
+
+      <div class="col s12 m12 l10">
+
+    
+      <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
+      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">{{pagestr["futurecoach"]|safe}}</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">{{pagestr["info"]|safe}}</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        
+      <div class="col l5 m6 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
+
+      {% if login %}
+          <div class="col s12">
+              <select class="browser-default" name="players" id="teams" onchange="getValue(this)">
+                <option value="" disabled selected>{{pagestr["chooseyourplayer"]|safe}}</option>
+                  {% for i in players %}
+                     <option value="{{i[0]}}">{{i[1]}}</option>
+                  {% endfor %}
+               </select>
+             </div>
+           <br><br><br>
+          <div class="progress" id="progress" style="display:none">
+            <div class="indeterminate"></div>
+          </div>          
+       {% endif %}
+       <br>
+      <form id="my-form-1" style="overflow:hidden" class="col s12">
+        
+        <div class="row slidercls"><b>{{pagestr["experience"]|safe}}</b><span id="experience" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-experience" class="slider-success" style="width:80%;float:left"></div><input type="text" id="experience-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div class="row slidercls"><b>{{pagestr["leadership"]|safe}}</b><span id="leadership" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-leadership" class="slider-success" style="width:80%;float:left"></div><input type="text" id="leadership-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div class="row slidercls"><b>{{pagestr["coachlevel"]|safe}}</b><span id="coachlevel" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-coachlevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="coachlevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <button class="btn green waves-effect waves-light" style="float:right" type="submit">{{pagestr["Submit"]|safe}}</button>
+      </form>
+
+       
+      </div>
+
+    <div class="col l7 m6 s12">
+      <table class="table bordered centered" id="resultstable" style="background-color:#fff">
+            <thead>
+              <tr style="background-color: #277F31; color:#fff">
+                <th>{{pagestr["costofconversion"]|safe}}</th>
+                <th>{{pagestr["savingfromexternalrecruiting"]|safe}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: #a94442;background-color: #f2dede;border-color: #ebccd1;"></td>
+                <td style="color: #31708f;background-color: #d9edf7;border-color: #bce8f1;"></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "responsiveRect.html" %}</div>
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>{{pagestr["futurecoach"]|safe}}</b></h5>
+        <img src="/static/images/futurecoach.png" style="float:left;margin-right:15px"><span><b>{{pagestr["info"]|safe}}:</b> {{pagestr["description"]|safe}}</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  {% include "language-selector.html" %}
+   
+</main>
+
+<footer>
+
+    {% include "footer.html" %}
+      
+</footer>
+
+
+
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="/static/js/cookies.js"></script>
+
+<script type="text/javascript" src="/static/js/futurecoach.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
+      $('.collapsible').collapsible();
+      $('ul.tabs').tabs();
+    });
+</script>
+
+{% include "analytics.html" %}
+
+
+<script type="text/javascript">
+$('#my-form-1').on('submit', function () {
+  var exptolow = "{{pagestr['experienceistolow']|safe}}";
+  futurecoach(exptolow);
+  return false;
+});
+
+</script>
+
+<script type="text/javascript">
+  
+ var names = {{htlang["levels"]|safe}};
+
+
+  $('#slider-experience').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['experience']}} ],
+  step: 1,
+  range: {
+    'min': [  4 ],
+    'max': [ 20 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-experience').Link('lower').to($('#experience-value'));  
+
+$( "#slider-experience" ).Link().to($( "#experience" ), function ( value ) {
+    $(this).html(names[value]);
+});
+
+$('#slider-leadership').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['leadership']}} ],
+  step: 1,
+  range: {
+    'min': [  3 ],
+    'max': [ 7 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-leadership').Link('lower').to($('#leadership-value'));  
+
+$( "#slider-leadership" ).Link().to($( "#leadership" ), function ( value ) {
+    $(this).html(names[value]);
+});
+
+$('#slider-coachlevel').noUiSlider({
+  connect: 'lower',
+  start: [ {{param['coachlevel']}} ],
+  step: 1,
+  range: {
+    'min': [  6 ],
+    'max': [ 8 ]
+  },
+  format: wNumb({
+    decimals: 0
+  })
+});    
+
+$('#slider-coachlevel').Link('lower').to($('#coachlevel-value'));  
+
+$( "#slider-coachlevel" ).Link().to($( "#coachlevel" ), function ( value ) {
+    $(this).html(names[value]);
+});
+
+</script>
+<script type="text/javascript">
+
+       function getValue(value)  {
+           $("#progress").show();
+
+           $.getJSON('/_jquerydownloaddata', 
+           {'name':'futurecoach','team':value.value}
+           ,
+
+           function(data) {
+
+              $('#slider-experience').val(data.experience);
+              $('#slider-leadership').val(data.leadership);
+              
+          
+              $("#progress").hide();
+
+           });
+
+          return false;
+
+         };
+
+    </script>
+
+</body>
+</html>

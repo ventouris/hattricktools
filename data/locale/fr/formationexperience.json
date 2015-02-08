@@ -1,0 +1,14 @@
+{
+  "info":"Info",
+  "chooseyourteam":"Choisissez votre équipe",
+  "description":"Cet outil permet de calculer l'augmentation et la diminution du niveau des routines après un match (jusqu'à 4 matchs) en fonction du nombre de minutes jouées dans chacune d'entre elle",
+  "Submit":"Calculer",
+  "formationexperience":"Niveaux de routines",
+  "match":"Match",
+  "formation":"Formation",
+  "minutes":"Minutes",
+  "addformationmanually":"Modifier une routine manuellement",
+  "level":"Niveau",
+  "addformationlevel":"Modifier niveau routine",
+  "resetformation":"RAZ"
+}

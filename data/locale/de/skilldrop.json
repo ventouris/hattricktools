@@ -1,0 +1,13 @@
+{
+  "info":"Info",
+  "week":"Woche",
+  "last":"Ende",
+  "description":"Berechne den Skillverfall eines Spielers. Wichtig: Dieses Tool berechnet nicht den Skill-Verfall aufgrund des Alters des Spielers.",
+  "level":"Level",
+  "skilllevel":"Skill Level",
+  "Submit":"Abschicken",
+  "next":"Vorwärts",
+  "skilldrop":"Skillverfall",
+  "previous":"Zurück",
+  "first":"Anfang"
+}

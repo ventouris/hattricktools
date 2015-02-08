@@ -1,0 +1,19 @@
+{
+  "info":"Informazioni",
+  "description":"Healing Calculator ti aiuterà a identificare quanti giorni o aggiornamenti di salute necessitano a un giocatore per avere un infortunio o guarigione completa dopo un incidente. Potrai modificare i parametri tipo il livello medico, sottolivello dell'infortunio ed età. In questo strumento è implementato il nuovo strumento Hattrick Staff.",
+  "injuryweeks":"Settimane di infortunio",
+  "tsib":"STI prima dell'infortunio",
+  "findthesublevel":"Trovare il sottolivello dell'infortunio",
+  "age":"Età",
+  "days":"Giorni",
+  "Submit":"Inoltra",
+  "bruised":"Contuso",
+  "healthy":"Sano",
+  "mediclevel":"Livello medico",
+  "updates":"Aggiornamenti di salute",
+  "tsia":"STI dopo l'infortunio",
+  "chooseyourplayer":"Scegli il tuo giocatore",
+  "weeks":"Settimane",
+  "optional":"Opzionale",
+  "healingcalc":"Healing Calculator"
+}

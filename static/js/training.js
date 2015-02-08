@@ -1,4 +1,25 @@
-var trainingcalc = function() {
+ /* ========================================================================
+ * HT-Tools Hattrick Manager Assistant 
+ *
+ * Copyright 2014-2015 Ventouris Anastasios
+ * Licensed under GPL v3
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * ======================================================================== */
+
+
+var trainingcalc = function(strtotalweeks, chooseaskill) {
 
     //coefficients arrays
 
@@ -35,7 +56,7 @@ var trainingcalc = function() {
     var dropdown = document.getElementById('skill');
     var skill = dropdown.options[dropdown.selectedIndex].value;
     if (skill === "") {
-        toast("You should choose a skill first!", 3000, 'rounded') // 'rounded' is the class I'm applying to the toast
+        toast(chooseaskill, 3000, 'rounded') // 'rounded' is the class I'm applying to the toast
         return;
     }
 
@@ -145,7 +166,7 @@ var trainingcalc = function() {
         var tr = document.createElement('tr');
         tr.setAttribute("class", "tooltipped");
         tr.setAttribute("data-position", "top");
-        tr.setAttribute("data-tooltip", "Total Weeks: " + totalweeks.toFixed(1));
+        tr.setAttribute("data-tooltip", strtotalweeks+": " + totalweeks.toFixed(1));
 
         var td1 = document.createElement('td');
         var td2 = document.createElement('td');
