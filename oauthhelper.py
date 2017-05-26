@@ -16,8 +16,8 @@ class OAuthHelper(object):
     check_token_path      = 'https://chpp.hattrick.org/oauth/check_token.ashx'
     invalidate_token_path = 'https://chpp.hattrick.org/oauth/invalidate_token.ashx'
     resources_path        = 'http://chpp.hattrick.org/chppxml.ashx'
-    chpp_key              = 'pnn15gGT69ZjN8fQ3FNHOg'
-    chpp_secret           = 'sGzTAf2u1l71YGWAYy73I4JE46h9hIak7WQbkVw8rVz'
+    chpp_key              = 'xxxxxxxxx'
+    chpp_secret           = 'xxxxxxxxxxxxx'
 
     def __init__(self):
         self.consumer = oauth.Consumer(key=self.chpp_key, 
